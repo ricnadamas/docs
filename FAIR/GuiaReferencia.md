@@ -29,6 +29,7 @@ Esta guía ha sido elaborada con el apoyo de diversas personas y organizaciones 
 
 **Colaboradores:**
 - **....** (....)
+- Isabel Abedrapo
 
 ---
 
