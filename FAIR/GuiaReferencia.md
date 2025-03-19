@@ -123,7 +123,7 @@ Algunos estándares de metadatos recomendados incluyen:
 
 - **[Dublin Core](https://www.dublincore.org/):** General y ampliamente adoptado.
 - **[DataCite Metadata Schema](https://schema.datacite.org/):** Para la citación de datos de investigación.
-- **[OpenAire Guidelines](https://guidelines.openaire.eu/en/latest/):** Esquemas base para DataCite y adoptados por LAReferencia y ANID.
+- **[OpenAIRE Guidelines](https://guidelines.openaire.eu/en/latest/):** Esquemas base para DataCite y adoptados por LAReferencia y ANID.
 - **[ISO 19115](https://www.iso.org/standard/26020.html):** Metadatos geoespaciales.
 - **[Darwin Core](https://dwc.tdwg.org/):** Biodiversidad.
 
