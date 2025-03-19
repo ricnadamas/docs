@@ -123,6 +123,7 @@ Algunos estándares de metadatos recomendados incluyen:
 
 - **[Dublin Core](https://www.dublincore.org/):** General y ampliamente adoptado.
 - **[DataCite Metadata Schema](https://schema.datacite.org/):** Para la citación de datos de investigación.
+- **[OpenAire Guidelines](https://guidelines.openaire.eu/en/latest/):** Esquemas base para DataCite y adoptados por LAReferencia y ANID.
 - **[ISO 19115](https://www.iso.org/standard/26020.html):** Metadatos geoespaciales.
 - **[Darwin Core](https://dwc.tdwg.org/):** Biodiversidad.
 
@@ -141,6 +142,7 @@ Las licencias abiertas permiten la reutilización de datos:
 | **ODbL** | Para bases de datos, con condiciones de atribución y compartición. |
 
 📌 **Herramienta para elegir licencias:** [Choose a License](https://choosealicense.com/)
+📌 **Lista de licencias y sus identificadores:** [SPDX License List](https://spdx.org/licenses/)
 
 ---
 
