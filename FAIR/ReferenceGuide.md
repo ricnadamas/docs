@@ -21,6 +21,15 @@
    - [Anexo B: Ejemplo de Metadatos Estructurados](#anexo-b-ejemplo-de-metadatos-estructurados)
    - [Anexo C: Datos mínimos para un Plan de Gestión de Datos](#anexo-c-datos-minimos-para-un-plan-de-gestion-de-datos)
 
+**Este documento está disponible bajo la licencia CC BY 4.0** y puede ser actualizado con nuevas colaboraciones.
+
+## Colaboradores
+
+Esta guía ha sido elaborada con el apoyo de diversas personas y organizaciones comprometidas con la promoción de los principios FAIR. Se invita a otros colaboradores a contribuir con mejoras, actualizaciones y ejemplos adicionales.
+
+**Colaboradores:**
+- **....** (....)
+
 ---
 
 ## Introduccion
@@ -151,17 +160,6 @@ Algunas herramientas útiles para evaluar la adopción FAIR incluyen:
 
 ---
 
-## Colaboradores
-
-Esta guía ha sido elaborada con el apoyo de diversas personas y organizaciones comprometidas con la promoción de los principios FAIR.
-
-**Colaboradores confirmados:**
-- **Ricardo** (Fundación Openlab Ecuador)
-
-Se invita a otros colaboradores a contribuir con mejoras, actualizaciones y ejemplos adicionales.
-
----
-
 # Anexos
 
 ## Anexo A: Checklist de Evaluación FAIR
@@ -269,25 +267,29 @@ source: "Los datos fueron recopilados por el Instituto de Climatología en colab
 contact:
   email: "contacto@datosclimaticos.org"
   phone: "+56 2 1234 5678"
+
+```
+
+```yaml
 additional_metadata:
   data_origin: "Los datos fueron procesados y validados utilizando ClimateDataTool v2.1. Se eliminaron registros incompletos y se corrigieron valores atípicos identificados mediante análisis estadístico."
   methodology: "Se usaron sensores calibrados de alta precisión para la recolección de datos. La frecuencia de medición fue diaria, y los datos fueron almacenados y respaldados siguiendo protocolos estándar."
+```
 
-
-# Anexo C: Datos mínimos para un Plan de Gestión de Datos (DMP)
+## Anexo C: Datos mínimos para un Plan de Gestión de Datos (DMP)
 
 Un **Plan de Gestión de Datos (DMP)** es un documento esencial que describe cómo se generarán, documentarán, almacenarán, compartirán y preservarán los datos de investigación. A continuación, se presentan los elementos mínimos que debe contener un DMP.
 
 ---
 
-## 1. Información del Proyecto
+### 1. Información del Proyecto
    - [ ] **Título del proyecto:** Nombre oficial del estudio o iniciativa.
    - [ ] **Investigadores responsables:** Nombres y afiliaciones de los principales responsables del proyecto.
    - [ ] **Fuentes de financiamiento:** Instituciones, agencias o programas que financian el proyecto.
 
 ---
 
-## 2. Descripción de los Datos
+### 2. Descripción de los Datos
    - [ ] **Tipos de datos:** ¿Qué tipo de datos se generarán o recopilarán? (Ej.: encuestas, imágenes, datos tabulares, secuencias genómicas, etc.)
    - [ ] **Formatos de datos:** Formatos recomendados para garantizar la interoperabilidad y accesibilidad a largo plazo (Ej.: CSV, JSON, XML, NetCDF, FITS).
    - [ ] **Volumen estimado de datos:** Aproximación del tamaño de los datos generados (Ej.: 100 GB, 1 TB, etc.).
@@ -295,21 +297,21 @@ Un **Plan de Gestión de Datos (DMP)** es un documento esencial que describe có
 
 ---
 
-## 3. Documentación y Metadatos
+### 3. Documentación y Metadatos
    - [ ] **Estándares de metadatos:** Especificar qué estándares se utilizarán para describir los datos (Ej.: Dublin Core, DataCite, ISO 19115).
    - [ ] **Herramientas de documentación:** Métodos y plataformas usadas para generar documentación (Ej.: README.txt, Data Dictionaries, esquemas JSON-LD).
    - [ ] **Vocabularios controlados y ontologías:** Identificar si se utilizarán vocabularios estandarizados (Ej.: FOAF, Schema.org, Darwin Core).
 
 ---
 
-## 4. Almacenamiento y Seguridad
+### 4. Almacenamiento y Seguridad
    - [ ] **Ubicación de los datos durante el proyecto:** ¿Dónde se almacenarán los datos en curso? (Ej.: servidores locales, nube, repositorios de universidades).
    - [ ] **Estrategia de respaldo:** Métodos de respaldo y periodicidad (Ej.: copias diarias/semanales en almacenamiento redundante).
    - [ ] **Medidas de seguridad:** ¿Qué protocolos se implementarán para garantizar la seguridad de los datos? (Ej.: encriptación, acceso restringido).
 
 ---
 
-## 5. Preservación y Compartición
+### 5. Preservación y Compartición
    - [ ] **Repositorio seleccionado:** ¿Dónde se depositarán los datos para su preservación a largo plazo? (Ej.: Zenodo, Dryad, re3data).
    - [ ] **Periodo de retención:** ¿Por cuánto tiempo se almacenarán los datos después de finalizado el proyecto? (Ej.: 5 años, 10 años, indefinido).
    - [ ] **Estrategia de acceso:** ¿Quién podrá acceder a los datos?  
@@ -323,6 +325,4 @@ Un **Plan de Gestión de Datos (DMP)** es un documento esencial que describe có
 
 ## 📌 Notas Finales
 Un **DMP bien estructurado** es clave para asegurar la **transparencia, reproducibilidad e interoperabilidad** de los datos científicos. Se recomienda revisar periódicamente este plan para adaptarlo a nuevas necesidades o requisitos institucionales.
-
-✅ **Este documento está disponible bajo la licencia CC BY 4.0** y puede ser actualizado con nuevas contribuciones.
 
