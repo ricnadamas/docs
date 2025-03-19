@@ -49,7 +49,13 @@ Para facilitar su aplicación, se incluyen listas de verificación y directrices
 
 ---
 
-## Principios FAIR
+## Principios FAIR 
+
+📌 **Más información:**
+
+[Principios FAIR (material para taller). Autores Meyers, N., Escapil-Inchauspé, P., Egaña Aranguren, M., & Hartley Belmar, Ricardo](https://doi.org/10.6075/J0TM7BG5)
+
+[Traducción del Documento guía para el Plan de Gestión de Datos FAIR en Organizaciones e Instituciones. Autores Kirkpatrick, C. R., Cragin, M. H., & Meyers, N. (2024) (Translators Hartley Belmar, Ricardo; Meyers, Natalie)](https://doi.org/10.6075/J0ZC836W)
 
 ### Findable (Encontrable)
 Objetivo: Asegurar que los datos y metadatos puedan ser descubiertos fácilmente.
