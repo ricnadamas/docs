@@ -63,6 +63,7 @@ Objetivo: Asegurar que los datos y metadatos puedan ser descubiertos fácilmente
 
 **Requisitos clave:**
 - Uso de **identificadores persistentes (PID)** como DOI o Handle.
+- Almacenamiento de metadatos los identificadores persistentes.
 - Metadatos ricos que describan los datos de manera clara y estructurada.
 - Indexación en **repositorios especializados** como Zenodo, DataCite o re3data.
 
@@ -75,6 +76,7 @@ Objetivo: Garantizar el acceso a datos y metadatos de manera clara y transparent
 - Uso de protocolos de comunicación abiertos y seguros (**HTTPS, APIs RESTful**).
 - Implementación de mecanismos de autenticación y autorización cuando sea necesario.
 - **Disponibilidad de metadatos**, incluso si los datos tienen restricciones.
+- Metadatos descriptivos que permitan comprender los datos y la accesibilidad para personas con discapacidades.
 
 📌 **Más información:** [FAIR Data - OpenAIRE](https://www.openaire.eu/fair-data)
 
@@ -83,8 +85,8 @@ Objetivo: Facilitar la integración de datos con otros sistemas y garantizar su 
 
 **Requisitos clave:**
 - Uso de **formatos estándar** como JSON, RDF, XML.
-- Uso de **vocabularios controlados y ontologías** (ej. Dublin Core, Schema.org).
-- Inclusión de referencias a otros datos con relaciones bien definidas.
+- Uso de **vocabularios controlados y ontologías** (ej. COAR, Schema.org).
+- Inclusión de referencias a otros datos con relaciones bien definidas en los metadatos.
 
 📌 **Ejemplo práctico:** [FAIRsharing.org](https://fairsharing.org/)
 
@@ -94,7 +96,7 @@ Objetivo: Permitir la reutilización de los datos en distintos contextos.
 **Requisitos clave:**
 - Asignación de **licencias claras** (ej. CC BY, CC0).
 - Metadatos detallados con información metodológica y de procedencia.
-- Cumplimiento de estándares y buenas prácticas de la comunidad.
+- Cumplimiento de estándares y buenas prácticas de la comunidad (ej. diccionario de datos, cuaderno de código).
 
 📌 **Guía complementaria:** [Ten Simple Rules for FAIR Data](https://doi.org/10.1371/journal.pcbi.1007854)
 
