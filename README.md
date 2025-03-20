@@ -1,2 +1,2 @@
 # docs
-Documentos compartidos para la Ciencia Abierta y Gestión del Conocimiento
+Documentos de referencia colaborativos para la Ciencia Abierta y Gestión del Conocimiento.
