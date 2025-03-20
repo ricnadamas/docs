@@ -242,22 +242,22 @@ Las licencias abiertas facilitan la reutilización de datos:
 - **Mozilla Public License (MPL) 2.0**:
   - Licencia híbrida que permite combinar código abierto con código propietario, siempre que las modificaciones al código con licencia MPL se compartan bajo la misma licencia.
 
-## Consideraciones al Elegir una Licencia:
+### Consideraciones al Elegir una Licencia:
 
-### Para Datos:
-#### **Objetivos de Reutilización**
+#### Para Datos:
+##### **Objetivos de Reutilización**
 - ¿Se desea permitir el uso comercial y/o modificaciones de los datos?
 - ¿Se requiere que las derivaciones se compartan bajo la misma licencia?
 
-#### **Regulaciones Legales y Éticas**
+##### **Regulaciones Legales y Éticas**
 - Cumplir con leyes de derechos de autor, protección de datos personales (ej. **GDPR**) y otras regulaciones locales o internacionales.
 - Considerar implicaciones éticas, especialmente si los datos incluyen información sensible o de poblaciones vulnerables.
 
-#### **Licencias Legibles por Máquina**
+##### **Licencias Legibles por Máquina**
 - Usar formatos que permitan que la licencia sea interpretada por sistemas informáticos, como **Creative Commons Rights Expression Language (CC REL)** o **DCAT** para catálogos de datos.
 
-### Para Código y Software:
-#### **Tipo de Licencia**
+#### Para Código y Software:
+##### **Tipo de Licencia**
 - **Licencias Permisivas** (Apache 2.0, MIT, BSD):
   - Permiten el uso, modificación y distribución con pocas restricciones.
   - Adecuadas si se busca maximizar la adopción y flexibilidad en el uso del código.
@@ -265,48 +265,48 @@ Las licencias abiertas facilitan la reutilización de datos:
   - Requieren que los trabajos derivados se distribuyan bajo la misma licencia.
   - Ideales si se desea asegurar que el software y sus derivados permanezcan libres y abiertos.
 
-#### **Compatibilidad de Licencias**
+##### **Compatibilidad de Licencias**
 - Asegurar que la licencia elegida sea compatible con las licencias de cualquier código de terceros utilizado.
 - Evitar conflictos legales al combinar código con diferentes licencias.
 
-#### **Requisitos de Atribución y Aviso**
+##### **Requisitos de Atribución y Aviso**
 - Incluir cualquier aviso de derechos de autor y atribución requerido por la licencia.
 
-#### **Transparencia y Consistencia**
+##### **Transparencia y Consistencia**
 - Especificar claramente la licencia en los metadatos, documentación, repositorios y puntos de acceso a datos y código.
 - Incluir archivos de licencia (ejemplo: **LICENSE.txt**) en los repositorios de código.
 
-#### **Implicaciones en Interoperabilidad y Reutilización**
+##### **Implicaciones en Interoperabilidad y Reutilización**
 - Licencias más abiertas y permisivas facilitan una mayor interoperabilidad y reutilización.
 - Licencias más restrictivas pueden limitar la capacidad de terceros para reutilizar o integrar los datos y código en otros proyectos.
 
-#### **Consultas Legales**
+##### **Consultas Legales**
 - Si hay dudas sobre qué licencia elegir, considerar consultar con un experto legal para garantizar cumplimiento y adecuación.
 
-## Pasos para Implementar la Licencia:
+### Pasos para Implementar la Licencia:
 
-### **Seleccionar la Licencia Apropiada**
+#### **Seleccionar la Licencia Apropiada**
 - Evaluar los objetivos del proyecto y consideraciones legales y éticas para elegir la licencia más adecuada para los datos y el código.
 
-### **Aplicar la Licencia a los Datos y el Código**
-#### **Para Datos:**
+#### **Aplicar la Licencia a los Datos y el Código**
+##### **Para Datos:**
 - Incluir una nota de licencia en la documentación, archivos **README** y metadatos.
 - Usar identificadores y enlaces a la licencia oficial.
 
-#### **Para Código:**
+##### **Para Código:**
 - Incluir un archivo de licencia (**LICENSE.txt**) en el repositorio.
 - Agregar encabezados de licencia en los archivos de código fuente si es apropiado.
 
-### **Usar Enlaces y Recursos Estándar**
+#### **Usar Enlaces y Recursos Estándar**
 - Proporcionar enlaces a la versión oficial de la licencia para facilitar su acceso y verificación.
 
-### **Licencias Legibles por Máquina**
+#### **Licencias Legibles por Máquina**
 - Para datos y código, utilizar formatos que permitan la interpretación de la licencia por sistemas informáticos.
 
-## Tipos de Investigación y Requisitos Específicos
+### Tipos de Investigación y Requisitos Específicos
 
-### **Investigación Observacional**
-#### **Requisitos:**
+#### **Investigación Observacional**
+##### **Requisitos:**
 - **Documentar Instrumentos y Métodos**:  
   - Describir en detalle los instrumentos utilizados y los métodos de recopilación de datos.  
   - Usar estándares y protocolos reconocidos en el dominio (ej. **Darwin Core** para biodiversidad, **ISO 19115** para metadatos geoespaciales).
@@ -318,8 +318,8 @@ Las licencias abiertas facilitan la reutilización de datos:
   - Obtener consentimiento informado cuando sea aplicable.  
   - Cumplir con las regulaciones de protección de datos.
 
-### **Investigación Experimental**
-#### **Requisitos:**
+#### **Investigación Experimental**
+##### **Requisitos:**
 - **Documentar Condiciones Experimentales**:  
   - Describir el diseño experimental, procedimientos y protocolos utilizados.  
   - Incluir información sobre materiales, reactivos y sujetos experimentales.
@@ -332,8 +332,8 @@ Las licencias abiertas facilitan la reutilización de datos:
 - **Consideraciones Éticas**:  
   - Obtener aprobaciones éticas y cumplir con las regulaciones aplicables.
 
-### **Investigación Teórica/Computacional**
-#### **Requisitos:**
+#### **Investigación Teórica/Computacional**
+##### **Requisitos:**
 - **Documentar Código y Dependencias**:  
   - Proporcionar acceso al código fuente, scripts y bibliotecas utilizadas, con comentarios y documentación adecuada.  
   - Usar sistemas de control de versiones como **Git**.
@@ -347,8 +347,8 @@ Las licencias abiertas facilitan la reutilización de datos:
 - **Licencias de Código**:  
   - Aplicar licencias apropiadas como **Apache 2.0** o **GPL** para código y software.
 
-### **Investigación Clínica y Social**
-#### **Requisitos:**
+#### **Investigación Clínica y Social**
+##### **Requisitos:**
 - **Cumplimiento con Regulaciones de Protección de Datos**:  
   - Cumplir con regulaciones como **GDPR** (Europa), **LGPD** (Brasil), **HIPAA** (EE.UU.), u otras aplicables.
 - **Anonimización y Seudonimización**:  
