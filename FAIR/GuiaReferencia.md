@@ -107,25 +107,109 @@ Objetivo: Permitir la reutilización de los datos en distintos contextos.
 
 ## Formatos de Datos y Recomendaciones
 
-| Tipo de Datos | Formato Recomendado |
-|--------------|-------------------|
-| Datos Tabulares | CSV, TSV (UTF-8) |
-| Datos Jerárquicos | JSON, XML |
-| Datos Geoespaciales | GeoJSON, GML |
-| Datos Biológicos | FASTA, NetCDF |
-| Imágenes Científicas | TIFF, DICOM |
+| Tipo de Datos | Formato Recomendado | Observaciones |
+|--------------|-------------------|----------------|
+| Datos Tabulares | CSV, TSV (UTF-8) | Comma or tab separated values), ensuring the use of UTF-8 encoding and the inclusion of clear column headers |
+| Datos Jerárquicos | JSON, XML | Use of standardized schemas to facilitate interoperability |
+| Datos Geoespaciales | GeoJSON, GML | including information on coordinate systems and projections used |
+| Datos Biológicos | FASTA, NetCDF | following the specifications and versions recommended by the corresponding scientific community |
+| Imágenes Científicas | TIFF, DICOM | following the specifications and versions recommended by the corresponding scientific community |
+| Otros específicos | FITS, NETCDF | following the specifications and versions recommended by the corresponding scientific community |
+
+### Consideraciones:
+
+#### Formatos Abiertos vs. Formatos Propietarios
+- Preferir formatos abiertos y estandarizados para promover la interoperabilidad y la reutilización a largo plazo.
+- Evitar formatos propietarios que puedan limitar el acceso y uso de los datos.
+
+#### Compresión y Codificación
+- Utilizar codificaciones de caracteres estándar como UTF-8.
+- Documentar claramente la codificación utilizada para garantizar la correcta interpretación de los datos.
+
+#### Compresión y Verificación de Integridad
+- Documentar los métodos de compresión y cualquier configuración especial utilizada.
+- Proporcionar sumas de verificación (por ejemplo, MD5, SHA-256) para permitir la verificación de la integridad de los archivos.
+
+#### Interoperabilidad Semántica
+- Cuando sea apropiado, utilizar formatos que faciliten la interoperabilidad semántica, como RDF o JSON-LD.
+
 
 ---
 
 ## Metadatos y Estándares
 
-Algunos estándares de metadatos recomendados incluyen:
+#### Importancia de la Metadata
 
-- **[Dublin Core](https://www.dublincore.org/):** General y ampliamente adoptado.
-- **[DataCite Metadata Schema](https://schema.datacite.org/):** Para la citación de datos de investigación.
-- **[OpenAIRE Guidelines](https://guidelines.openaire.eu/en/latest/):** Esquemas base para DataCite y adoptados por LAReferencia y ANID.
-- **[ISO 19115](https://www.iso.org/standard/26020.html):** Metadatos geoespaciales.
-- **[Darwin Core](https://dwc.tdwg.org/):** Biodiversidad.
+- Describen el contenido, contexto y estructura de los datos de manera detallada y legible por máquinas.
+- Facilitan la búsqueda, comprensión, interoperabilidad y reutilización de los datos por parte de los usuarios y los sistemas informáticos.
+
+### Estándares de Metadatos
+
+#### Generales
+- **Dublin Core**: Estándar general y ampliamente utilizado para describir una amplia variedad de recursos digitales y físicos. Proporciona un conjunto básico de elementos de metadatos para facilitar la interoperabilidad.
+- **DataCite Metadata Schema**: Enfocado en la citación y el registro de datos de investigación, incluyendo identificadores persistentes como DOI. Facilita la identificación, acceso y reutilización de conjuntos de datos.
+- **ISO 19115**: Estándar internacional para metadatos de información geoespacial. Define la estructura y contenido de los metadatos para describir datos geoespaciales y servicios relacionados.
+
+#### Ciencias Sociales y Economía
+- **DDI (Data Documentation Initiative)**: Estándar para metadatos en ciencias sociales, comportamiento y economía. Facilita la documentación, descubrimiento y compartición de datos en estos campos.
+- **SDMX (Statistical Data and Metadata eXchange)**: Estándar para el intercambio de datos y metadatos estadísticos, utilizado por organizaciones estadísticas y bancos centrales.
+
+#### Ciencias de la Salud
+- **CDISC (Clinical Data Interchange Standards Consortium)**: Estándares para datos clínicos y de ensayos clínicos, promoviendo la interoperabilidad y eficiencia en la investigación clínica.
+- **HL7 (Health Level Seven)**: Conjunto de estándares para el intercambio, integración y recuperación de información electrónica de salud, utilizado en sistemas hospitalarios y clínicos.
+
+#### Ciencias de la Vida y Biología
+- **Darwin Core (DwC)**: Estándar para datos de biodiversidad. Proporciona un marco para compartir información sobre especies y registros de organismos, facilitando el intercambio y agregación de datos biológicos.
+- **MIAME (Minimum Information About a Microarray Experiment)**: Directrices para la descripción de experimentos de microarrays en genética y genómica, garantizando que los datos sean interpretables y reutilizables.
+- **MINSEQE (Minimum Information about a high-throughput Nucleotide Sequencing Experiment)**: Estándar para describir experimentos de secuenciación de alto rendimiento, facilitando la comprensión y reproducción de resultados.
+- **EML (Ecological Metadata Language)**: Estándar para metadatos en ecología y ciencias ambientales, promoviendo la gestión y reutilización de datos ecológicos.
+- **SBML (Systems Biology Markup Language)**: Lenguaje para representar modelos en biología de sistemas.
+- **BioPAX (Biological Pathway Exchange)**: Estándar para el intercambio de datos sobre vías biológicas.
+
+#### Humanidades Digitales y Patrimonio Cultural
+- **TEI (Text Encoding Initiative)**: Estándar para la representación de textos en formato digital, ampliamente utilizado en humanidades digitales para codificar y describir recursos textuales.
+- **METS (Metadata Encoding and Transmission Standard)**: Esquema para la codificación y transmisión de metadatos de objetos digitales complejos, comúnmente utilizado en bibliotecas y archivos digitales.
+- **PREMIS (Preservation Metadata)**: Estándar para metadatos de preservación digital, proporcionando información necesaria para gestionar y mantener objetos digitales a largo plazo.
+- **MODS (Metadata Object Description Schema)**: Esquema para descripción bibliográfica, desarrollado por la Biblioteca del Congreso de EE.UU., utilizado en bibliotecas y repositorios digitales.
+- **VRA Core**: Estándar para describir obras de arte y artefactos culturales, utilizado en museos, galerías y colecciones de arte.
+- **LIDO (Lightweight Information Describing Objects)**: Estándar para la interoperabilidad de datos sobre objetos de museos y colecciones culturales, facilitando el intercambio de información entre instituciones.
+- **EAD (Encoded Archival Description)**: Estándar para describir materiales de archivo y manuscritos, utilizado en archivos y bibliotecas para facilitar el acceso a colecciones especiales.
+- **ONIX (ONline Information eXchange)**: Estándar para el intercambio de información sobre publicaciones, utilizado en la industria editorial para compartir metadatos sobre libros y otros medios.
+- **CIDOC CRM (Conceptual Reference Model)**: Modelo para la interoperabilidad de información cultural y patrimonial.
+- **IIIF (International Image Interoperability Framework)**: Estándares para compartir, visualizar y anotar imágenes de alta resolución.
+
+#### Ciencias de la Tierra y Medio Ambiente
+- **CF Conventions (Climate and Forecast)**: Estándares para datos climáticos y de pronósticos meteorológicos, utilizados con formatos como NetCDF.
+- **INSPIRE Metadata Implementing Rules**: Especificaciones para metadatos en el contexto de la directiva INSPIRE de la Unión Europea, relacionadas con datos espaciales ambientales.
+- **CSDGM (Content Standard for Digital Geospatial Metadata)**: Estándar desarrollado por el FGDC (Federal Geographic Data Committee) de EE.UU. para metadatos geoespaciales, promoviendo una documentación consistente de datos geoespaciales.
+
+#### Ingeniería y Manufactura
+- **STEP (Standard for the Exchange of Product model data)**: Estándar para el intercambio de datos de productos industriales y de ingeniería.
+
+#### Educación
+- **LOM (Learning Object Metadata)**: Estándar para describir objetos de aprendizaje y recursos educativos.
+
+#### Servicios Web y Datos Abiertos
+- **DCAT (Data Catalog Vocabulary)**: Vocabulario para describir catálogos de datos publicados en la web, facilitando la interoperabilidad entre portales de datos.
+- **OAI-PMH (Open Archives Initiative Protocol for Metadata Harvesting)**: Protocolo que facilita la recolección de metadatos desde repositorios digitales, permitiendo la interoperabilidad y el descubrimiento de recursos.
+
+### Uso de Vocabularios Controlados y Ontologías
+- Emplear vocabularios y ontologías estandarizados como **Schema.org**, **FOAF**, **DCMI Terms**, que mejoran la interoperabilidad semántica y la comprensión común de los términos utilizados.
+- Asegurar que estos vocabularios y ontologías sigan los principios **FAIR**.
+
+### Elementos Clave de los Metadatos
+- **Título**
+- **Autores/Colaboradores**: Incluir identificadores persistentes como **ORCID** para autores y **ROR** para organizaciones.
+- **Resumen/Descripción**
+- **Palabras Clave**: Utilizar vocabularios controlados para facilitar la búsqueda y recuperación.
+- **Fecha de Publicación**
+- **Fecha de Creación y Modificación**
+- **Licencia**: Especificar una licencia clara y estándar (ej. **CC BY**, **CC0**) para definir las condiciones de reutilización.
+- **Identificador Persistente**: Asignar un **DOI** u otro identificador persistente al conjunto de datos.
+- **Proveniencia**: Proporcionar información sobre el origen de los datos, métodos de recolección y cualquier transformación realizada.
+- **Métodos**: Detalles sobre cómo se recopilaron, procesaron y analizaron los datos.
+- **Estándares y Formatos Utilizados**: Especificar los estándares y formatos utilizados en los datos y metadatos.
+- **Información de Contacto**: Datos de la persona responsable o custodio de los datos para soporte o consultas adicionales.
 
 📌 **Referencia útil:** [FAIR Metadata Recommendations](https://doi.org/10.1371/journal.pcbi.1009041)
 
@@ -133,13 +217,150 @@ Algunos estándares de metadatos recomendados incluyen:
 
 ## Licencias y Derechos de Uso
 
-Las licencias abiertas permiten la reutilización de datos:
+Las licencias abiertas facilitan la reutilización de datos:
 
-| Tipo de Licencia | Aplicación |
-|-----------------|------------|
-| **CC0** | Dominio público, sin restricciones. |
-| **CC BY** | Uso permitido con atribución. |
-| **ODbL** | Para bases de datos, con condiciones de atribución y compartición. |
+### Tipos de Licencias Comunes para Datos:
+- **Creative Commons Zero (CC0)**: Sin restricciones, dominio público. Permite el uso, compartición y modificación sin atribución.
+- **Creative Commons Attribution (CC BY)**: Requiere atribución al creador. Permite el uso comercial y modificaciones siempre que se otorgue el crédito adecuado.
+- **Creative Commons Attribution-ShareAlike (CC BY-SA)**: Requiere atribución y compartir bajo la misma licencia. Promueve la distribución en los mismos términos.
+- **Open Data Commons Open Database License (ODbL)**: Requiere atribución y compartir con la misma licencia para bases de datos. Específico para conjuntos de datos y bases de datos.
+- **Public Domain Dedication and License (PDDL)**: Equivalente a CC0 para datos y bases de datos, dedicando los datos al dominio público.
+
+### Tipos de Licencias Comunes para Código y Software:
+- **Apache 2.0 License**:
+  - Licencia permisiva que permite el uso, modificación y distribución del software.
+  - Requiere atribución y proporciona una concesión de patentes, protegiendo a los usuarios del software contra reclamaciones de patentes.
+- **MIT License**:
+  - Licencia permisiva simple que permite el uso, copia, modificación y distribución del software.
+  - Requiere atribución al autor original en copias o modificaciones.
+- **GNU General Public License (GPL)**:
+  - Licencia copyleft que permite el uso, modificación y distribución del software, siempre que las obras derivadas se distribuyan bajo la misma licencia.
+  - Promueve que el software derivado permanezca libre y abierto.
+- **3-clause BSD License**:
+  - Licencia permisiva que permite el uso, modificación y distribución con atribución obligatoria.
+  - No impone restricciones en trabajos derivados.
+- **Mozilla Public License (MPL) 2.0**:
+  - Licencia híbrida que permite combinar código abierto con código propietario, siempre que las modificaciones al código con licencia MPL se compartan bajo la misma licencia.
+
+## Consideraciones al Elegir una Licencia:
+
+### Para Datos:
+#### **Objetivos de Reutilización**
+- ¿Se desea permitir el uso comercial y/o modificaciones de los datos?
+- ¿Se requiere que las derivaciones se compartan bajo la misma licencia?
+
+#### **Regulaciones Legales y Éticas**
+- Cumplir con leyes de derechos de autor, protección de datos personales (ej. **GDPR**) y otras regulaciones locales o internacionales.
+- Considerar implicaciones éticas, especialmente si los datos incluyen información sensible o de poblaciones vulnerables.
+
+#### **Licencias Legibles por Máquina**
+- Usar formatos que permitan que la licencia sea interpretada por sistemas informáticos, como **Creative Commons Rights Expression Language (CC REL)** o **DCAT** para catálogos de datos.
+
+### Para Código y Software:
+#### **Tipo de Licencia**
+- **Licencias Permisivas** (Apache 2.0, MIT, BSD):
+  - Permiten el uso, modificación y distribución con pocas restricciones.
+  - Adecuadas si se busca maximizar la adopción y flexibilidad en el uso del código.
+- **Licencias Copyleft** (GPL, LGPL):
+  - Requieren que los trabajos derivados se distribuyan bajo la misma licencia.
+  - Ideales si se desea asegurar que el software y sus derivados permanezcan libres y abiertos.
+
+#### **Compatibilidad de Licencias**
+- Asegurar que la licencia elegida sea compatible con las licencias de cualquier código de terceros utilizado.
+- Evitar conflictos legales al combinar código con diferentes licencias.
+
+#### **Requisitos de Atribución y Aviso**
+- Incluir cualquier aviso de derechos de autor y atribución requerido por la licencia.
+
+#### **Transparencia y Consistencia**
+- Especificar claramente la licencia en los metadatos, documentación, repositorios y puntos de acceso a datos y código.
+- Incluir archivos de licencia (ejemplo: **LICENSE.txt**) en los repositorios de código.
+
+#### **Implicaciones en Interoperabilidad y Reutilización**
+- Licencias más abiertas y permisivas facilitan una mayor interoperabilidad y reutilización.
+- Licencias más restrictivas pueden limitar la capacidad de terceros para reutilizar o integrar los datos y código en otros proyectos.
+
+#### **Consultas Legales**
+- Si hay dudas sobre qué licencia elegir, considerar consultar con un experto legal para garantizar cumplimiento y adecuación.
+
+## Pasos para Implementar la Licencia:
+
+### **Seleccionar la Licencia Apropiada**
+- Evaluar los objetivos del proyecto y consideraciones legales y éticas para elegir la licencia más adecuada para los datos y el código.
+
+### **Aplicar la Licencia a los Datos y el Código**
+#### **Para Datos:**
+- Incluir una nota de licencia en la documentación, archivos **README** y metadatos.
+- Usar identificadores y enlaces a la licencia oficial.
+
+#### **Para Código:**
+- Incluir un archivo de licencia (**LICENSE.txt**) en el repositorio.
+- Agregar encabezados de licencia en los archivos de código fuente si es apropiado.
+
+### **Usar Enlaces y Recursos Estándar**
+- Proporcionar enlaces a la versión oficial de la licencia para facilitar su acceso y verificación.
+
+### **Licencias Legibles por Máquina**
+- Para datos y código, utilizar formatos que permitan la interpretación de la licencia por sistemas informáticos.
+
+## Tipos de Investigación y Requisitos Específicos
+
+### **Investigación Observacional**
+#### **Requisitos:**
+- **Documentar Instrumentos y Métodos**:  
+  - Describir en detalle los instrumentos utilizados y los métodos de recopilación de datos.  
+  - Usar estándares y protocolos reconocidos en el dominio (ej. **Darwin Core** para biodiversidad, **ISO 19115** para metadatos geoespaciales).
+- **Registrar Coordenadas y Tiempo**:  
+  - Proporcionar información precisa sobre la ubicación geográfica (coordenadas GPS) y marcas de tiempo, utilizando formatos estandarizados como **ISO 8601** para fechas y horas.
+- **Preservar Metadatos Contextuales**:  
+  - Incluir metadatos sobre condiciones ambientales, contexto del estudio y factores que puedan influir en los datos.
+- **Consideraciones Éticas y Legales**:  
+  - Obtener consentimiento informado cuando sea aplicable.  
+  - Cumplir con las regulaciones de protección de datos.
+
+### **Investigación Experimental**
+#### **Requisitos:**
+- **Documentar Condiciones Experimentales**:  
+  - Describir el diseño experimental, procedimientos y protocolos utilizados.  
+  - Incluir información sobre materiales, reactivos y sujetos experimentales.
+- **Registrar Calibraciones y Configuraciones**:  
+  - Documentar calibraciones de equipos, configuraciones de instrumentos y parámetros relevantes.
+- **Preservar Datos Brutos y Procesados**:  
+  - Almacenar y compartir tanto datos en bruto como procesados, junto con información sobre métodos de procesamiento y análisis.
+- **Cumplimiento de Estándares del Dominio**:  
+  - Usar estándares como **MIAME** para microarrays, **MIBBI** para investigaciones biológicas y biomédicas.
+- **Consideraciones Éticas**:  
+  - Obtener aprobaciones éticas y cumplir con las regulaciones aplicables.
+
+### **Investigación Teórica/Computacional**
+#### **Requisitos:**
+- **Documentar Código y Dependencias**:  
+  - Proporcionar acceso al código fuente, scripts y bibliotecas utilizadas, con comentarios y documentación adecuada.  
+  - Usar sistemas de control de versiones como **Git**.
+- **Preservar Entornos de Ejecución**:  
+  - Compartir información sobre el entorno de ejecución (sistemas operativos, versiones de software, contenedores como **Docker** o **Singularity**).
+  - Considerar el uso de contenedores o máquinas virtuales para facilitar la reproducibilidad.
+- **Registrar Parámetros y Seeds**:  
+  - Documentar todos los parámetros de entrada, configuraciones y seeds aleatorios utilizados en simulaciones o modelos.
+- **Publicación y Citación del Código**:  
+  - Asignar un **DOI** al código y usar repositorios como **GitHub**, **GitLab** o **Zenodo**.
+- **Licencias de Código**:  
+  - Aplicar licencias apropiadas como **Apache 2.0** o **GPL** para código y software.
+
+### **Investigación Clínica y Social**
+#### **Requisitos:**
+- **Cumplimiento con Regulaciones de Protección de Datos**:  
+  - Cumplir con regulaciones como **GDPR** (Europa), **LGPD** (Brasil), **HIPAA** (EE.UU.), u otras aplicables.
+- **Anonimización y Seudonimización**:  
+  - Aplicar técnicas para proteger la identidad de los participantes.  
+  - Evaluar riesgos de re-identificación y aplicar medidas adecuadas.
+- **Consentimiento Informado**:  
+  - Obtener consentimiento explícito para la recopilación, uso y compartición de datos.
+- **Aprobaciones Éticas y Regulatorias**:  
+  - Obtener aprobaciones de comités de ética y cumplir con requisitos institucionales y legales.
+- **Acceso Restringido y Controlado**:  
+  - Implementar mecanismos para controlar el acceso a datos sensibles.
+
 
 📌 **Herramienta para elegir licencias:** [Choose a License](https://choosealicense.com/)
 📌 **Lista de licencias y sus identificadores:** [SPDX License List](https://spdx.org/licenses/)
@@ -150,9 +371,36 @@ Las licencias abiertas permiten la reutilización de datos:
 
 Algunas herramientas útiles para evaluar la adopción FAIR incluyen:
 
-- **[FAIR-Aware](https://fairaware.dans.knaw.nl/)** – Evaluación de principios FAIR.
-- **[FAIR Evaluator](https://fairsharing.org/FAIR-Evaluator)** – Evaluación automática de datasets.
-- **[FAIR Data Maturity Model](https://zenodo.org/record/3909563)** – Modelo de medición de FAIR.
+## **FAIR-Aware**
+- **Descripción**: FAIR-Aware es una plataforma educativa desarrollada por **DANS (Data Archiving and Networked Services)** que ayuda a investigadores y gestores de datos a comprender mejor los principios **FAIR** y cómo aplicarlos a sus datos. 
+- Proporciona una autoevaluación guiada que sensibiliza sobre los aspectos clave de FAIR.  
+- **Enlace**: [FAIR-Aware](https://fairaware.dans.knaw.nl/)
+
+## **FAIR Evaluator**
+- **Descripción**: Herramienta en línea que permite a los usuarios evaluar el cumplimiento de sus datos con los principios **FAIR** a través de una serie de preguntas y métricas. 
+- Proporciona comentarios y recomendaciones para mejorar la **FAIRness** de los datos.
+- **Enlace**: [FAIR Evaluator](https://fairsharing.org/FAIR-Evaluator)
+
+## **FAIRsharing**
+- **Descripción**: Recurso curado que proporciona información sobre estándares, repositorios y políticas que apoyan la implementación de los principios **FAIR**.
+- **Enlace**: [FAIRsharing](https://fairsharing.org/)
+
+## **FAIR Data Maturity Model**
+- **Descripción**: Modelo desarrollado por el **Grupo de Trabajo ISO/TC 276** para medir el grado de "FAIRness" de los datos. 
+- Proporciona un conjunto de indicadores y métricas que permiten evaluar de manera sistemática el cumplimiento de los principios **FAIR**.
+- **Enlace**: [FAIR Data Maturity Model](https://zenodo.org/records/3909563)
+
+## **FAIR Cookbook**
+- **Descripción**: Colección de recetas prácticas que guían a los usuarios a través de los pasos necesarios para implementar los principios **FAIR** en la gestión y publicación de datos.
+- **Enlace**: [FAIR Cookbook](https://faircookbook.elixir-europe.org/)
+
+## **FAIRification Process**
+- **Descripción**: Guía detallada que describe el proceso de "FAIRificación" de los datos, incluyendo pasos prácticos y consideraciones técnicas.
+- **Enlace**: [FAIRification Process](https://www.go-fair.org/fair-principles/fairification-process/)
+
+## **Otros Recursos Relevantes**
+- **DMT Clearinghouse**: [Enlace](https://dmtclearinghouse.esipfed.org/search)
+- **Ethical Data Initiative**: [Enlace](https://ethicaldatainitiative.org)
 
 ---
 
