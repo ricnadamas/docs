@@ -1,7 +1,7 @@
 # FAIR: Guía de Referencia
 
 ## Índice
-1. [Introducción](#ntroduccion)
+1. [Introducción](#ntroducción)
 2. [Principios FAIR](#principios-fair)
    - [Findable (Encontrable)](#findable-encontrable)
    - [Accessible (Accesible)](#accessible-accesible)
@@ -11,10 +11,10 @@
 4. [Metadatos y Estándares](#metadatos-y-estandares)
 5. [Licencias y Derechos de Uso](#licencias-y-derechos-de-uso)
 6. [Evaluación FAIR y Herramientas](#evaluación-fair-y-herramientas)
-7. [Tipos de Investigación y Requisitos FAIR](#tipos-de-investigacion-y-requisitos-fair)
-   - [Investigación Observacional](#investigacion-observacional)
-   - [Investigación Experimental](#investigacion-experimental)
-   - [Investigación Computacional](#investigacion-computacional)
+7. [Tipos de Investigación y Requisitos FAIR](#tipos-de-investigación-y-requisitos-fair)
+   - [Investigación Observacional](#investigación-observacional)
+   - [Investigación Experimental](#investigación-experimental)
+   - [Investigación Computacional](#investigación-computacional)
 8. [Colaboradores](#colaboradores)
 9. [Anexos](#anexos)
    - [Anexo A: Checklist de Evaluación FAIR](#anexo-a-checklist-de-evaluacion-fair)
