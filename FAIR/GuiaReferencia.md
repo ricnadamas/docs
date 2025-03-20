@@ -10,7 +10,7 @@
 3. [Formatos de Datos y Recomendaciones](#formatos-de-datos-y-recomendaciones)
 4. [Metadatos y Estándares](#metadatos-y-estandares)
 5. [Licencias y Derechos de Uso](#licencias-y-derechos-de-uso)
-6. [Evaluación FAIR y Herramientas](#evaluacion-fair-y-herramientas)
+6. [Evaluación FAIR y Herramientas](#evaluación-fair-y-herramientas)
 7. [Tipos de Investigación y Requisitos FAIR](#tipos-de-investigacion-y-requisitos-fair)
    - [Investigación Observacional](#investigacion-observacional)
    - [Investigación Experimental](#investigacion-experimental)
