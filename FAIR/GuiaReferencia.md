@@ -1,4 +1,4 @@
-# FAIR: Guía de Referencia
+# FAIR: Guía de Referencia General
 
 ## Índice
 1. [Introducción](#ntroducción)
