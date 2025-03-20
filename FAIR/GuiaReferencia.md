@@ -133,6 +133,7 @@ Objetivo: Permitir la reutilización de los datos en distintos contextos.
 #### Interoperabilidad Semántica
 - Cuando sea apropiado, utilizar formatos que faciliten la interoperabilidad semántica, como RDF o JSON-LD.
 
+📌 **Guía complementaria:** [Formatos preferidos para la preservación y publicación en repositorios](https://doi.org/10.5281/zenodo.8432009)
 
 ---
 
@@ -241,6 +242,9 @@ Las licencias abiertas facilitan la reutilización de datos:
   - No impone restricciones en trabajos derivados.
 - **Mozilla Public License (MPL) 2.0**:
   - Licencia híbrida que permite combinar código abierto con código propietario, siempre que las modificaciones al código con licencia MPL se compartan bajo la misma licencia.
+ 
+📌 **Más licencias:** [Recopilación de licencias según tipo de objeto digital](https://doi.org/10.5281/zenodo.8222781)
+
 
 ### Consideraciones al Elegir una Licencia:
 
@@ -362,7 +366,7 @@ Las licencias abiertas facilitan la reutilización de datos:
   - Implementar mecanismos para controlar el acceso a datos sensibles.
 
 
-📌 **Herramienta para elegir licencias:** [Choose a License](https://choosealicense.com/)
+📌 **Herramienta para elegir licencias:** [Choose a License](https://choosealicense.com/).
 
 📌 **Lista de licencias y sus identificadores:** [SPDX License List](https://spdx.org/licenses/)
 
