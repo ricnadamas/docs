@@ -65,7 +65,7 @@ Para facilitar su aplicación, se incluyen listas de verificación y directrices
 Objetivo: Asegurar que los datos y metadatos puedan ser descubiertos fácilmente.
 
 **Requisitos clave:**
-- Uso de **identificadores persistentes (PID)** como DOI o Handle.
+- Uso de **identificadores persistentes (PIDs)**.
 - Almacenamiento de metadatos los identificadores persistentes.
 - Metadatos ricos que describan los datos de manera clara y estructurada.
 - Indexación en **repositorios especializados** como Zenodo, DataCite o re3data.
