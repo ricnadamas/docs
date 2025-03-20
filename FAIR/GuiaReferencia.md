@@ -68,7 +68,7 @@ Objetivo: Asegurar que los datos y metadatos puedan ser descubiertos fácilmente
 - Uso de **identificadores persistentes (PIDs)**.
 - Almacenamiento de metadatos los identificadores persistentes.
 - Metadatos ricos que describan los datos de manera clara y estructurada.
-- Indexación en **repositorios especializados** como Zenodo, DataCite o re3data.
+- Indexación en **repositorios especializados** como Zenodo, DataCite o re3data  o busque aquí repositorios certificados [Current CoreTrustSeal certified data repositories](https://amt.coretrustseal.org/certificates)
 
 📌 **Más información:** [FAIR Data Principles - GO FAIR](https://www.go-fair.org/fair-principles/)
 
