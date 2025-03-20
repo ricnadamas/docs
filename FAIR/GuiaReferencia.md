@@ -363,6 +363,7 @@ Las licencias abiertas facilitan la reutilización de datos:
 
 
 📌 **Herramienta para elegir licencias:** [Choose a License](https://choosealicense.com/)
+
 📌 **Lista de licencias y sus identificadores:** [SPDX License List](https://spdx.org/licenses/)
 
 ---
