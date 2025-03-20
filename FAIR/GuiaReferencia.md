@@ -376,34 +376,34 @@ Las licencias abiertas facilitan la reutilización de datos:
 
 Algunas herramientas útiles para evaluar la adopción FAIR incluyen:
 
-## **FAIR-Aware**
+### **FAIR-Aware**
 - **Descripción**: FAIR-Aware es una plataforma educativa desarrollada por **DANS (Data Archiving and Networked Services)** que ayuda a investigadores y gestores de datos a comprender mejor los principios **FAIR** y cómo aplicarlos a sus datos. 
 - Proporciona una autoevaluación guiada que sensibiliza sobre los aspectos clave de FAIR.  
 - **Enlace**: [FAIR-Aware](https://fairaware.dans.knaw.nl/)
 
-## **FAIR Evaluator**
+### **FAIR Evaluator**
 - **Descripción**: Herramienta en línea que permite a los usuarios evaluar el cumplimiento de sus datos con los principios **FAIR** a través de una serie de preguntas y métricas. 
 - Proporciona comentarios y recomendaciones para mejorar la **FAIRness** de los datos.
 - **Enlace**: [FAIR Evaluator](https://fairsharing.org/FAIR-Evaluator)
 
-## **FAIRsharing**
+### **FAIRsharing**
 - **Descripción**: Recurso curado que proporciona información sobre estándares, repositorios y políticas que apoyan la implementación de los principios **FAIR**.
 - **Enlace**: [FAIRsharing](https://fairsharing.org/)
 
-## **FAIR Data Maturity Model**
+### **FAIR Data Maturity Model**
 - **Descripción**: Modelo desarrollado por el **Grupo de Trabajo ISO/TC 276** para medir el grado de "FAIRness" de los datos. 
 - Proporciona un conjunto de indicadores y métricas que permiten evaluar de manera sistemática el cumplimiento de los principios **FAIR**.
 - **Enlace**: [FAIR Data Maturity Model](https://zenodo.org/records/3909563)
 
-## **FAIR Cookbook**
+### **FAIR Cookbook**
 - **Descripción**: Colección de recetas prácticas que guían a los usuarios a través de los pasos necesarios para implementar los principios **FAIR** en la gestión y publicación de datos.
 - **Enlace**: [FAIR Cookbook](https://faircookbook.elixir-europe.org/)
 
-## **FAIRification Process**
+### **FAIRification Process**
 - **Descripción**: Guía detallada que describe el proceso de "FAIRificación" de los datos, incluyendo pasos prácticos y consideraciones técnicas.
 - **Enlace**: [FAIRification Process](https://www.go-fair.org/fair-principles/fairification-process/)
 
-## **Otros Recursos Relevantes**
+### **Otros Recursos Relevantes**
 - **DMT Clearinghouse**: [Enlace](https://dmtclearinghouse.esipfed.org/search)
 - **Ethical Data Initiative**: [Enlace](https://ethicaldatainitiative.org)
 
