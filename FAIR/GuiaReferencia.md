@@ -107,14 +107,14 @@ Objetivo: Permitir la reutilización de los datos en distintos contextos.
 
 ## Formatos de Datos y Recomendaciones
 
-| Tipo de Datos | Formato Recomendado | Observaciones |
-|--------------|-------------------|----------------|
-| Datos Tabulares | CSV, TSV (UTF-8) | Comma or tab separated values), ensuring the use of UTF-8 encoding and the inclusion of clear column headers |
-| Datos Jerárquicos | JSON, XML | Use of standardized schemas to facilitate interoperability |
-| Datos Geoespaciales | GeoJSON, GML | including information on coordinate systems and projections used |
-| Datos Biológicos | FASTA, NetCDF | following the specifications and versions recommended by the corresponding scientific community |
-| Imágenes Científicas | TIFF, DICOM | following the specifications and versions recommended by the corresponding scientific community |
-| Otros específicos | FITS, NETCDF | following the specifications and versions recommended by the corresponding scientific community |
+| **Tipo de Datos**      | **Formato Recomendado** | **Observaciones** |
+|------------------------|------------------------|--------------------|
+| **Datos Tabulares**    | CSV, TSV (UTF-8)       | Valores separados por comas o tabulaciones, asegurando el uso de codificación **UTF-8** y la inclusión de encabezados de columna claros. |
+| **Datos Jerárquicos**  | JSON, XML              | Uso de esquemas estandarizados para facilitar la interoperabilidad. |
+| **Datos Geoespaciales** | GeoJSON, GML          | Incluir información sobre sistemas de coordenadas y proyecciones utilizadas. |
+| **Datos Biológicos**   | FASTA, NetCDF          | Seguir las especificaciones y versiones recomendadas por la comunidad científica correspondiente. |
+| **Imágenes Científicas** | TIFF, DICOM          | Seguir las especificaciones y versiones recomendadas por la comunidad científica correspondiente. |
+| **Otros específicos**  | FITS, NetCDF           | Seguir las especificaciones y versiones recomendadas por la comunidad científica correspondiente. |
 
 ### Consideraciones:
 
