@@ -17,10 +17,10 @@
    - [Investigación Computacional](#investigación-computacional)
 8. [Colaboradores](#colaboradores)
 9. [Anexos](#anexos)
-   - [Anexo A: Checklist de Evaluación FAIR](#anexo-a-checklist-de-evaluacion-fair)
-   - [Anexo B: Ejemplo de Metadatos Estructurados](#anexo-b-ejemplo-de-metadatos-estructurados)
-   - [Anexo C: Datos mínimos para un Plan de Gestión de Datos](#anexo-c-datos-minimos-para-un-plan-de-gestión-de-datos)
-   - [Anexo D: Datos mínimos para un Plan de Gestión de Software](#anexo-d-datos-minimos-para-un-plan-de-gestión-de-software)
+   - [Anexo A Checklist de Evaluación FAIR](#anexo-a-checklist-de-evaluación-fair)
+   - [Anexo B Ejemplo de Metadatos Estructurados](#anexo-b-ejemplo-de-metadatos-estructurados)
+   - [Anexo C Datos mínimos para un Plan de Gestión de Datos](#anexo-c-datos-mínimos-para-un-plan-de-gestión-de-datos)
+   - [Anexo D Datos mínimos para un Plan de Gestión de Software](#anexo-d-datos-mínimos-para-un-plan-de-gestión-de-software)
 
 **Este documento está disponible bajo la licencia CC BY 4.0** y puede ser actualizado con nuevas colaboraciones.
 
