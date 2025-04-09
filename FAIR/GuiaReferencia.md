@@ -31,6 +31,7 @@ Esta guía ha sido elaborada con el apoyo de diversas personas y organizaciones 
 - Ricardo Hartley Belmar @ricnadamas [ORCID:0000-0001-5058-9309](https://orcid.org/my-orcid?orcid=0000-0001-5058-9309)
 - Isabel Abedrapo @yolaisa [ORCID:0000-0001-9990-0436](https://orcid.org/0000-0001-9990-0436)
 - Priyanka Ojha @priya-gitTest [ORCID:0000-0002-6844-6493](https://orcid.org/0000-0002-6844-6493)
+- Carlos Martinez-Ortiz @c-martinez [ORCID:0000-0001-5565-7577](https://orcid.org/0000-0001-5565-7577)
 - ..
 - .
 
@@ -41,6 +42,8 @@ Esta guía ha sido elaborada con el apoyo de diversas personas y organizaciones 
 Esta guía proporciona un marco práctico para la implementación de los principios **FAIR** en la gestión de datos de investigación y otras áreas que requieren estructuración y accesibilidad de la información. No está dirigida únicamente a investigadores, sino también a bibliotecarios, gestores de datos, responsables de políticas científicas, desarrolladores de infraestructuras y cualquier persona interesada en la gestión eficiente de datos digitales.
 
 Los principios FAIR buscan garantizar que los datos sean **Encontrables (Findable), Accesibles (Accessible), Interoperables (Interoperable) y Reutilizables (Reusable)**. Implementar estos principios permite mejorar la visibilidad y el impacto de los datos, optimizar la inversión en su generación y promover la colaboración científica y tecnológica.
+
+Los principios FAIR fueron inicialmente pensados para su aplicación a datos, pero han sido adaptados a software de investigación mediante la creación de de los principios **FAIR4RS** (FAIR for Research Software). Cabe mencionar que en este contexto, software es utilizado como un termino inclusivo, abarcando desde pequeños scripts hasta complejas librerias.
 
 Además de describir los principios FAIR, esta guía proporciona información sobre:
 - **Estándares de metadatos** recomendados.
@@ -385,6 +388,21 @@ Algunas herramientas útiles para evaluar la adopción FAIR incluyen:
 - **Descripción**: Herramienta en línea que permite a los usuarios evaluar el cumplimiento de sus datos con los principios **FAIR** a través de una serie de preguntas y métricas. 
 - Proporciona comentarios y recomendaciones para mejorar la **FAIRness** de los datos.
 - **Enlace**: [FAIR Evaluator](https://fairsharing.org/FAIR-Evaluator)
+
+### **How FAIR is**
+- **Descripción**: Herramienta de línea de commando que permite analisar el cumplimiento del software con las recomendaciones de [fair-software.eu](https://fair-software.eu/). 
+- Las recomendaciones de no estan directamente ligadas a los principios **FAIR4RS**, pero no les contradicen tienen el mismo objetivo.
+- **Enlace**: [howFAIRis](https://github.com/fair-software/howfairis)
+
+### **F-UJI**
+- **Descripción**: Herramienta automatica para la evaluación de **FAIRness**.
+- La evaluación de F-UJI assessment esta basada en 16 de las 17 metricas desarolladas en el projecto [FAIRsFAIR](https://www.fairsfair.eu/). 
+- **Enlace**: [F-UJI](https://catalogue.fair-impact.eu/resources/f-uji)
+
+### ** Auto-evaluacion de FAIR software **
+- **Descripción**: Una lista interactive de verificación con preguntas sobre el **FAIRness** del software de investigación.
+- Esta lista genera una insignia (badge) que los propietarios de proyectos pueden incluir en su README para comunicar el estado del proyecto a los visitantes.
+- **Enlace**: [FAIR software check-list](https://fairsoftwarechecklist.net/v0.2/)
 
 ### **FAIRsharing**
 - **Descripción**: Recurso curado que proporciona información sobre estándares, repositorios y políticas que apoyan la implementación de los principios **FAIR**.

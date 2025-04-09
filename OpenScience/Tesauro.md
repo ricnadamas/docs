@@ -34,6 +34,7 @@
 | [Principios FAIR](#principios-fair)  | Datos Encontrables, Accesibles, Interoperables y Reutilizables. |
 | [Ciencia Ciudadana](#ciencia-ciudadana)  | Participación del público en investigaciones científicas y recolección de datos. |
 | [Plan de Gestión de Datos (DMP)](#plan-gestion-datos)  | Documento formal sobre la gestión y compartición de datos en investigación. |
+| [Plan de Gestión de Software (SMP)](#plan-gestion-software)  | Documento formal sobre la gestión y compartición de software en investigación. |
 | [Identificadores Persistentes (PIDs)](#identificadores-persistentes)  | Identificadores únicos para objetos digitales (DOI, ORCID, ARK). |
 | [Estándares de Metadatos](#estandares-metadatos)  | Normas para describir datos de investigación, como DublinCore y DataCite. |
 | [Plan S](#plan-s)  | Iniciativa que exige que la investigación financiada con fondos públicos sea de acceso abierto. |
@@ -61,6 +62,7 @@
 | [DataCite](https://datacite.org/)  | Proporciona identificadores persistentes (DOIs) para datos de investigación. |
 | [Crossref](https://www.crossref.org/)  | Proporciona DOIs para artículos científicos y otros contenidos. |
 | [RDA (Research Data Alliance)](https://www.rd-alliance.org/)  | Organización internacional que facilita la compartición y reutilización de datos. |
+| [ReSA (Research Software Alliance)](https://www.researchsoft.org/)  | Organización internacional que promueva la importancia del software de investigación. |
 | [SPARC](https://sparcopen.org/)  | Alianza internacional de bibliotecas académicas que impulsa la comunicación científica abierta. |
 | [COAR](https://www.coar-repositories.org/)  | Asociación global de repositorios abiertos de investigación. |
 | [Open Knowledge Foundation](https://okfn.org/)  | Promueve el acceso y compartición de información y datos abiertos. |
