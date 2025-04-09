@@ -599,7 +599,7 @@ Un **Plan de Gestión de Datos (DMP)** es un documento esencial que describe có
 
 ---
 
-## 📌 Notas Finales
+📌 Notas Finales
 Un **DMP bien estructurado** es clave para asegurar la **transparencia, reproducibilidad e interoperabilidad** de los datos científicos. Se recomienda revisar periódicamente este plan para adaptarlo a nuevas necesidades o requisitos institucionales.
 
 ---
