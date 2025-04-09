@@ -604,4 +604,4 @@ Un **DMP bien estructurado** es clave para asegurar la **transparencia, reproduc
 
 ---
 
-## Anexo D: Datos mínimos para un Plan de Gestión de Software (SMP)
+## Anexo D Datos mínimos para un Plan de Gestión de Software (SMP)
