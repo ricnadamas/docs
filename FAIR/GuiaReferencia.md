@@ -20,6 +20,7 @@
    - [Anexo A: Checklist de Evaluación FAIR](#anexo-a-checklist-de-evaluacion-fair)
    - [Anexo B: Ejemplo de Metadatos Estructurados](#anexo-b-ejemplo-de-metadatos-estructurados)
    - [Anexo C: Datos mínimos para un Plan de Gestión de Datos](#anexo-c-datos-minimos-para-un-plan-de-gestion-de-datos)
+   - [Anexo D: Datos mínimos para un Plan de Gestión de Software](#anexo-d-datos-minimos-para-un-plan-de-gestion-de-software)
 
 **Este documento está disponible bajo la licencia CC BY 4.0** y puede ser actualizado con nuevas colaboraciones.
 
@@ -601,3 +602,6 @@ Un **Plan de Gestión de Datos (DMP)** es un documento esencial que describe có
 ## 📌 Notas Finales
 Un **DMP bien estructurado** es clave para asegurar la **transparencia, reproducibilidad e interoperabilidad** de los datos científicos. Se recomienda revisar periódicamente este plan para adaptarlo a nuevas necesidades o requisitos institucionales.
 
+---
+
+## Anexo D: Datos mínimos para un Plan de Gestión de Software (SMP)
