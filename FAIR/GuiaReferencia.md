@@ -448,7 +448,7 @@ Algunas herramientas útiles para evaluar la adopción FAIR incluyen:
 
 # Anexos
 
-## Anexo A: Checklist de Evaluación FAIR
+## Anexo A Checklist de Evaluación FAIR
 
 ### **Findable (Encontrable)**
 
@@ -520,7 +520,7 @@ Algunas herramientas útiles para evaluar la adopción FAIR incluyen:
   
 ---
 
-## Anexo B: Ejemplo de Metadatos Estructurados
+## Anexo B Ejemplo de Metadatos Estructurados
 
 A continuación se muestra un ejemplo de metadatos estructurados según el estándar **Dublin Core** para un conjunto de datos hipotético.
 
@@ -562,7 +562,7 @@ additional_metadata:
   methodology: "Se usaron sensores calibrados de alta precisión para la recolección de datos. La frecuencia de medición fue diaria, y los datos fueron almacenados y respaldados siguiendo protocolos estándar."
 ```
 
-## Anexo C: Datos mínimos para un Plan de Gestión de Datos (DMP)
+## Anexo C Datos mínimos para un Plan de Gestión de Datos (DMP)
 
 Un **Plan de Gestión de Datos (DMP)** es un documento esencial que describe cómo se generarán, documentarán, almacenarán, compartirán y preservarán los datos de investigación. A continuación, se presentan los elementos mínimos que debe contener un DMP.
 
