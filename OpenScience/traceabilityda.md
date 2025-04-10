@@ -1,8 +1,16 @@
-# Research Digital Object Traceability Guidelines (draft-scheme)
+# Research Object Traceability Framework (draft-scheme)
 
 ## Overview
 
 This repository contains a mind map of digital artefact traceability. The mind map covers various aspects of managing, identifying, and transferring digital objects in research.
+
+## Contributors
+
+This guide was developed with the support of various individuals and organizations committed to promoting the FAIR principles. Additional collaborators are welcome to contribute improvements, updates, and further examples.
+
+- Ricardo Hartley Belmar @ricnadamas [ORCID:0000-0001-5058-9309](https://orcid.org/my-orcid?orcid=0000-0001-5058-9309)
+
+**This document is available under the CC BY 4.0 license** and may be updated with new contributions.
 
 ## Detailed Sections
 
