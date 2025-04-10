@@ -609,15 +609,4 @@ This guide was developed with the support of various individuals and organizatio
   </tbody>
 </table>
 
-## License
-
-This project is licensed under the MIT License.
-
-## Acknowledgments
-
-To be...
-
-## Citation
-
-To be...
 
