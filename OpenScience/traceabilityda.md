@@ -135,478 +135,158 @@ This guide was developed with the support of various individuals and organizatio
 ### Resume
 - Summary of key points and considerations for digital artifact traceability.
 
+## Table of Contents
+
+- [Objects Use](#objects-use)
+  - [Rights Code](#rights-code)
+  - [Embargo Period](#embargo-period)
+- [Project](#project)
+  - [Project ID](#project-id)
+  - [Grant ID (Project)](#grant-id-project)
+- [Creator](#creator)
+  - [ORCID ID](#orcid-id)
+  - [Person Name](#person-name)
+- [Grant](#grant)
+  - [Grant ID (Funding)](#grant-id-funding)
+  - [Funding Amount](#funding-amount)
+  - [Funding Period](#funding-period)
+  - [Public Funders](#public-funders)
+  - [Private Funders](#private-funders)
+- [Objects Description](#objects-description)
+  - [Report Structure](#report-structure)
+  - [Metadata Representation](#metadata-representation)
+  - [Localization Code](#localization-code)
+  - [License Code](#license-code)
+- [Object ID](#object-id)
+  - [Handle-based Object ID](#handle-based-object-id)
+  - [Non Handle-based Object ID](#non-handle-based-object-id)
+
 ## Properties
 
 ### Objects Use
 
 #### Rights Code
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Data Type</th>
-      <th>Cardinality</th>
-      <th>Example Value</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Rights Code</td>
-      <td>Codes specifying the usage rights and permissions for data objects</td>
-      <td>String</td>
-      <td>1</td>
-      <td>CC BY</td>
-    </tr>
-  </tbody>
-</table>
+
+| Name | Description | Data Type | Cardinality | Example Value |
+| --- | --- | --- | --- | --- |
+| Rights Code | Codes specifying the usage rights and permissions for data objects | String | 1 | CC BY |
 
 #### Embargo Period
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Data Type</th>
-      <th>Cardinality</th>
-      <th>Example Value</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Embargo Period</td>
-      <td>Period during which access to data is restricted</td>
-      <td>String</td>
-      <td>1</td>
-      <td>12 months</td>
-    </tr>
-  </tbody>
-</table>
+
+| Name | Description | Data Type | Cardinality | Example Value |
+| --- | --- | --- | --- | --- |
+| Embargo Period | Period during which access to data is restricted | String | 1 | 12 months |
 
 ### Project
 
 #### Project ID
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Data Type</th>
-      <th>Cardinality</th>
-      <th>Example Value</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Project ID</td>
-      <td>Research Activity Identifier for tracking project activities</td>
-      <td>String</td>
-      <td>1</td>
-      <td>10.12345/RAiD.123456</td>
-    </tr>
-  </tbody>
-</table>
 
-#### Grant ID
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Data Type</th>
-      <th>Cardinality</th>
-      <th>Example Value</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Grant ID</td>
-      <td>Identifier for the grant supporting the project</td>
-      <td>String</td>
-      <td>1</td>
-      <td>10.13039/100000001</td>
-    </tr>
-  </tbody>
-</table>
+| Name | Description | Data Type | Cardinality | Example Value |
+| --- | --- | --- | --- | --- |
+| Project ID | Research Activity Identifier for tracking project activities | String | 1 | 10.12345/RAiD.123456 |
+
+#### Grant ID (Project)
+
+| Name | Description | Data Type | Cardinality | Example Value |
+| --- | --- | --- | --- | --- |
+| Grant ID | Identifier for the grant supporting the project | String | 1 | 10.13039/100000001 |
 
 ### Creator
 
-#### Person ID
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Data Type</th>
-      <th>Cardinality</th>
-      <th>Example Value</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>ORCID ID</td>
-      <td>Open Researcher and Contributor ID</td>
-      <td>String</td>
-      <td>1</td>
-      <td>https://orcid.org/0000-0001-2345-6789</td>
-    </tr>
-  </tbody>
-</table>
+#### Author ID
+
+| Name | Description | Data Type | Cardinality | Example Value |
+| --- | --- | --- | --- | --- |
+| ORCID ID | Open Researcher and Contributor ID | String | 1 | https://orcid.org/0000-0001-2345-6789 |
 
 #### Person Name
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Data Type</th>
-      <th>Cardinality</th>
-      <th>Example Value</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Family Name</td>
-      <td>Surname according to cultural naming conventions</td>
-      <td>String</td>
-      <td>1</td>
-      <td>Doe</td>
-    </tr>
-    <tr>
-      <td>Given Name</td>
-      <td>First name according to cultural naming conventions</td>
-      <td>String</td>
-      <td>1</td>
-      <td>John</td>
-    </tr>
-  </tbody>
-</table>
+
+| Name | Description | Data Type | Cardinality | Example Value |
+| --- | --- | --- | --- | --- |
+| Family Name | Surname according to cultural naming conventions | String | 1 | Doe |
+| Given Name | First name according to cultural naming conventions | String | 1 | John |
 
 ### Grant
 
-#### Grant ID
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Data Type</th>
-      <th>Cardinality</th>
-      <th>Example Value</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Grant ID</td>
-      <td>Identifier for the grant supporting the project</td>
-      <td>String</td>
-      <td>1</td>
-      <td>10.13039/100000001</td>
-    </tr>
-  </tbody>
-</table>
+#### Grant ID (Funding)
+
+| Name | Description | Data Type | Cardinality | Example Value |
+| --- | --- | --- | --- | --- |
+| Grant ID | Identifier for the grant supporting the project | String | 1 | 10.13039/100000001 |
 
 #### Funding Amount
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Data Type</th>
-      <th>Cardinality</th>
-      <th>Example Value</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Funding Amount</td>
-      <td>Amount of funding awarded</td>
-      <td>Number</td>
-      <td>1</td>
-      <td>1000000</td>
-    </tr>
-  </tbody>
-</table>
+
+| Name | Description | Data Type | Cardinality | Example Value |
+| --- | --- | --- | --- | --- |
+| Funding Amount | Amount of funding awarded | Number | 1 | 1000000 |
 
 #### Funding Period
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Data Type</th>
-      <th>Cardinality</th>
-      <th>Example Value</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Funding Period</td>
-      <td>Duration of the grant in years</td>
-      <td>Number</td>
-      <td>1</td>
-      <td>3</td>
-    </tr>
-  </tbody>
-</table>
 
-#### Funder ID
+| Name | Description | Data Type | Cardinality | Example Value |
+| --- | --- | --- | --- | --- |
+| Funding Period | Duration of the grant in years | Number | 1 | 3 |
 
-##### Public Funders
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Data Type</th>
-      <th>Cardinality</th>
-      <th>Example Value</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>ROR ID</td>
-      <td>Research Organization Registry identifier</td>
-      <td>String</td>
-      <td>1</td>
-      <td>https://ror.org/1234567</td>
-    </tr>
-    <tr>
-      <td>GRID ID</td>
-      <td>Global Research Identifier Database ID</td>
-      <td>String</td>
-      <td>1</td>
-      <td>https://grid.ac/institutes/grid.1234.5</td>
-    </tr>
-    <tr>
-      <td>ISNI ID</td>
-      <td>International Standard Name Identifier</td>
-      <td>String</td>
-      <td>1</td>
-      <td>https://isni.org/isni/0000000123456789</td>
-    </tr>
-    <tr>
-      <td>Wikidata ID</td>
-      <td>Identifier for Wikidata entities</td>
-      <td>String</td>
-      <td>1</td>
-      <td>https://www.wikidata.org/wiki/Q123456</td>
-    </tr>
-    <tr>
-      <td>Crossref Funder ID</td>
-      <td>Unique identifier assigned by Crossref</td>
-      <td>String</td>
-      <td>1</td>
-      <td>https://doi.org/10.13039/501100000</td>
-    </tr>
-  </tbody>
-</table>
+### Funder ID
 
-##### Private Funders
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Data Type</th>
-      <th>Cardinality</th>
-      <th>Example Value</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>ROR ID</td>
-      <td>Research Organization Registry identifier</td>
-      <td>String</td>
-      <td>1</td>
-      <td>https://ror.org/1234567</td>
-    </tr>
-    <tr>
-      <td>GRID ID</td>
-      <td>Global Research Identifier Database ID</td>
-      <td>String</td>
-      <td>1</td>
-      <td>https://grid.ac/institutes/grid.1234.5</td>
-    </tr>
-    <tr>
-      <td>ISNI ID</td>
-      <td>International Standard Name Identifier</td>
-      <td>String</td>
-      <td>1</td>
-      <td>https://isni.org/isni/0000000123456789</td>
-    </tr>
-    <tr>
-      <td>Wikidata ID</td>
-      <td>Identifier for Wikidata entities</td>
-      <td>String</td>
-      <td>1</td>
-      <td>https://www.wikidata.org/wiki/Q123456</td>
-    </tr>
-    <tr>
-      <td>Crossref Funder ID</td>
-      <td>Unique identifier assigned by Crossref</td>
-      <td>String</td>
-      <td>1</td>
-      <td>https://doi.org/10.13039/501100000</td>
-    </tr>
-  </tbody>
-</table>
+#### Public Funders
+
+| Name | Description | Data Type | Cardinality | Example Value |
+| --- | --- | --- | --- | --- |
+| ROR ID | Research Organization Registry identifier | String | 1 | https://ror.org/1234567 |
+| GRID ID | Global Research Identifier Database ID | String | 1 | https://grid.ac/institutes/grid.1234.5 |
+| ISNI ID | International Standard Name Identifier | String | 1 | https://isni.org/isni/0000000123456789 |
+| Wikidata ID | Identifier for Wikidata entities | String | 1 | https://www.wikidata.org/wiki/Q123456 |
+| Crossref Funder ID | Unique identifier assigned by Crossref | String | 1 | https://doi.org/10.13039/501100000 |
+
+#### Private Funders
+
+| Name | Description | Data Type | Cardinality | Example Value |
+| --- | --- | --- | --- | --- |
+| ROR ID | Research Organization Registry identifier | String | 1 | https://ror.org/1234567 |
+| GRID ID | Global Research Identifier Database ID | String | 1 | https://grid.ac/institutes/grid.1234.5 |
+| ISNI ID | International Standard Name Identifier | String | 1 | https://isni.org/isni/0000000123456789 |
+| Wikidata ID | Identifier for Wikidata entities | String | 1 | https://www.wikidata.org/wiki/Q123456 |
+| Crossref Funder ID | Unique identifier assigned by Crossref | String | 1 | https://doi.org/10.13039/501100000 |
 
 ### Objects Description
 
 #### Report Structure
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Data Type</th>
-      <th>Cardinality</th>
-      <th>Example Value</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Sample ID</td>
-      <td>Detailed information on chemical samples</td>
-      <td>String</td>
-      <td>1</td>
-      <td>Sample123</td>
-    </tr>
-  </tbody>
-</table>
+
+| Name | Description | Data Type | Cardinality | Example Value |
+| --- | --- | --- | --- | --- |
+| Sample ID | Detailed information on chemical samples | String | 1 | Sample123 |
 
 #### Metadata Representation
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Data Type</th>
-      <th>Cardinality</th>
-      <th>Example Value</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Metadata Standard</td>
-      <td>Standards for metadata interoperability in open science</td>
-      <td>String</td>
-      <td>1</td>
-      <td>OpenAIRE</td>
-    </tr>
-  </tbody>
-</table>
+
+| Name | Description | Data Type | Cardinality | Example Value |
+| --- | --- | --- | --- | --- |
+| Metadata Standard | Standards for metadata interoperability in open science | String | 1 | OpenAIRE |
 
 #### Localization Code
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Data Type</th>
-      <th>Cardinality</th>
-      <th>Example Value</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>GeoNames ID</td>
-      <td>Unique identifiers for geographical locations</td>
-      <td>String</td>
-      <td>1</td>
-      <td>http://www.geonames.org/1234567</td>
-    </tr>
-  </tbody>
-</table>
+
+| Name | Description | Data Type | Cardinality | Example Value |
+| --- | --- | --- | --- | --- |
+| GeoNames ID | Unique identifiers for geographical locations | String | 1 | http://www.geonames.org/1234567 |
 
 #### License Code
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Data Type</th>
-      <th>Cardinality</th>
-      <th>Example Value</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>License Code</td>
-      <td>Creative Commons licenses and other open data licenses</td>
-      <td>String</td>
-      <td>1</td>
-      <td>CC BY 4.0</td>
-    </tr>
-  </tbody>
-</table>
 
-#### Object ID
+| Name | Description | Data Type | Cardinality | Example Value |
+| --- | --- | --- | --- | --- |
+| License Code | Creative Commons licenses and other open data licenses | String | 1 | CC BY 4.0 |
 
-##### Handle-based
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Data Type</th>
-      <th>Cardinality</th>
-      <th>Example Value</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Handle</td>
-      <td>System for assigning and managing persistent identifiers for digital objects</td>
-      <td>String</td>
-      <td>1</td>
-      <td>hdl:12345/6789</td>
-    </tr>
-    <tr>
-      <td>DOI</td>
-      <td>Digital Object Identifier for uniquely identifying content</td>
-      <td>String</td>
-      <td>1</td>
-      <td>10.1000/182</td>
-    </tr>
-  </tbody>
-</table>
+### Object ID
 
-##### Non Handle-based
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Data Type</th>
-      <th>Cardinality</th>
-      <th>Example Value</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>ARK</td>
-      <td>Archival Resource Key for long-term access to information objects</td>
-      <td>String</td>
-      <td>1</td>
-      <td>ark:/12345/xv12345</td>
-    </tr>
-    <tr>
-      <td>URN</td>
-      <td>Uniform Resource Name for persistent, location-independent resource identifiers</td>
-      <td>String</td>
-      <td>1</td>
-      <td>urn:nbn:de:0001-0002</td>
-    </tr>
-    <tr>
-      <td>PURL</td>
-      <td>Persistent Uniform Resource Locator for redirecting to the current URL of a resource</td>
-      <td>String</td>
-      <td>1</td>
-      <td>http://purl.org/12345</td>
-    </tr>
-  </tbody>
-</table>
+#### Handle-based Object ID
 
+| Name | Description | Data Type | Cardinality | Example Value |
+| --- | --- | --- | --- | --- |
+| Handle | System for assigning and managing persistent identifiers for digital objects | String | 1 | hdl:12345/6789 |
+| DOI | Digital Object Identifier for uniquely identifying content | String | 1 | 10.1000/182 |
 
+#### Non Handle-based Object ID
+
+| Name | Description | Data Type | Cardinality | Example Value |
+| --- | --- | --- | --- | --- |
+| ARK | Archival Resource Key for long-term access to information objects | String | 1 | ark:/12345/xv12345 |
+| URN | Uniform Resource Name for persistent, location-independent resource identifiers | String | 1 | urn:nbn:de:0001-0002 |
+| PURL | Persistent Uniform Resource Locator for redirecting to the current URL of a resource | String | 1 | http://purl.org/12345 |
