@@ -60,10 +60,8 @@ Para facilitar su aplicación, se incluyen listas de verificación y directrices
 ## Principios FAIR 
 
 📌 **Más información:**
-
-[Principios FAIR (material para taller). Autores Meyers, N., Escapil-Inchauspé, P., Egaña Aranguren, M., & Hartley Belmar, Ricardo](https://doi.org/10.6075/J0TM7BG5)
-
-[Traducción del Documento guía para el Plan de Gestión de Datos FAIR en Organizaciones e Instituciones. Autores Kirkpatrick, C. R., Cragin, M. H., & Meyers, N. (2024) (Translators Hartley Belmar, Ricardo; Meyers, Natalie)](https://doi.org/10.6075/J0ZC836W)
+- [Principios FAIR (material para taller). Autores Meyers, N., Escapil-Inchauspé, P., Egaña Aranguren, M., & Hartley Belmar, Ricardo](https://doi.org/10.6075/J0TM7BG5)
+- [Traducción del Documento guía para el Plan de Gestión de Datos FAIR en Organizaciones e Instituciones. Autores Kirkpatrick, C. R., Cragin, M. H., & Meyers, N. (2024) (Translators Hartley Belmar, Ricardo; Meyers, Natalie)](https://doi.org/10.6075/J0ZC836W)
 
 ### Findable (Encontrable)
 Objetivo: Asegurar que los datos y metadatos puedan ser descubiertos fácilmente.
@@ -74,7 +72,8 @@ Objetivo: Asegurar que los datos y metadatos puedan ser descubiertos fácilmente
 - Metadatos ricos que describan los datos de manera clara y estructurada.
 - Indexación en **repositorios especializados** como Zenodo, DataCite o re3data  o busque aquí repositorios certificados [Current CoreTrustSeal certified data repositories](https://amt.coretrustseal.org/certificates)
 
-📌 **Más información:** [FAIR Data Principles - GO FAIR](https://www.go-fair.org/fair-principles/)
+📌 **Más información:** 
+- [FAIR Data Principles - GO FAIR](https://www.go-fair.org/fair-principles/)
 
 ### Accessible (Accesible)
 Objetivo: Garantizar el acceso a datos y metadatos de manera clara y transparente.
@@ -85,7 +84,8 @@ Objetivo: Garantizar el acceso a datos y metadatos de manera clara y transparent
 - **Disponibilidad de metadatos**, incluso si los datos tienen restricciones.
 - Metadatos descriptivos que permitan comprender los datos y la accesibilidad para personas con discapacidades.
 
-📌 **Más información:** [FAIR Data - OpenAIRE](https://www.openaire.eu/fair-data)
+📌 **Más información:** 
+- [FAIR Data - OpenAIRE](https://www.openaire.eu/fair-data)
 
 ### Interoperable
 Objetivo: Facilitar la integración de datos con otros sistemas y garantizar su reutilización automatizada.
@@ -95,7 +95,8 @@ Objetivo: Facilitar la integración de datos con otros sistemas y garantizar su 
 - Uso de **vocabularios controlados y ontologías** (ej. COAR, Schema.org).
 - Inclusión de referencias a otros datos con relaciones bien definidas en los metadatos.
 
-📌 **Ejemplo práctico:** [FAIRsharing.org](https://fairsharing.org/)
+📌 **Ejemplo práctico:** 
+- [FAIRsharing.org](https://fairsharing.org/)
 
 ### Reusable (Reutilizable)
 Objetivo: Permitir la reutilización de los datos en distintos contextos.
@@ -105,7 +106,8 @@ Objetivo: Permitir la reutilización de los datos en distintos contextos.
 - Metadatos detallados con información metodológica y de procedencia.
 - Cumplimiento de estándares y buenas prácticas de la comunidad (ej. diccionario de datos, cuaderno de código).
 
-📌 **Guía complementaria:** [Ten Simple Rules for FAIR Data](https://doi.org/10.1371/journal.pcbi.1007854)
+📌 **Guía complementaria:** 
+- [Ten Simple Rules for FAIR Data](https://doi.org/10.1371/journal.pcbi.1007854)
 
 ---
 
@@ -137,7 +139,8 @@ Objetivo: Permitir la reutilización de los datos en distintos contextos.
 #### Interoperabilidad Semántica
 - Cuando sea apropiado, utilizar formatos que faciliten la interoperabilidad semántica, como RDF o JSON-LD.
 
-📌 **Guía complementaria:** [Formatos preferidos para la preservación y publicación en repositorios](https://doi.org/10.5281/zenodo.8432009)
+📌 **Guía complementaria:** 
+- [Formatos preferidos para la preservación y publicación en repositorios](https://doi.org/10.5281/zenodo.8432009)
 
 ---
 
@@ -216,7 +219,8 @@ Objetivo: Permitir la reutilización de los datos en distintos contextos.
 - **Estándares y Formatos Utilizados**: Especificar los estándares y formatos utilizados en los datos y metadatos.
 - **Información de Contacto**: Datos de la persona responsable o custodio de los datos para soporte o consultas adicionales.
 
-📌 **Referencia útil:** [FAIR Metadata Recommendations](https://doi.org/10.1371/journal.pcbi.1009041)
+📌 **Referencia útil:** 
+- [FAIR Metadata Recommendations](https://doi.org/10.1371/journal.pcbi.1009041)
 
 ---
 
@@ -247,7 +251,8 @@ Las licencias abiertas facilitan la reutilización de datos:
 - **Mozilla Public License (MPL) 2.0**:
   - Licencia híbrida que permite combinar código abierto con código propietario, siempre que las modificaciones al código con licencia MPL se compartan bajo la misma licencia.
  
-📌 **Más licencias:** [Recopilación de licencias según tipo de objeto digital](https://doi.org/10.5281/zenodo.8222781)
+📌 **Más sobre licencias:** 
+- [Recopilación de licencias según tipo de objeto digital](https://doi.org/10.5281/zenodo.8222781)
 
 
 ### Consideraciones al Elegir una Licencia:
@@ -370,9 +375,11 @@ Las licencias abiertas facilitan la reutilización de datos:
   - Implementar mecanismos para controlar el acceso a datos sensibles.
 
 
-📌 **Herramienta para elegir licencias:** [Choose a License](https://choosealicense.com/).
+📌 **Herramienta para elegir licencias:** 
+- [Choose a License](https://choosealicense.com/).
 
-📌 **Lista de licencias y sus identificadores:** [SPDX License List](https://spdx.org/licenses/)
+📌 **Lista de licencias y sus identificadores:** 
+- [SPDX License List](https://spdx.org/licenses/)
 
 ---
 
@@ -442,7 +449,8 @@ Algunas herramientas útiles para evaluar la adopción FAIR incluyen:
 - Uso de control de versiones (Git).
 - Publicación de código y dependencias en repositorios abiertos.
 
-📌 **Ejemplo:** [FAIR for Research Software](https://fair4rs.org/)
+📌 **Ejemplo:** 
+- [FAIR for Research Software](https://fair4rs.org/)
 
 ---
 
@@ -605,3 +613,76 @@ Un **DMP bien estructurado** es clave para asegurar la **transparencia, reproduc
 ---
 
 ## Anexo D Datos mínimos para un Plan de Gestión de Software (SMP)
+
+Un **Plan de Gestión de Software (PGS)** es un documento vivo que describe cómo se desarrollará, documentará, mantendrá y compartirá el software de investigación en un proyecto científico. Su objetivo es garantizar que el software sea **mantenido, utilizable y accesible a largo plazo**, apoyando la trazabilidad de su desarrollo y facilitando su reutilización, de acuerdo con los principios FAIR4RS (Findable, Accessible, Interoperable, Reusable for Research Software).
+
+📌 **Más información:**
+- Martínez-Ortiz, C., Bakker, P., & Koning, H. (2022). *Practical guide to Software Management Plans*. Netherlands eScience Center. [https://doi.org/10.5281/zenodo.6245751](https://doi.org/10.5281/zenodo.6245751)
+
+A continuación, se describen los elementos mínimos recomendados que debe contener un PGS:
+
+### 1. Información general del software
+- Nombre del software y del proyecto asociado
+- Instituciones y responsables (desarrolladores, mantenedores)
+- Periodo de desarrollo y/o mantenimiento
+- Recursos necesarios (infraestructura, personal)
+
+### 2. Propósito y alcance
+- Objetivo científico del software
+- Problema que resuelve
+- Usuarios esperados y contexto de aplicación
+
+### 3. Repositorio y control de versiones
+- URL del repositorio (por ejemplo, GitHub, GitLab)
+- Uso de control de versiones (por ejemplo, Git)
+- Estrategia de *releases* y asignación de DOI (por ejemplo, Zenodo)
+- Historial de cambios
+
+### 4. Documentación
+- Manuales de usuario
+- Guías de instalación y despliegue
+- Documentación para desarrolladores
+- Herramientas de documentación (Markdown, ReadTheDocs, etc.)
+
+### 5. Calidad del software
+- Pruebas (unitarias, integración, regresión)
+- Revisión de código (*code review*)
+- Uso de herramientas de calidad (linters, CI/CD)
+- Gestión de *issues* y errores
+
+### 6. Licenciamiento y aspectos legales
+- Licencia elegida (MIT, GPL, Apache, etc.)
+- Consideraciones de copyright y atribución
+- Restricciones legales o éticas (por ejemplo, uso dual, privacidad)
+
+### 7. Publicación, citación y visibilidad
+- Plataforma de publicación (Zenodo, Software Heritage, repositorio institucional)
+- Especificación de citación (CITATION.cff, codemeta.json)
+- Registro en catálogos o directorios de software científico
+
+### 8. Preservación y sostenibilidad
+- Responsable(s) del mantenimiento
+- Plan de archivado a largo plazo
+- Compatibilidad futura (contenedores, gestión de dependencias)
+- Nivel de soporte tras el proyecto
+
+### 9. Soporte y gobernanza
+- Canales de contacto o soporte para usuarios
+- Roles y responsabilidades del equipo
+- Recursos estimados para sostenibilidad
+
+---
+
+📌 **Recursos y plantillas útiles:**
+
+- [FAIR4RS Principles (RDA, FORCE11, ReSA)](https://doi.org/10.15497/RDA00068)
+- [Software Sustainability Institute - SMP Checklist](https://software.ac.uk/resources/guides/software-management-plans)
+- [Plantilla de PGS - Wageningen University & Research](https://zenodo.org/record/10696023)
+- [Data Stewardship Wizard (DSW)](https://ds-wizard.org/)
+- [DMPonline - Plantillas con PGS](https://dmponline.dcc.ac.uk/)
+- [RDMO - Research Data Management Organizer](https://rdmorganiser.github.io/)
+- [Software Heritage - Archivo universal de software](https://www.softwareheritage.org/)
+- [Choose a License - GitHub](https://choosealicense.com/)
+- [Codemeta - Metadata para software](https://codemeta.github.io/)
+
+---
