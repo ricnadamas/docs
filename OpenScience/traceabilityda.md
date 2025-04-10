@@ -1,4 +1,4 @@
-# Digital Traceability Artifact (DTA-scheme)
+# Research Digital Object Traceability Guidelines (draft-scheme)
 
 ## Overview
 
