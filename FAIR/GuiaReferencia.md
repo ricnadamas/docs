@@ -67,7 +67,7 @@ Objetivo: Asegurar que los datos y metadatos puedan ser descubiertos fácilmente
 
 **Requisitos clave:**
 - Uso de **identificadores persistentes (PIDs)**.
-- Almacenamiento de metadatos los identificadores persistentes.
+- Almacenamiento de metadatos los identificadores persistentes. E.g. [PIDs](https://support.orcid.org/hc/en-us/articles/360006971013-What-are-persistent-identifiers-PIDs)
 - Metadatos ricos que describan los datos de manera clara y estructurada.
 - Indexación en **repositorios especializados** como Zenodo, DataCite o re3data  o busque aquí repositorios certificados [Current CoreTrustSeal certified data repositories](https://amt.coretrustseal.org/certificates)
 
@@ -249,6 +249,8 @@ Las licencias abiertas facilitan la reutilización de datos:
   - No impone restricciones en trabajos derivados.
 - **Mozilla Public License (MPL) 2.0**:
   - Licencia híbrida que permite combinar código abierto con código propietario, siempre que las modificaciones al código con licencia MPL se compartan bajo la misma licencia.
+
+ [Software Licenses in Plain English](https://www.tldrlegal.com/)
  
 📌 **Más sobre licencias:** 
 - [Recopilación de licencias según tipo de objeto digital](https://doi.org/10.5281/zenodo.8222781)
