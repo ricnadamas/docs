@@ -139,8 +139,15 @@ Objetivo: Permitir la reutilización de los datos en distintos contextos.
 - Cuando sea apropiado, utilizar formatos que faciliten la interoperabilidad semántica, como RDF o JSON-LD.
 
 📌 **Guía complementaria:** 
-- [Formatos preferidos para la preservación y publicación en repositorios](https://doi.org/10.5281/zenodo.8432009)
+- [Formatos preferidos para la preservación y publicación en repositorios (Zenodo)](https://doi.org/10.5281/zenodo.8432009)  
+  Recomendaciones sobre formatos aceptados y sostenibles para la preservación digital a largo plazo.
 
+- [DANS - Recomendaciones de formatos de archivo](https://dans.knaw.nl/en/file-formats/)  
+  Guía del Instituto Holandés DANS con formatos recomendados para el archivo sostenible de datos digitales.
+
+- [UK Data Service - Formatos recomendados](https://ukdataservice.ac.uk/learning-hub/research-data-management/format-your-data/recommended-formats/)  
+  Tabla con orientación sobre formatos de archivo recomendados y aceptados por el UK Data Service para compartir, reutilizar y preservar datos.
+  
 ---
 
 ## Metadatos y Estándares
