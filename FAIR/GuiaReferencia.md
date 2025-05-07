@@ -676,14 +676,36 @@ A continuación, se describen los elementos mínimos recomendados que debe conte
 
 📌 **Recursos y plantillas útiles:**
 
-- [FAIR4RS Principles (RDA, FORCE11, ReSA)](https://doi.org/10.15497/RDA00068)
-- [Software Sustainability Institute - SMP Checklist](https://software.ac.uk/resources/guides/software-management-plans)
-- [Plantilla de PGS - Wageningen University & Research](https://zenodo.org/record/10696023)
-- [Data Stewardship Wizard (DSW)](https://ds-wizard.org/)
-- [DMPonline - Plantillas con PGS](https://dmponline.dcc.ac.uk/)
-- [RDMO - Research Data Management Organizer](https://rdmorganiser.github.io/)
-- [Software Heritage - Archivo universal de software](https://www.softwareheritage.org/)
-- [Choose a License - GitHub](https://choosealicense.com/)
-- [Codemeta - Metadata para software](https://codemeta.github.io/)
+- [FAIR4RS Principles (RDA, FORCE11, ReSA)](https://doi.org/10.15497/RDA00068)  
+  Principios FAIR aplicados específicamente al desarrollo de software para la investigación.
 
+- [Software Sustainability Institute - SMP Checklist](https://software.ac.uk/resources/guides/software-management-plans)  
+  Guía práctica para elaborar planes de gestión de software (SMP).
+
+- [Plantilla de PGS - Wageningen University & Research](https://zenodo.org/record/10696023)  
+  Ejemplo de plantilla para planes de gestión de software, alineado con principios FAIR.
+
+- [Data Stewardship Wizard (DSW)](https://ds-wizard.org/)  
+  Herramienta para construir planes de gestión de datos y software, con enfoque FAIR.
+
+- [Machine Actionable DMPs - DSW](https://ds-wizard.org/machine-actionability)  
+  Información y herramientas para construir planes de gestión de datos que sean interpretables por máquinas (maDMPs).
+
+- [RDA Workshop on Machine Actionable DMPs](https://www.dcc.ac.uk/events/RDAcolocated_machine_actionable_DMPs)  
+  Taller coorganizado por RDA y DCC sobre el desarrollo e implementación de maDMPs.
+
+- [DMPonline - Plantillas con PGS](https://dmponline.dcc.ac.uk/)  
+  Plataforma con plantillas de Planes de Gestión de Datos y Software personalizables.
+
+- [RDMO - Research Data Management Organizer](https://rdmorganiser.github.io/)  
+  Plataforma para diseñar, planificar y documentar la gestión de datos de investigación.
+
+- [Software Heritage - Archivo universal de software](https://www.softwareheritage.org/)  
+  Iniciativa para preservar, rastrear y referenciar el código fuente de forma abierta y permanente.
+
+- [Choose a License - GitHub](https://choosealicense.com/)  
+  Asistente para seleccionar licencias de software adecuadas, con comparaciones y sugerencias.
+
+- [Codemeta - Metadata para software](https://codemeta.github.io/)  
+  Esquema estandarizado para describir software con metadatos interoperables.
 ---
