@@ -715,4 +715,5 @@ A continuación, se describen los elementos mínimos recomendados que debe conte
 
 - [Codemeta - Metadata para software](https://codemeta.github.io/)  
   Esquema estandarizado para describir software con metadatos interoperables.
+  
 ---
