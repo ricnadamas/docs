@@ -1,4 +1,5 @@
 # FAIR: Guía de Referencia General
+** Versión 1.0 **
 
 ## Índice
 1. [Introducción](#ntroducción)
@@ -32,8 +33,6 @@ Esta guía ha sido elaborada con el apoyo de diversas personas y organizaciones 
 - Isabel Abedrapo @yolaisa [ORCID:0000-0001-9990-0436](https://orcid.org/0000-0001-9990-0436)
 - Priyanka Ojha @priya-gitTest [ORCID:0000-0002-6844-6493](https://orcid.org/0000-0002-6844-6493)
 - Carlos Martinez-Ortiz @c-martinez [ORCID:0000-0001-5565-7577](https://orcid.org/0000-0001-5565-7577)
-- ..
-- .
 
 ---
 
