@@ -426,7 +426,7 @@ Algunas herramientas útiles para evaluar la adopción FAIR incluyen:
 
 ## 7. Tipos de Investigación y Requisitos FAIR
   
-### 7.1 Investigación Observacional
+### 7.1 Investigación Observacional <a name="71-investigacion-observacional"></a>
   
 ##### **Requisitos:**
 - **Documentar Instrumentos y Métodos**:  
