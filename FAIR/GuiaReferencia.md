@@ -51,24 +51,61 @@ Esta guía ha sido elaborada en colaboración diversas personas comprometidas co
 
 ## 1. Introducción <a name="1-introduccion"></a>
 
-Esta guía práctica busca apoyar la implementación efectiva de los principios **FAIR** en la gestión de datos de investigación y otros contextos donde la organización, trazabilidad y accesibilidad de la información digital son esenciales. No está dirigida únicamente a investigadores, sino también a bibliotecarios, gestores de datos, responsables de políticas científicas, desarrolladores de infraestructuras y cualquier persona interesada en la gestión eficiente de datos digitales.
+# 1. Introducción
 
-Los principios FAIR buscan garantizar que los datos sean **Encontrables (Findable), Accesibles (Accessible), Interoperables (Interoperable) y Reutilizables (Reusable)**. Implementar estos principios facilita el acceso y reutilización de datos, mejora su visibilidad, y fomenta la colaboración científica.
+Esta guía fue concebida como una herramienta práctica para facilitar la adopción de los principios **FAIR** en la gestión de datos y otros productos digitales vinculados a la investigación. Está pensada no solo para investigadores, sino también para profesionales que desempeñan roles clave en la gestión de información científica: bibliotecarios, desarrolladores de infraestructura, gestores de datos y responsables de políticas públicas.
 
-Los principios FAIR fueron inicialmente pensados para su aplicación a datos, pero han sido adaptados a software de investigación mediante la creación de los principios **FAIR4RS** (FAIR for Research Software). Cabe mencionar que en este contexto, software es utilizado como un término inclusivo, abarcando desde pequeños scripts hasta complejas librerías.
+Los principios FAIR —**Encontrables, Accesibles, Interoperables y Reutilizables**— promueven la organización y publicación de datos de manera que otras personas (y sistemas informáticos) puedan encontrarlos, acceder a ellos, integrarlos y reutilizarlos con facilidad. Lejos de ser una lista rígida, representan una aspiración hacia un ecosistema de conocimiento más abierto y eficiente.
 
-Además de describir los principios FAIR, esta guía proporciona información sobre:
-- **Estándares de metadatos** recomendados.
-- **Formatos de datos** y su interoperabilidad.
-- **Licencias y derechos de uso** para facilitar la reutilización.
-- **Herramientas y metodologías** para evaluar la adopción de FAIR.
-- **Ejemplos y recursos prácticos** para la implementación en diferentes contextos.
+Aunque se diseñaron inicialmente para datos, estos principios han sido adaptados también al **software de investigación**, dando origen a la iniciativa **FAIR4RS**. Aquí, el término "software" se entiende en un sentido amplio: desde líneas de código simples hasta sistemas complejos desarrollados en colaboración.
 
-Para facilitar su aplicación, se incluyen listas de verificación y directrices para distintos tipos de proyectos.
+A lo largo de esta guía se abordan también temas prácticos y estratégicos: recomendaciones sobre **estándares de metadatos**, **formatos abiertos**, **licencias de uso**, **evaluación del cumplimiento FAIR**, así como ejemplos aplicables a distintos tipos de proyectos y disciplinas. Se incluyen listas de verificación y recursos para facilitar su implementación en entornos reales.
 
 ---
 
-## 2. Principios FAIR <a name="2-principios-fair"></a>
+# 2. Principios FAIR
+
+Los principios FAIR aseguran que los datos sean **Encontrables (Findable)**, **Accesibles (Accessible)**, **Interoperables (Interoperable)** y **Reutilizables (Reusable)**. Estos principios facilitan el acceso a los datos científicos, promoviendo su reutilización y fomentando el intercambio de conocimientos en múltiples contextos.
+
+Aquí se detallan los principios clave de FAIR:
+
+## 2.1 Findable (Encontrable)
+
+**Objetivo:** Hacer que los datos y sus metadatos sean fácilmente descubribles por las personas y los sistemas.
+
+**Requisitos clave:**
+- Los datos deben tener un **identificador único**, como un DOI, que permita encontrarlos fácilmente.
+- Los metadatos deben incluir estos identificadores persistentes, lo que facilita su localización automática.
+- Los metadatos deben ser detallados y estar en formatos comprensibles tanto para personas como para máquinas.
+- Los datos deben ser indexados en **repositorios certificados** como Zenodo, DataCite o aquellos registrados en CoreTrustSeal.
+
+## 2.2 Accessible (Accesible)
+
+**Objetivo:** Garantizar que los datos y metadatos estén accesibles de forma abierta y transparente.
+
+**Requisitos clave:**
+- Los datos deben estar disponibles a través de **enlaces seguros y abiertos**, como HTTPS o APIs RESTful.
+- Si se requiere control de acceso, deben implementarse sistemas de **autenticación y autorización** bien definidos.
+- Los **metadatos** deben ser accesibles independientemente del acceso a los datos subyacentes, especialmente si existen restricciones de acceso.
+
+## 2.3 Interoperable
+
+**Objetivo:** Facilitar la integración de los datos con otros sistemas y su reutilización en diversos contextos.
+
+**Requisitos clave:**
+- Los datos deben estar en **formatos abiertos** y estandarizados, como JSON, XML o RDF, que sean fáciles de procesar y convertir a otros formatos.
+- Se deben utilizar **vocabularios controlados** y **ontologías** reconocidas, como Schema.org o DCMI Terms, para asegurar la compatibilidad semántica.
+- Los metadatos deben incluir relaciones claras entre los datos, como enlaces a recursos relacionados que aporten contexto o información adicional.
+
+## 2.4 Reusable (Reutilizable)
+
+**Objetivo:** Asegurar que los datos puedan ser utilizados de nuevo en otros contextos científicos, por otros investigadores y en diferentes momentos.
+
+**Requisitos clave:**
+- Los datos deben tener **licencias claras y abiertas**, como CC BY o CC0, que permitan su reutilización sin restricciones.
+- La **documentación** debe ser completa, explicando cómo se generaron, transformaron, validaron y versionaron los datos.
+- Es fundamental mantener un **registro de versiones** para asegurar que los datos se puedan actualizar de forma coherente, señalando las fechas y responsables de las modificaciones.
+- Los datos deben seguir **estándares y buenas prácticas** dentro de la comunidad científica, como diccionarios de datos o glosarios, y ser proporcionados en formatos reutilizables como notebooks reproducibles.
 
 📌 **Más información:**
 - [Principios FAIR (material para taller). Autores: Meyers, N., Escapil-Inchauspé, P., Egaña Aranguren, M., & Hartley Belmar, R.](https://doi.org/10.6075/J0TM7BG5)  
@@ -78,47 +115,12 @@ Para facilitar su aplicación, se incluyen listas de verificación y directrices
 - [Ten Simple Rules for FAIR Data](https://doi.org/10.1371/journal.pcbi.1007854)  
   Artículo que sintetiza recomendaciones clave para implementar datos FAIR.
 
-### 2.1 Findable (Encontrable) <a name="21-findable-encontrable"></a>
-**Objetivo:** Asegurar que los datos y metadatos puedan ser descubiertos fácilmente.
-
-**Requisitos clave:**
-- Uso de **identificadores persistentes (PIDs)** como DOI, Handle o ARK, que permiten la referencia inequívoca a conjuntos de datos.
-- Inclusión de metadatos que referencien explícitamente estos identificadores persistentes.  
-  Ejemplo: [¿Qué son los PIDs? - ORCID Support](https://support.orcid.org/hc/en-us/articles/360006971013-What-are-persistent-identifiers-PIDs)
-- Metadatos ricos, legibles por humanos y máquinas, que describan el contenido, contexto y estructura de los datos.
-- Indexación en **repositorios certificados** como Zenodo, DataCite o aquellos registrados en [CoreTrustSeal](https://amt.coretrustseal.org/certificates).
-
-### 2.2 Accessible (Accesible) <a name="22-accessible-accesible"></a>
-**Objetivo:** Garantizar el acceso a datos y metadatos de manera clara y transparente.
-
-**Requisitos clave:**
-- Uso de **protocolos de comunicación abiertos y seguros**, como HTTPS o APIs RESTful.
-- Implementación de mecanismos de **autenticación y autorización**, cuando sea necesario.
-- **Disponibilidad de metadatos**, incluso si los datos tienen restricciones de acceso.
-- Inclusión de descripciones que favorezcan la accesibilidad, incluyendo para personas con discapacidades.
-
-### 2.3 Interoperable <a name="23-interoperable"></a>
-**Objetivo:** Facilitar la integración de los datos con otros sistemas y su reutilización automatizada.
-
-**Requisitos clave:**
-- Uso de **formatos abiertos y estándar** como JSON, XML, RDF.
-- Empleo de **vocabularios controlados y ontologías reconocidas**, como COAR, Schema.org, DCMI Terms.
-- Inclusión de relaciones semánticas claras entre recursos, utilizando descripciones interoperables y enlaces entre conjuntos de datos relacionados.
-
-### 2.4 Reusable (Reutilizable) <a name="24-reusable-reutilizable"></a>
-**Objetivo:** Permitir la reutilización de los datos en múltiples contextos disciplinarios, temporales y geográficos.
-
-**Requisitos clave:**
-- Asignación de **licencias claras y abiertas**, como CC BY o CC0.
-- Documentación detallada de la **proveniencia de los datos**: cómo fueron generados, transformados, validados y versionados.
-- Mantenimiento de un **registro de versiones**, indicando fecha de creación, modificación y responsable del conjunto de datos.
-- Cumplimiento de **estándares y buenas prácticas de la comunidad**, incluyendo glosarios, diccionarios de datos y notebooks reproducibles.
 
 ---
 
-## 3. Consideraciones éticas, lingüísticas y culturales <a name="3-consideraciones-eticas-linguisticas-y-culturales"></a>
+## 3. Consideraciones éticas, lingüísticas y culturales
 
-Los principios **FAIR** no consideran explícitamente los derechos de comunidades, por lo que es crucial complementarlos con los principios **CARE** (Colectivo, Autoridad, Responsabilidad, Ética), desarrollados por la **Global Indigenous Data Alliance (GIDA)** para guiar el uso justo y respetuoso de datos sobre pueblos indígenas.
+Los principios **FAIR** no consideran explícitamente los derechos de las comunidades, por lo que es necesario complementarlos con los principios **CARE** (Colectivo, Autoridad, Responsabilidad, Ética), desarrollados por la **Global Indigenous Data Alliance (GIDA)**. Estos principios guían el uso justo y respetuoso de los datos sobre pueblos indígenas, garantizando la soberanía digital y el respeto hacia los derechos colectivos.
 
 📌 **Más información:**
 - [Más información sobre CARE](https://www.gida-global.org/care)  
@@ -126,17 +128,17 @@ Los principios **FAIR** no consideran explícitamente los derechos de comunidade
 
 ### Accesibilidad lingüística
 
-- La mayoría de las herramientas, guías y vocabularios están disponibles solo en inglés.
-- Promover traducciones, glosarios en español y capacitación multilingüe es un paso esencial hacia la equidad en ciencia abierta.
+- La mayoría de las herramientas, guías y vocabularios relacionados con la ciencia abierta están disponibles principalmente en inglés, lo que limita su acceso global.
+- Promover traducciones, crear glosarios en español y ofrecer capacitación multilingüe son pasos esenciales para avanzar hacia una verdadera **equidad en ciencia abierta**.
 - Ejemplos de recursos adaptados al español incluyen materiales de OpenAIRE, el Grupo de Trabajo de RDA en español, y la traducción de guías FAIR institucionales.
 
 ### Contextos locales y epistemologías diversas
 
-- La definición de metadatos, estándares y licencias debe considerar normas culturales, marcos legales nacionales y derechos colectivos.
-- El principio de **reutilización responsable** implica no solo lo técnico, sino también lo ético y contextual.
-- En contextos donde existan pueblos originarios, se recomienda tener en cuenta instrumentos como el **Convenio 169 de la OIT** sobre derechos de los pueblos indígenas y tribales, así como leyes locales sobre patrimonio cultural y datos sensibles.
+- La definición de metadatos, estándares y licencias debe considerar normas culturales, marcos legales nacionales y derechos colectivos, respetando la diversidad epistémica.
+- El principio de **reutilización responsable** no solo aborda lo técnico, sino también lo ético y contextual. Los datos deben ser gestionados con responsabilidad y en consonancia con los derechos de las comunidades.
+- En contextos con pueblos originarios, es esencial tener en cuenta instrumentos como el **Convenio 169 de la OIT** sobre derechos de los pueblos indígenas y tribales, así como las leyes locales que protegen el patrimonio cultural y los datos sensibles.
 
-> ⚠️ Se recomienda no aplicar criterios FAIR de forma mecánica o exclusivamente técnica, sino incorporar principios de **justicia epistémica**, accesibilidad cultural y pluralismo de saberes.
+> ⚠️ Se recomienda evitar aplicar los principios FAIR de manera rígida y exclusivamente técnica. Es fundamental incorporar principios de **justicia epistémica**, accesibilidad cultural y pluralismo de saberes.
 
 📌 **Más información:**
 - [Ethical Data Initiative](https://ethicaldatainitiative.org)  
