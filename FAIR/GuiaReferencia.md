@@ -1,26 +1,29 @@
 # FAIR: Guía de Referencia General
 
 ## Índice
-1. [Introducción](#ntroducción)
-2. [Principios FAIR](#principios-fair)
-   - [Findable (Encontrable)](#findable-encontrable)
-   - [Accessible (Accesible)](#accessible-accesible)
-   - [Interoperable](#interoperable)
-   - [Reusable (Reutilizable)](#reusable-reutilizable)
-3. [Formatos de Datos y Recomendaciones](#formatos-de-datos-y-recomendaciones)
-4. [Metadatos y Estándares](#metadatos-y-estandares)
-5. [Licencias y Derechos de Uso](#licencias-y-derechos-de-uso)
-6. [Evaluación FAIR y Herramientas](#evaluación-fair-y-herramientas)
-7. [Tipos de Investigación y Requisitos FAIR](#tipos-de-investigación-y-requisitos-fair)
-   - [Investigación Observacional](#investigación-observacional)
-   - [Investigación Experimental](#investigación-experimental)
-   - [Investigación Computacional](#investigación-computacional)
-8. [Consideraciones éticas, lingüísticas y culturales](#consideraciones-éticas,-lingüísticas-y-culturales)
-9. [Anexos](#anexos)
-   - [Anexo A Checklist de Evaluación FAIR](#anexo-a-checklist-de-evaluación-fair)
-   - [Anexo B Ejemplo de Metadatos Estructurados](#anexo-b-ejemplo-de-metadatos-estructurados)
-   - [Anexo C Datos mínimos para un Plan de Gestión de Datos](#anexo-c-datos-mínimos-para-un-plan-de-gestión-de-datos)
-   - [Anexo D Datos mínimos para un Plan de Gestión de Software](#anexo-d-datos-mínimos-para-un-plan-de-gestión-de-software)
+
+1. [Introducción](#1-introduccion)  
+2. [Principios FAIR](#2-principios-fair)  
+   2.1 [Findable (Encontrable)](#21-findable-encontrable)  
+   2.2 [Accessible (Accesible)](#22-accessible-accesible)  
+   2.3 [Interoperable](#23-interoperable)  
+   2.4 [Reusable (Reutilizable)](#24-reusable-reutilizable)  
+3. [Formatos de Datos y Recomendaciones](#3-formatos-de-datos-y-recomendaciones)  
+4. [Metadatos y Estándares](#4-metadatos-y-estandares)  
+5. [Licencias y Derechos de Uso](#5-licencias-y-derechos-de-uso)  
+6. [Evaluación FAIR y Herramientas](#6-evaluacion-fair-y-herramientas)  
+7. [Tipos de Investigación y Requisitos FAIR](#7-tipos-de-investigacion-y-requisitos-fair)  
+   7.1 [Investigación Observacional](#71-investigacion-observacional)  
+   7.2 [Investigación Experimental](#72-investigacion-experimental)  
+   7.3 [Investigación Computacional](#73-investigacion-computacional)  
+   7.4 [Investigación Clínica y Social](#74-investigacion-clinica-y-social)  
+8. [Consideraciones éticas, lingüísticas y culturales](#8-consideraciones-eticas-linguisticas-y-culturales)  
+9. [Anexos](#9-anexos)  
+   9.1 [Anexo A: Checklist de Evaluación FAIR](#91-anexo-a-checklist-de-evaluacion-fair)  
+   9.2 [Anexo B: Ejemplo de Metadatos Estructurados](#92-anexo-b-ejemplo-de-metadatos-estructurados)  
+   9.3 [Anexo C: Datos mínimos para un Plan de Gestión de Datos (DMP)](#93-anexo-c-datos-minimos-para-un-plan-de-gestion-de-datos-dmp)  
+   9.4 [Anexo D: Datos mínimos para un Plan de Gestión de Software (SMP)](#94-anexo-d-datos-minimos-para-un-plan-de-gestion-de-software-smp)  
+
 
 **Este documento está disponible bajo la licencia CC BY 4.0** y puede ser actualizado con nuevas colaboraciones.
 
@@ -35,9 +38,9 @@ Esta guía ha sido elaborada con el apoyo de diversas personas y organizaciones 
 
 ---
 
-## Introduccion
+## 1. Introducción
 
-Esta guía ofrece una guía práctica para aplicar los principios **FAIR** en la gestión de datos de investigación y otros contextos donde la organización y el acceso a la información son clave. No está dirigida únicamente a investigadores, sino también a bibliotecarios, gestores de datos, responsables de políticas científicas, desarrolladores de infraestructuras y cualquier persona interesada en la gestión eficiente de datos digitales.
+Esta guía práctica tiene como objetivo facilitar la implementación de los principios **FAIR** en la gestión de datos de investigación y otros contextos donde la organización, trazabilidad y accesibilidad de la información digital son esenciales. No está dirigida únicamente a investigadores, sino también a bibliotecarios, gestores de datos, responsables de políticas científicas, desarrolladores de infraestructuras y cualquier persona interesada en la gestión eficiente de datos digitales.
 
 Los principios FAIR buscan garantizar que los datos sean **Encontrables (Findable), Accesibles (Accessible), Interoperables (Interoperable) y Reutilizables (Reusable)**. Implementar estos principios facilita el acceso y reutilización de datos, mejora su visibilidad, y fomenta la colaboración científica.
 
@@ -54,17 +57,17 @@ Para facilitar su aplicación, se incluyen listas de verificación y directrices
 
 ---
 
-## Principios FAIR 
+## 2. Principios FAIR
 
 📌 **Más información:**
 - [Principios FAIR (material para taller). Autores Meyers, N., Escapil-Inchauspé, P., Egaña Aranguren, M., & Hartley Belmar, Ricardo](https://doi.org/10.6075/J0TM7BG5)
 - [Traducción del Documento guía para el Plan de Gestión de Datos FAIR en Organizaciones e Instituciones. Autores Kirkpatrick, C. R., Cragin, M. H., & Meyers, N. (2024) (Translators Hartley Belmar, Ricardo; Meyers, Natalie)](https://doi.org/10.6075/J0ZC836W)
 
-### Findable (Encontrable)
+### 2.1 Findable (Encontrable)
 Objetivo: Asegurar que los datos y metadatos puedan ser descubiertos fácilmente.
 
 **Requisitos clave:**
-- Uso de **identificadores persistentes (PIDs)**.
+- Uso de **identificadores persistentes (PIDs)** como DOI, Handle, ARK u otros, que permiten la referencia inequívoca a los conjuntos de datos.
 - Almacenamiento de metadatos los identificadores persistentes. E.g. [PIDs](https://support.orcid.org/hc/en-us/articles/360006971013-What-are-persistent-identifiers-PIDs)
 - Metadatos ricos que describan los datos de manera clara y estructurada.
 - Indexación en **repositorios especializados** como Zenodo, DataCite o re3data  o busque aquí repositorios certificados [Current CoreTrustSeal certified data repositories](https://amt.coretrustseal.org/certificates)
@@ -72,7 +75,7 @@ Objetivo: Asegurar que los datos y metadatos puedan ser descubiertos fácilmente
 📌 **Más información:** 
 - [FAIR Data Principles - GO FAIR](https://www.go-fair.org/fair-principles/)
 
-### Accessible (Accesible)
+### 2.2 Accessible (Accesible)
 Objetivo: Garantizar el acceso a datos y metadatos de manera clara y transparente.
 
 **Requisitos clave:**
@@ -84,7 +87,7 @@ Objetivo: Garantizar el acceso a datos y metadatos de manera clara y transparent
 📌 **Más información:** 
 - [FAIR Data - OpenAIRE](https://www.openaire.eu/fair-data)
 
-### Interoperable
+### 2.3 Interoperable
 Objetivo: Facilitar la integración de datos con otros sistemas y garantizar su reutilización automatizada.
 
 **Requisitos clave:**
@@ -95,12 +98,13 @@ Objetivo: Facilitar la integración de datos con otros sistemas y garantizar su 
 📌 **Ejemplo práctico:** 
 - [FAIRsharing.org](https://fairsharing.org/)
 
-### Reusable (Reutilizable)
+### 2.4 Reusable (Reutilizable)
 Objetivo: Permitir la reutilización de los datos en distintos contextos.
 
 **Requisitos clave:**
 - Asignación de **licencias claras** (ej. CC BY, CC0).
-- Metadatos detallados con información metodológica y de procedencia.
+- Documentar exhaustivamente la **proveniencia** de los datos: cómo fueron generados, transformados y validados.
+- Mantener un **registro de versiones** de los datos y los metadatos asociados, incluyendo fecha de creación, modificación y autor responsable.
 - Cumplimiento de estándares y buenas prácticas de la comunidad (ej. diccionario de datos, cuaderno de código).
 
 📌 **Guía complementaria:** 
@@ -108,7 +112,7 @@ Objetivo: Permitir la reutilización de los datos en distintos contextos.
 
 ---
 
-## Formatos de Datos y Recomendaciones
+## 3. Formatos de Datos y Recomendaciones
 
 | **Tipo de Datos**      | **Formato Recomendado** | **Observaciones** |
 |------------------------|------------------------|--------------------|
@@ -116,7 +120,7 @@ Objetivo: Permitir la reutilización de los datos en distintos contextos.
 | **Datos Jerárquicos**  | JSON, XML              | Uso de esquemas estandarizados para facilitar la interoperabilidad. |
 | **Datos Geoespaciales** | GeoJSON, GML          | Incluir información sobre sistemas de coordenadas y proyecciones utilizadas. |
 | **Datos Biológicos**   | FASTA, NetCDF          | Seguir las especificaciones y versiones recomendadas por la comunidad científica correspondiente. |
-| **Imágenes Científicas** | TIFF, DICOM          | Seguir las especificaciones y versiones recomendadas por la comunidad científica correspondiente. |
+| **Imágenes Científicas** | TIFF, DICOM          | Seguir las especificaciones y versiones recomendadas por la comunidad científica correspondiente (Cuidado con metadatos embebidos) |
 | **Otros específicos**  | FITS, NetCDF           | Seguir las especificaciones y versiones recomendadas por la comunidad científica correspondiente. |
 
 ### Consideraciones:
@@ -148,7 +152,9 @@ Objetivo: Permitir la reutilización de los datos en distintos contextos.
   
 ---
 
-## Metadatos y Estándares
+## 4. Metadatos y Estándares
+
+Los **metadatos** son descripciones estructuradas que permiten entender, descubrir y reutilizar los datos. Siguen estructuras normalizadas conocidas como **esquemas de metadatos** y, cuando se alinean con vocabularios compartidos, habilitan la interoperabilidad semántica.
 
 #### Importancia de la Metadata
 
@@ -252,7 +258,7 @@ Objetivo: Permitir la reutilización de los datos en distintos contextos.
 
 ---
 
-## Licencias y Derechos de Uso
+## 5. Licencias y Derechos de Uso
 
 Las licencias abiertas facilitan la reutilización de datos:
 
@@ -346,64 +352,6 @@ Las licencias abiertas facilitan la reutilización de datos:
 #### **Licencias Legibles por Máquina**
 - Para datos y código, utilizar formatos que permitan la interpretación de la licencia por sistemas informáticos.
 
-### Tipos de Investigación y Requisitos Específicos
-
-#### **Investigación Observacional**
-##### **Requisitos:**
-- **Documentar Instrumentos y Métodos**:  
-  - Describir en detalle los instrumentos utilizados y los métodos de recopilación de datos.  
-  - Usar estándares y protocolos reconocidos en el dominio (ej. **Darwin Core** para biodiversidad, **ISO 19115** para metadatos geoespaciales).
-- **Registrar Coordenadas y Tiempo**:  
-  - Proporcionar información precisa sobre la ubicación geográfica (coordenadas GPS) y marcas de tiempo, utilizando formatos estandarizados como **ISO 8601** para fechas y horas.
-- **Preservar Metadatos Contextuales**:  
-  - Incluir metadatos sobre condiciones ambientales, contexto del estudio y factores que puedan influir en los datos.
-- **Consideraciones Éticas y Legales**:  
-  - Obtener consentimiento informado cuando sea aplicable.  
-  - Cumplir con las regulaciones de protección de datos.
-
-#### **Investigación Experimental**
-##### **Requisitos:**
-- **Documentar Condiciones Experimentales**:  
-  - Describir el diseño experimental, procedimientos y protocolos utilizados.  
-  - Incluir información sobre materiales, reactivos y sujetos experimentales.
-- **Registrar Calibraciones y Configuraciones**:  
-  - Documentar calibraciones de equipos, configuraciones de instrumentos y parámetros relevantes.
-- **Preservar Datos Brutos y Procesados**:  
-  - Almacenar y compartir tanto datos en bruto como procesados, junto con información sobre métodos de procesamiento y análisis.
-- **Cumplimiento de Estándares del Dominio**:  
-  - Usar estándares como **MIAME** para microarrays, **MIBBI** para investigaciones biológicas y biomédicas.
-- **Consideraciones Éticas**:  
-  - Obtener aprobaciones éticas y cumplir con las regulaciones aplicables.
-
-#### **Investigación Teórica/Computacional**
-##### **Requisitos:**
-- **Documentar Código y Dependencias**:  
-  - Proporcionar acceso al código fuente, scripts y bibliotecas utilizadas, con comentarios y documentación adecuada.  
-  - Usar sistemas de control de versiones como **Git**.
-- **Preservar Entornos de Ejecución**:  
-  - Compartir información sobre el entorno de ejecución (sistemas operativos, versiones de software, contenedores como **Docker** o **Singularity**).
-  - Considerar el uso de contenedores o máquinas virtuales para facilitar la reproducibilidad.
-- **Registrar Parámetros y Seeds**:  
-  - Documentar todos los parámetros de entrada, configuraciones y seeds aleatorios utilizados en simulaciones o modelos.
-- **Publicación y Citación del Código**:  
-  - Asignar un **DOI** al código y usar repositorios como **GitHub**, **GitLab** o **Zenodo**.
-- **Licencias de Código**:  
-  - Aplicar licencias apropiadas como **Apache 2.0** o **GPL** para código y software.
-
-#### **Investigación Clínica y Social**
-##### **Requisitos:**
-- **Cumplimiento con Regulaciones de Protección de Datos**:  
-  - Cumplir con regulaciones como **GDPR** (Europa), **LGPD** (Brasil), **HIPAA** (EE.UU.), u otras aplicables.
-- **Anonimización y Seudonimización**:  
-  - Aplicar técnicas para proteger la identidad de los participantes.  
-  - Evaluar riesgos de re-identificación y aplicar medidas adecuadas.
-- **Consentimiento Informado**:  
-  - Obtener consentimiento explícito para la recopilación, uso y compartición de datos.
-- **Aprobaciones Éticas y Regulatorias**:  
-  - Obtener aprobaciones de comités de ética y cumplir con requisitos institucionales y legales.
-- **Acceso Restringido y Controlado**:  
-  - Implementar mecanismos para controlar el acceso a datos sensibles.
-
 
 📌 **Herramienta para elegir licencias:** 
 - [Choose a License](https://choosealicense.com/).
@@ -413,7 +361,7 @@ Las licencias abiertas facilitan la reutilización de datos:
 
 ---
 
-## Evaluación FAIR y Herramientas
+## 6. Evaluación FAIR y Herramientas
 
 Algunas herramientas útiles para evaluar la adopción FAIR incluyen:
 
@@ -476,28 +424,76 @@ Algunas herramientas útiles para evaluar la adopción FAIR incluyen:
 
 ---
 
-## Tipos de Investigación y Requisitos FAIR
+## 7. Tipos de Investigación y Requisitos FAIR
 
-### Investigación Observacional
-- Documentación detallada de instrumentos y métodos.
-- Geolocalización y timestamps en formatos estándar.
+### 7.1 Investigación Observacional
+##### **Requisitos:**
+- **Documentar Instrumentos y Métodos**:  
+  - Metadatos de contexto
+  - Describir en detalle los instrumentos utilizados y los métodos de recopilación de datos.  
+  - Usar estándares y protocolos reconocidos en el dominio (ej. **Darwin Core** para biodiversidad, **ISO 19115** para metadatos geoespaciales).
+- **Registrar Coordenadas y Tiempo**:  
+  - Proporcionar información precisa sobre la ubicación geográfica (coordenadas GPS) y marcas de tiempo, utilizando formatos estandarizados como **ISO 8601** para fechas y horas.
+- **Preservar Metadatos Contextuales**:  
+  - Incluir metadatos sobre condiciones ambientales, contexto del estudio y factores que puedan influir en los datos.
+- **Consideraciones Éticas y Legales**:  
+  - Obtener consentimiento informado cuando sea aplicable.  
+  - Cumplir con las regulaciones de protección de datos.
 
-### Investigación Experimental
-- Registro de configuraciones y calibraciones de equipos.
-- Publicación de datos brutos y procesados.
+### 7.2 Investigación Experimental
+##### **Requisitos:**
+- **Documentar Condiciones Experimentales**:
+  - Proveniencia y estándares
+  - Describir el diseño experimental, procedimientos y protocolos utilizados.  
+  - Incluir información sobre materiales, reactivos y sujetos experimentales.
+- **Registrar Calibraciones y Configuraciones**:  
+  - Documentar calibraciones de equipos, configuraciones de instrumentos y parámetros relevantes.
+- **Preservar Datos Brutos y Procesados**:  
+  - Almacenar y compartir tanto datos en bruto como procesados, junto con información sobre métodos de procesamiento y análisis.
+- **Cumplimiento de Estándares del Dominio**:  
+  - Usar estándares como **MIAME** para microarrays, **MIBBI** para investigaciones biológicas y biomédicas.
+- **Consideraciones Éticas**:  
+  - Obtener aprobaciones éticas y cumplir con las regulaciones aplicables.
 
-### Investigación Computacional
-- Uso de control de versiones (Git).
-- Publicación de código y dependencias en repositorios abiertos.
+### 7.3 Investigación Computacional
+##### **Requisitos:**
+- **Documentar Código y Dependencias**:
+  - Publicación de código y entorno   
+  - Proporcionar acceso al código fuente, scripts y bibliotecas utilizadas, con comentarios y documentación adecuada.  
+  - Usar sistemas de control de versiones como **Git**.
+- **Preservar Entornos de Ejecución**:  
+  - Compartir información sobre el entorno de ejecución (sistemas operativos, versiones de software, contenedores como **Docker** o **Singularity**).
+  - Considerar el uso de contenedores o máquinas virtuales para facilitar la reproducibilidad.
+- **Registrar Parámetros y Seeds**:  
+  - Documentar todos los parámetros de entrada, configuraciones y seeds aleatorios utilizados en simulaciones o modelos.
+- **Publicación y Citación del Código**:  
+  - Asignar un **DOI** al código y usar repositorios como **GitHub**, **GitLab** o **Zenodo**.
+- **Licencias de Código**:  
+  - Aplicar licencias apropiadas como **Apache 2.0** o **GPL** para código y software.
 
-📌 **Ejemplo:** 
-- [FAIR for Research Software](https://fair4rs.org/)
+### 7.4 Investigación Clínica y Social
+##### **Requisitos:**
+- **Cumplimiento con Regulaciones de Protección de Datos**:
+  - Licencias, anonimización  
+  - Cumplir con regulaciones como **GDPR** (Europa), **LGPD** (Brasil), **HIPAA** (EE.UU.), u otras aplicables.
+- **Anonimización y Seudonimización**:  
+  - Aplicar técnicas para proteger la identidad de los participantes.  
+  - Evaluar riesgos de re-identificación y aplicar medidas adecuadas.
+- **Consentimiento Informado**:  
+  - Obtener consentimiento explícito para la recopilación, uso y compartición de datos.
+- **Aprobaciones Éticas y Regulatorias**:  
+  - Obtener aprobaciones de comités de ética y cumplir con requisitos institucionales y legales.
+- **Acceso Restringido y Controlado**:  
+  - Implementar mecanismos para controlar el acceso a datos sensibles.
 
 ---
 
-## Consideraciones éticas, lingüísticas y culturales
+## 8. Consideraciones éticas, lingüísticas y culturales
 
-Aunque los principios FAIR promueven prácticas estandarizadas, su aplicación no es neutral ni homogénea. En contextos como América Latina, es clave reconocer la diversidad lingüística, cultural y epistémica.
+Los principios **FAIR** no consideran explícitamente los derechos de comunidades, por lo que es crucial complementarlos con los principios **CARE** (Colectivo, Autoridad, Responsabilidad, Ética), desarrollados por GIDA para guiar el uso justo y respetuoso de datos sobre pueblos indígenas.
+
+📌 [Más información sobre CARE](https://www.gida-global.org/care)
+
 
 ### Accesibilidad lingüística
 
@@ -516,9 +512,9 @@ Aunque los principios FAIR promueven prácticas estandarizadas, su aplicación n
 
 ---
 
-# Anexos
+## 9. Anexos
 
-## Anexo A Checklist de Evaluación FAIR
+### 9.1 Anexo A: Checklist de Evaluación FAIR
 
 ### **Findable (Encontrable)**
 
@@ -590,7 +586,7 @@ Aunque los principios FAIR promueven prácticas estandarizadas, su aplicación n
   
 ---
 
-## Anexo B Ejemplo de Metadatos Estructurados
+### 9.2 Anexo B: Ejemplo de Metadatos Estructurados
 
 A continuación se muestra un ejemplo de metadatos estructurados según el estándar **Dublin Core** para un conjunto de datos hipotético.
 
@@ -632,7 +628,7 @@ additional_metadata:
   methodology: "Se usaron sensores calibrados de alta precisión para la recolección de datos. La frecuencia de medición fue diaria, y los datos fueron almacenados y respaldados siguiendo protocolos estándar."
 ```
 
-## Anexo C Datos mínimos para un Plan de Gestión de Datos (DMP)
+### 9.3 Anexo C: Datos mínimos para un Plan de Gestión de Datos (DMP)
 
 Un **Plan de Gestión de Datos (DMP)** es un documento esencial que describe cómo se generarán, documentarán, almacenarán, compartirán y preservarán los datos de investigación. A continuación, se presentan los elementos mínimos que debe contener un DMP.
 
@@ -674,9 +670,18 @@ Un **DMP bien estructurado** es clave para asegurar la **transparencia, reproduc
 
 ---
 
-## Anexo D Datos mínimos para un Plan de Gestión de Software (SMP)
+### 9.4 Anexo D: Datos mínimos para un Plan de Gestión de Software (SMP)
 
 El **Plan de Gestión de Software (PGS)** describe cómo se desarrollará, documentará y compartirá el software durante un proyecto de investigación. Su objetivo es garantizar que el software sea **mantenido, utilizable y accesible a largo plazo**, apoyando la trazabilidad de su desarrollo y facilitando su reutilización, de acuerdo con los principios FAIR4RS (Findable, Accessible, Interoperable, Reusable for Research Software).
+
+## Comparación entre FAIR y FAIR4RS
+
+| Principio | FAIR (datos) | FAIR4RS (software) |
+|-----------|--------------|--------------------|
+| **Findable** | Los datos deben tener un identificador persistente y estar indexados en un repositorio. | El software debe tener un identificador, versión persistente y estar registrable (ej. en Zenodo, Software Heritage). |
+| **Accessible** | Los metadatos y datos deben estar disponibles con protocolos abiertos. | El código fuente, documentación y ejecutables deben estar accesibles (repositorio abierto, instrucciones de instalación). |
+| **Interoperable** | Uso de vocabularios controlados y formatos estándar. | Uso de lenguajes estándar, interoperabilidad entre módulos, y metadatos de ejecución. |
+| **Reusable** | Licencias claras, documentación adecuada y proveniencia completa. | Licencia de software compatible, documentación, dependencias y entorno reproducible. |
 
 📌 **Más información:**
 - Martínez-Ortiz, C., Bakker, P., & Koning, H. (2022). *Practical guide to Software Management Plans*. Netherlands eScience Center. [https://doi.org/10.5281/zenodo.6245751](https://doi.org/10.5281/zenodo.6245751)
