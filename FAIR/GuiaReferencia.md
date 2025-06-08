@@ -38,12 +38,13 @@
 
 ## Colaboradores
 
-Esta guía ha sido elaborada con el apoyo de diversas personas y organizaciones comprometidas con la promoción de los principios FAIR. Se invita a otros colaboradores a contribuir con mejoras, actualizaciones y ejemplos adicionales.
+Esta guía ha sido elaborada en colaboración diversas personas comprometidas con la promoción de los principios FAIR. Se invita a otr@s colaborador@s a contribuir con mejoras, actualizaciones y ejemplos adicionales.
 
 - Ricardo Hartley Belmar @ricnadamas [ORCID:0000-0001-5058-9309](https://orcid.org/my-orcid?orcid=0000-0001-5058-9309)
 - Isabel Abedrapo @yolaisa [ORCID:0000-0001-9990-0436](https://orcid.org/0000-0001-9990-0436)
 - Priyanka Ojha @priya-gitTest [ORCID:0000-0002-6844-6493](https://orcid.org/0000-0002-6844-6493)
 - Carlos Martinez-Ortiz @c-martinez [ORCID:0000-0001-5565-7577](https://orcid.org/0000-0001-5565-7577)
+- ...
 
 ---
 
