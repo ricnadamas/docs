@@ -15,7 +15,7 @@
    - [Investigación Observacional](#investigación-observacional)
    - [Investigación Experimental](#investigación-experimental)
    - [Investigación Computacional](#investigación-computacional)
-8. [Colaboradores](#colaboradores)
+8. [Consideraciones éticas, lingüísticas y culturales](#consideraciones-éticas,-lingüísticas-y-culturales)
 9. [Anexos](#anexos)
    - [Anexo A Checklist de Evaluación FAIR](#anexo-a-checklist-de-evaluación-fair)
    - [Anexo B Ejemplo de Metadatos Estructurados](#anexo-b-ejemplo-de-metadatos-estructurados)
@@ -37,9 +37,9 @@ Esta guía ha sido elaborada con el apoyo de diversas personas y organizaciones 
 
 ## Introduccion
 
-Esta guía proporciona un marco práctico para la implementación de los principios **FAIR** en la gestión de datos de investigación y otras áreas que requieren estructuración y accesibilidad de la información. No está dirigida únicamente a investigadores, sino también a bibliotecarios, gestores de datos, responsables de políticas científicas, desarrolladores de infraestructuras y cualquier persona interesada en la gestión eficiente de datos digitales.
+Esta guía ofrece una guía práctica para aplicar los principios **FAIR** en la gestión de datos de investigación y otros contextos donde la organización y el acceso a la información son clave. No está dirigida únicamente a investigadores, sino también a bibliotecarios, gestores de datos, responsables de políticas científicas, desarrolladores de infraestructuras y cualquier persona interesada en la gestión eficiente de datos digitales.
 
-Los principios FAIR buscan garantizar que los datos sean **Encontrables (Findable), Accesibles (Accessible), Interoperables (Interoperable) y Reutilizables (Reusable)**. Implementar estos principios permite mejorar la visibilidad y el impacto de los datos, optimizar la inversión en su generación y promover la colaboración científica y tecnológica.
+Los principios FAIR buscan garantizar que los datos sean **Encontrables (Findable), Accesibles (Accessible), Interoperables (Interoperable) y Reutilizables (Reusable)**. Implementar estos principios facilita el acceso y reutilización de datos, mejora su visibilidad, y fomenta la colaboración científica.
 
 Los principios FAIR fueron inicialmente pensados para su aplicación a datos, pero han sido adaptados a software de investigación mediante la creación de de los principios **FAIR4RS** (FAIR for Research Software). Cabe mencionar que en este contexto, software es utilizado como un termino inclusivo, abarcando desde pequeños scripts hasta complejas librerias.
 
@@ -223,8 +223,32 @@ Objetivo: Permitir la reutilización de los datos en distintos contextos.
 - **Estándares y Formatos Utilizados**: Especificar los estándares y formatos utilizados en los datos y metadatos.
 - **Información de Contacto**: Datos de la persona responsable o custodio de los datos para soporte o consultas adicionales.
 
+### **Estructura de metadatos procesables por máquinas**
+
+### **Data Stewardship Wizard – maDMPs**
+- **Descripción**: Extensión de la herramienta DSW que permite generar planes de gestión de datos legibles por máquinas (maDMPs), facilitando su integración con flujos institucionales, APIs y sistemas de monitoreo FAIR.
+- **Enlace**: [https://ds-wizard.org/machine-actionability](https://ds-wizard.org/machine-actionability)
+
+### **Schema.org**
+- **Descripción**: Vocabulario ampliamente adoptado para describir objetos digitales (datasets, software, publicaciones) en formato legible por máquinas, compatible con JSON-LD y motores de búsqueda académicos.
+- **Enlace**: [https://schema.org/](https://schema.org/)
+
+### **CodeMeta**
+- **Descripción**: Esquema de metadatos para describir software de investigación, interoperable con Schema.org y diseñado para facilitar la integración con sistemas abiertos. Utiliza archivos `codemeta.json`.
+- **Enlace**: [https://codemeta.github.io/](https://codemeta.github.io/)
+
+### **DCAT – Data Catalog Vocabulary**
+- **Descripción**: Vocabulario del W3C para describir catálogos de datos abiertos y sus recursos asociados, usado por portales de datos científicos e institucionales.
+- **Enlace**: [https://www.w3.org/TR/vocab-dcat-3/](https://www.w3.org/TR/vocab-dcat-3/)
+
+### **FAIRsharing**
+- **Descripción**: Repositorio curado de estándares, metadatos, políticas y repositorios que permite identificar estructuras interoperables por disciplina o tipo de producto digital.
+- **Enlace**: [https://fairsharing.org/](https://fairsharing.org/)
+
 📌 **Referencia útil:** 
 - [FAIR Metadata Recommendations](https://doi.org/10.1371/journal.pcbi.1009041)
+
+
 
 ---
 
@@ -261,7 +285,7 @@ Las licencias abiertas facilitan la reutilización de datos:
 - [Recopilación de licencias según tipo de objeto digital](https://doi.org/10.5281/zenodo.8222781)
 
 
-### Consideraciones al Elegir una Licencia:
+### Consideraciones al elegir una licencia:
 
 #### Para Datos:
 ##### **Objetivos de Reutilización**
@@ -435,9 +459,20 @@ Algunas herramientas útiles para evaluar la adopción FAIR incluyen:
 - **Descripción**: Guía detallada que describe el proceso de "FAIRificación" de los datos, incluyendo pasos prácticos y consideraciones técnicas.
 - **Enlace**: [FAIRification Process](https://www.go-fair.org/fair-principles/fairification-process/)
 
-### **Otros Recursos Relevantes**
-- **DMT Clearinghouse**: [Enlace](https://dmtclearinghouse.esipfed.org/search)
-- **Ethical Data Initiative**: [Enlace](https://ethicaldatainitiative.org)
+### ***Otros Recursos Relevantes***
+
+### **DMT Clearinghouse**
+- **Descripción**: Repositorio curado de materiales educativos, herramientas y recursos sobre gestión de datos. Permite buscar guías, plantillas y presentaciones útiles para investigadores y data stewards.
+- **Enlace**: [https://dmtclearinghouse.esipfed.org/search](https://dmtclearinghouse.esipfed.org/search)
+
+### **Ethical Data Initiative**
+- **Descripción**: Iniciativa global centrada en los aspectos éticos del uso, gestión y gobernanza de datos. Promueve principios de equidad, justicia de datos y soberanía digital.
+- **Enlace**: [https://ethicaldatainitiative.org](https://ethicaldatainitiative.org)
+
+### **The Turing Way**
+- **Descripción**: Proyecto comunitario que ofrece una guía integral para la ciencia de datos reproducible, colaborativa y ética. Incluye capítulos sobre planes de gestión de datos y software, licencias, citación, liderazgo, diversidad y colaboración abierta. Todo el contenido está disponible bajo licencia CC BY e incluye ilustraciones reutilizables.
+- **Enlace**: [https://the-turing-way.netlify.app/](https://the-turing-way.netlify.app/)
+
 
 ---
 
@@ -457,6 +492,27 @@ Algunas herramientas útiles para evaluar la adopción FAIR incluyen:
 
 📌 **Ejemplo:** 
 - [FAIR for Research Software](https://fair4rs.org/)
+
+---
+
+## Consideraciones éticas, lingüísticas y culturales
+
+Aunque los principios FAIR promueven prácticas estandarizadas, su aplicación no es neutral ni homogénea. En contextos como América Latina, es clave reconocer la diversidad lingüística, cultural y epistémica.
+
+### Accesibilidad lingüística
+
+- La mayoría de las herramientas, guías y vocabularios están disponibles solo en inglés.
+- Promover traducciones, glosarios en español y capacitación multilingüe es un paso esencial hacia la equidad en ciencia abierta.
+
+### Contextos locales y epistemologías diversas
+
+- La definición de metadatos, estándares y licencias debe considerar normas culturales, marcos legales nacionales y derechos colectivos.
+- El principio de **reutilización responsable** implica no solo lo técnico, sino también lo ético y contextual.
+
+📌 **Recurso inspirador**:
+- [Ethical Data Initiative](https://ethicaldatainitiative.org) – reflexiones sobre justicia de datos, soberanía digital y derechos de comunidades.
+
+> ⚠️ Se recomienda no aplicar criterios FAIR de forma mecánica o exclusivamente técnica, sino incorporar principios de **justicia epistémica**, accesibilidad cultural y pluralismo de saberes.
 
 ---
 
@@ -620,7 +676,7 @@ Un **DMP bien estructurado** es clave para asegurar la **transparencia, reproduc
 
 ## Anexo D Datos mínimos para un Plan de Gestión de Software (SMP)
 
-Un **Plan de Gestión de Software (PGS)** es un documento vivo que describe cómo se desarrollará, documentará, mantendrá y compartirá el software de investigación en un proyecto científico. Su objetivo es garantizar que el software sea **mantenido, utilizable y accesible a largo plazo**, apoyando la trazabilidad de su desarrollo y facilitando su reutilización, de acuerdo con los principios FAIR4RS (Findable, Accessible, Interoperable, Reusable for Research Software).
+El **Plan de Gestión de Software (PGS)** describe cómo se desarrollará, documentará y compartirá el software durante un proyecto de investigación. Su objetivo es garantizar que el software sea **mantenido, utilizable y accesible a largo plazo**, apoyando la trazabilidad de su desarrollo y facilitando su reutilización, de acuerdo con los principios FAIR4RS (Findable, Accessible, Interoperable, Reusable for Research Software).
 
 📌 **Más información:**
 - Martínez-Ortiz, C., Bakker, P., & Koning, H. (2022). *Practical guide to Software Management Plans*. Netherlands eScience Center. [https://doi.org/10.5281/zenodo.6245751](https://doi.org/10.5281/zenodo.6245751)
@@ -679,39 +735,69 @@ A continuación, se describen los elementos mínimos recomendados que debe conte
 
 ---
 
-📌 **Recursos y plantillas útiles:**
+📌 **Recursos y plantillas útiles**
 
-- [FAIR4RS Principles (RDA, FORCE11, ReSA)](https://doi.org/10.15497/RDA00068)  
-  Principios FAIR aplicados específicamente al desarrollo de software para la investigación.
+### **Principios y lineamientos FAIR para software**
 
-- [Software Sustainability Institute - SMP Checklist](https://software.ac.uk/resources/guides/software-management-plans)  
-  Guía práctica para elaborar planes de gestión de software (SMP).
+### **FAIR4RS Principles (RDA, FORCE11, ReSA)**
+- **Descripción**: Principios FAIR adaptados específicamente para software de investigación, desarrollados por comunidades como RDA, FORCE11 y ReSA. Sirven como marco de referencia para asegurar la trazabilidad, accesibilidad y reutilización del software en contextos científicos.
+- **Enlace**: [https://doi.org/10.15497/RDA00068](https://doi.org/10.15497/RDA00068)
 
-- [Plantilla de PGS - Wageningen University & Research](https://zenodo.org/record/10696023)  
-  Ejemplo de plantilla para planes de gestión de software, alineado con principios FAIR.
+### **SMP Checklist – Software Sustainability Institute**
+- **Descripción**: Lista de verificación para elaborar planes de gestión de software sostenibles y de calidad. Incluye preguntas clave sobre documentación, licencias, preservación y gobernanza.
+- **Enlace**: [https://software.ac.uk/resources/guides/software-management-plans](https://software.ac.uk/resources/guides/software-management-plans)
 
-- [Data Stewardship Wizard (DSW)](https://ds-wizard.org/)  
-  Herramienta para construir planes de gestión de datos y software, con enfoque FAIR.
+### **Plantilla de PGS – Wageningen University & Research**
+- **Descripción**: Ejemplo práctico de plan de gestión de software (PGS), alineado con los principios FAIR y usado como referencia por instituciones europeas.
+- **Enlace**: [https://zenodo.org/record/10696023](https://zenodo.org/record/10696023)
 
-- [Machine Actionable DMPs - DSW](https://ds-wizard.org/machine-actionability)  
-  Información y herramientas para construir planes de gestión de datos que sean interpretables por máquinas (maDMPs).
+---
 
-- [RDA Workshop on Machine Actionable DMPs](https://www.dcc.ac.uk/events/RDAcolocated_machine_actionable_DMPs)  
-  Taller coorganizado por RDA y DCC sobre el desarrollo e implementación de maDMPs.
+### **Herramientas para elaborar y gestionar PGS**
 
-- [DMPonline - Plantillas con PGS](https://dmponline.dcc.ac.uk/)  
-  Plataforma con plantillas de Planes de Gestión de Datos y Software personalizables.
+### **Data Stewardship Wizard (DSW)**
+- **Descripción**: Herramienta interactiva para construir planes de gestión de datos y software, integrando vocabularios controlados y buenas prácticas FAIR desde etapas tempranas del proyecto.
+- **Enlace**: [https://ds-wizard.org/](https://ds-wizard.org/)
 
-- [RDMO - Research Data Management Organizer](https://rdmorganiser.github.io/)  
-  Plataforma para diseñar, planificar y documentar la gestión de datos de investigación.
+### **Machine Actionable DMPs – DSW**
+- **Descripción**: Extensión del DSW para generar DMPs legibles por máquinas (maDMPs), facilitando su integración en flujos automatizados de gestión de datos.
+- **Enlace**: [https://ds-wizard.org/machine-actionability](https://ds-wizard.org/machine-actionability)
 
-- [Software Heritage - Archivo universal de software](https://www.softwareheritage.org/)  
-  Iniciativa para preservar, rastrear y referenciar el código fuente de forma abierta y permanente.
+### **RDA Workshop on Machine Actionable DMPs**
+- **Descripción**: Taller organizado por la RDA y DCC para explorar el desarrollo, adopción y uso práctico de planes de gestión automatizados.
+- **Enlace**: [https://www.dcc.ac.uk/events/RDAcolocated_machine_actionable_DMPs](https://www.dcc.ac.uk/events/RDAcolocated_machine_actionable_DMPs)
 
-- [Choose a License - GitHub](https://choosealicense.com/)  
-  Asistente para seleccionar licencias de software adecuadas, con comparaciones y sugerencias.
+### **DMPonline**
+- **Descripción**: Plataforma ampliamente utilizada para elaborar DMPs y SMPs personalizados según el tipo de proyecto y requerimientos de financiadores.
+- **Enlace**: [https://dmponline.dcc.ac.uk/](https://dmponline.dcc.ac.uk/)
 
-- [Codemeta - Metadata para software](https://codemeta.github.io/)  
-  Esquema estandarizado para describir software con metadatos interoperables.
-  
+### **RDMO – Research Data Management Organizer**
+- **Descripción**: Herramienta flexible y modular para planificar la gestión de datos y software durante todo el ciclo de vida del proyecto.
+- **Enlace**: [https://rdmorganiser.github.io/](https://rdmorganiser.github.io/)
+
+---
+
+### **Preservación, licencias y metadatos**
+
+### **Software Heritage**
+- **Descripción**: Archivo universal de software impulsado por INRIA, que permite preservar, rastrear y citar código fuente mediante identificadores persistentes (SWHID).
+- **Enlace**: [https://www.softwareheritage.org/](https://www.softwareheritage.org/)
+
+### **Choose a License – GitHub**
+- **Descripción**: Asistente que facilita la elección de licencias de software, comparando permisos, restricciones y compatibilidades.
+- **Enlace**: [https://choosealicense.com/](https://choosealicense.com/)
+
+### **Codemeta**
+- **Descripción**: Esquema estandarizado para describir software con metadatos interoperables, facilitando su descubrimiento, citación y reutilización en repositorios.
+- **Enlace**: [https://codemeta.github.io/](https://codemeta.github.io/)
+
+---
+
+### **Herramientas para gestionar software científico**
+
+### **Tutorial GloBI (en español)**
+- **Descripción**: Guía paso a paso del proyecto Global Biotic Interactions (GloBI) sobre cómo documentar, versionar y publicar software científico usando GitHub y Zenodo. Incluye buenas prácticas para la asignación de DOIs y licencias.
+- **Enlace**: [https://www.globalbioticinteractions.org/es/tutorial.html](https://www.globalbioticinteractions.org/es/tutorial.html)
+
+
 ---
