@@ -111,7 +111,7 @@ Objetivo: Permitir la reutilización de los datos en distintos contextos.
 
 ---
 
-## 9. Consideraciones éticas, lingüísticas y culturales <a name="8-consideraciones-eticas-linguisticas-y-culturales"></a>
+## 3. Consideraciones éticas, lingüísticas y culturales <a name="8-consideraciones-eticas-linguisticas-y-culturales"></a>
 
 Los principios **FAIR** no consideran explícitamente los derechos de comunidades, por lo que es crucial complementarlos con los principios **CARE** (Colectivo, Autoridad, Responsabilidad, Ética), desarrollados por GIDA para guiar el uso justo y respetuoso de datos sobre pueblos indígenas.
 
