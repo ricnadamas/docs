@@ -17,12 +17,16 @@
    7.2 [Investigación Experimental](#72-investigacion-experimental)  
    7.3 [Investigación Computacional](#73-investigacion-computacional)  
    7.4 [Investigación Clínica y Social](#74-investigacion-clinica-y-social)  
-8. [Consideraciones éticas, lingüísticas y culturales](#8-consideraciones-eticas-linguisticas-y-culturales)  
-9. [Anexos](#9-anexos)  
-   9.1 [Anexo A: Checklist de Evaluación FAIR](#91-anexo-a-checklist-de-evaluacion-fair)  
-   9.2 [Anexo B: Ejemplo de Metadatos Estructurados](#92-anexo-b-ejemplo-de-metadatos-estructurados)  
-   9.3 [Anexo C: Datos mínimos para un Plan de Gestión de Datos (DMP)](#93-anexo-c-datos-minimos-para-un-plan-de-gestion-de-datos-dmp)  
-   9.4 [Anexo D: Datos mínimos para un Plan de Gestión de Software (SMP)](#94-anexo-d-datos-minimos-para-un-plan-de-gestion-de-software-smp)  
+8. [Planificación estructurada de productos de investigación](#8-planificacion-estructurada-de-productos-de-investigacion)  
+   8.1 [Planes de Gestión de Datos (DMP)](#81-planes-de-gestion-de-datos)  
+   8.2 [Planes de Gestión de Software (SMP)](#82-planes-de-gestion-de-software)  
+   8.3 [Planes Accionables por Máquina (maDMPs y maSMPs)](#83-planes-maquina)  
+9. [Consideraciones éticas, lingüísticas y culturales](#9-consideraciones-eticas-linguisticas-y-culturales)  
+10. [Anexos](#10-anexos)  
+    10.1 [Anexo A: Checklist de Evaluación FAIR](#101-anexo-a-checklist-de-evaluacion-fair)  
+    10.2 [Anexo B: Ejemplo de Metadatos Estructurados](#102-anexo-b-ejemplo-de-metadatos-estructurados)  
+    10.3 [Anexo C: Datos mínimos para un Plan de Gestión de Datos (DMP)](#103-anexo-c-datos-minimos-para-un-plan-de-gestion-de-datos-dmp)  
+    10.4 [Anexo D: Datos mínimos para un Plan de Gestión de Software (SMP)](#104-anexo-d-datos-minimos-para-un-plan-de-gestion-de-software-smp)  
 
 
 **Este documento está disponible bajo la licencia CC BY 4.0** y puede ser actualizado con nuevas colaboraciones.
@@ -60,8 +64,12 @@ Para facilitar su aplicación, se incluyen listas de verificación y directrices
 ## 2. Principios FAIR <a name="2-principios-fair"></a>
 
 📌 **Más información:**
-- [Principios FAIR (material para taller). Autores Meyers, N., Escapil-Inchauspé, P., Egaña Aranguren, M., & Hartley Belmar, Ricardo](https://doi.org/10.6075/J0TM7BG5)
-- [Traducción del Documento guía para el Plan de Gestión de Datos FAIR en Organizaciones e Instituciones. Autores Kirkpatrick, C. R., Cragin, M. H., & Meyers, N. (2024) (Translators Hartley Belmar, Ricardo; Meyers, Natalie)](https://doi.org/10.6075/J0ZC836W)
+- [Principios FAIR (material para taller). Autores Meyers, N., Escapil-Inchauspé, P., Egaña Aranguren, M., & Hartley Belmar, Ricardo](https://doi.org/10.6075/J0TM7BG5)  
+  Recurso didáctico adaptado para talleres sobre principios FAIR y su aplicación práctica.
+- [Traducción del Documento guía para el Plan de Gestión de Datos FAIR en Organizaciones e Instituciones. Autores Kirkpatrick, C. R., Cragin, M. H., & Meyers, N. (2024) (Translators Hartley Belmar, Ricardo; Meyers, Natalie)](https://doi.org/10.6075/J0ZC836W)  
+  Traducción comentada de la guía FAIR de DMPs institucionales, contextualizada para públicos hispanohablantes.
+- [Ten Simple Rules for FAIR Data](https://doi.org/10.1371/journal.pcbi.1007854)  
+  Artículo que sintetiza recomendaciones clave para implementar datos FAIR.
 
 ### 2.1 Findable (Encontrable) <a name="21-findable-encontrable"></a>
 Objetivo: Asegurar que los datos y metadatos puedan ser descubiertos fácilmente.
@@ -72,8 +80,6 @@ Objetivo: Asegurar que los datos y metadatos puedan ser descubiertos fácilmente
 - Metadatos ricos que describan los datos de manera clara y estructurada.
 - Indexación en **repositorios especializados** como Zenodo, DataCite o re3data  o busque aquí repositorios certificados [Current CoreTrustSeal certified data repositories](https://amt.coretrustseal.org/certificates)
 
-📌 **Más información:** 
-- [FAIR Data Principles - GO FAIR](https://www.go-fair.org/fair-principles/)
 
 ### 2.2 Accessible (Accesible) <a name="22-accessible-accesible"></a>
 Objetivo: Garantizar el acceso a datos y metadatos de manera clara y transparente.
@@ -84,8 +90,6 @@ Objetivo: Garantizar el acceso a datos y metadatos de manera clara y transparent
 - **Disponibilidad de metadatos**, incluso si los datos tienen restricciones.
 - Metadatos descriptivos que permitan comprender los datos y la accesibilidad para personas con discapacidades.
 
-📌 **Más información:** 
-- [FAIR Data - OpenAIRE](https://www.openaire.eu/fair-data)
 
 ### 2.3 Interoperable <a name="23-interoperable"></a>
 Objetivo: Facilitar la integración de datos con otros sistemas y garantizar su reutilización automatizada.
@@ -95,8 +99,6 @@ Objetivo: Facilitar la integración de datos con otros sistemas y garantizar su 
 - Uso de **vocabularios controlados y ontologías** (ej. COAR, Schema.org).
 - Inclusión de referencias a otros datos con relaciones bien definidas en los metadatos.
 
-📌 **Ejemplo práctico:** 
-- [FAIRsharing.org](https://fairsharing.org/)
 
 ### 2.4 Reusable (Reutilizable) <a name="24-reusable-reutilizable"></a>
 Objetivo: Permitir la reutilización de los datos en distintos contextos.
@@ -107,12 +109,35 @@ Objetivo: Permitir la reutilización de los datos en distintos contextos.
 - Mantener un **registro de versiones** de los datos y los metadatos asociados, incluyendo fecha de creación, modificación y autor responsable.
 - Cumplimiento de estándares y buenas prácticas de la comunidad (ej. diccionario de datos, cuaderno de código).
 
-📌 **Guía complementaria:** 
-- [Ten Simple Rules for FAIR Data](https://doi.org/10.1371/journal.pcbi.1007854)
+---
+
+## 9. Consideraciones éticas, lingüísticas y culturales <a name="8-consideraciones-eticas-linguisticas-y-culturales"></a>
+
+Los principios **FAIR** no consideran explícitamente los derechos de comunidades, por lo que es crucial complementarlos con los principios **CARE** (Colectivo, Autoridad, Responsabilidad, Ética), desarrollados por GIDA para guiar el uso justo y respetuoso de datos sobre pueblos indígenas.
+
+📌 **Más información:**
+- [Más información sobre CARE](https://www.gida-global.org/care)  
+  Declaración de principios para la gobernanza ética de datos sobre pueblos indígenas, centrada en valores de colectividad, autoridad, responsabilidad y ética.
+
+### Accesibilidad lingüística
+
+- La mayoría de las herramientas, guías y vocabularios están disponibles solo en inglés.
+- Promover traducciones, glosarios en español y capacitación multilingüe es un paso esencial hacia la equidad en ciencia abierta.
+
+### Contextos locales y epistemologías diversas
+
+- La definición de metadatos, estándares y licencias debe considerar normas culturales, marcos legales nacionales y derechos colectivos.
+- El principio de **reutilización responsable** implica no solo lo técnico, sino también lo ético y contextual.
+
+> ⚠️ Se recomienda no aplicar criterios FAIR de forma mecánica o exclusivamente técnica, sino incorporar principios de **justicia epistémica**, accesibilidad cultural y pluralismo de saberes.
+> 
+📌 **Más información:**
+- [Ethical Data Initiative](https://ethicaldatainitiative.org)  
+  Iniciativa que promueve la justicia de datos, la soberanía digital y los derechos de comunidades en entornos digitales.
 
 ---
 
-## 3. Formatos de Datos y Recomendaciones <a name="3-formatos-de-datos-y-recomendaciones"></a>
+## 4. Formatos de Datos y Recomendaciones <a name="3-formatos-de-datos-y-recomendaciones"></a>
 
 | **Tipo de Datos**      | **Formato Recomendado** | **Observaciones** |
 |------------------------|------------------------|--------------------|
@@ -140,7 +165,7 @@ Objetivo: Permitir la reutilización de los datos en distintos contextos.
 #### Interoperabilidad Semántica
 - Cuando sea apropiado, utilizar formatos que faciliten la interoperabilidad semántica, como RDF o JSON-LD.
 
-📌 **Guía complementaria:** 
+📌 **Más información:**
 - [Formatos preferidos para la preservación y publicación en repositorios (Zenodo)](https://doi.org/10.5281/zenodo.8432009)  
   Recomendaciones sobre formatos aceptados y sostenibles para la preservación digital a largo plazo.
 
@@ -148,11 +173,11 @@ Objetivo: Permitir la reutilización de los datos en distintos contextos.
   Guía del Instituto Holandés DANS con formatos recomendados para el archivo sostenible de datos digitales.
 
 - [UK Data Service - Formatos recomendados](https://ukdataservice.ac.uk/learning-hub/research-data-management/format-your-data/recommended-formats/)  
-  Tabla con orientación sobre formatos de archivo recomendados y aceptados por el UK Data Service para compartir, reutilizar y preservar datos.
-  
+  Tabla con orientación sobre formatos aceptados por el UK Data Service para compartir, reutilizar y preservar datos.
+
 ---
 
-## 4. Metadatos y Estándares <a name="4-metadatos-y-estandares"></a>
+## 5. Metadatos y Estándares <a name="4-metadatos-y-estandares"></a>
 
 Los **metadatos** son descripciones estructuradas que permiten entender, descubrir y reutilizar los datos. Siguen estructuras normalizadas conocidas como **esquemas de metadatos** y, cuando se alinean con vocabularios compartidos, habilitan la interoperabilidad semántica.
 
@@ -235,14 +260,6 @@ Los **metadatos** son descripciones estructuradas que permiten entender, descubr
 - **Descripción**: Extensión de la herramienta DSW que permite generar planes de gestión de datos legibles por máquinas (maDMPs), facilitando su integración con flujos institucionales, APIs y sistemas de monitoreo FAIR.
 - **Enlace**: [https://ds-wizard.org/machine-actionability](https://ds-wizard.org/machine-actionability)
 
-### **Schema.org**
-- **Descripción**: Vocabulario ampliamente adoptado para describir objetos digitales (datasets, software, publicaciones) en formato legible por máquinas, compatible con JSON-LD y motores de búsqueda académicos.
-- **Enlace**: [https://schema.org/](https://schema.org/)
-
-### **CodeMeta**
-- **Descripción**: Esquema de metadatos para describir software de investigación, interoperable con Schema.org y diseñado para facilitar la integración con sistemas abiertos. Utiliza archivos `codemeta.json`.
-- **Enlace**: [https://codemeta.github.io/](https://codemeta.github.io/)
-
 ### **DCAT – Data Catalog Vocabulary**
 - **Descripción**: Vocabulario del W3C para describir catálogos de datos abiertos y sus recursos asociados, usado por portales de datos científicos e institucionales.
 - **Enlace**: [https://www.w3.org/TR/vocab-dcat-3/](https://www.w3.org/TR/vocab-dcat-3/)
@@ -251,14 +268,13 @@ Los **metadatos** son descripciones estructuradas que permiten entender, descubr
 - **Descripción**: Repositorio curado de estándares, metadatos, políticas y repositorios que permite identificar estructuras interoperables por disciplina o tipo de producto digital.
 - **Enlace**: [https://fairsharing.org/](https://fairsharing.org/)
 
-📌 **Referencia útil:** 
-- [FAIR Metadata Recommendations](https://doi.org/10.1371/journal.pcbi.1009041)
-
-
+📌 **Más información:**
+- [FAIR Metadata Recommendations](https://doi.org/10.1371/journal.pcbi.1009041)  
+  Recomendaciones prácticas para mejorar la calidad de los metadatos según los principios FAIR.
 
 ---
 
-## 5. Licencias y Derechos de Uso <a name="5-licencias-y-derechos-de-uso"></a>
+## 6. Licencias y Derechos de Uso <a name="6-licencias-y-derechos-de-uso"></a>
 
 Las licencias abiertas facilitan la reutilización de datos:
 
@@ -287,9 +303,9 @@ Las licencias abiertas facilitan la reutilización de datos:
 
  [Software Licenses in Plain English](https://www.tldrlegal.com/)
  
-📌 **Más sobre licencias:** 
-- [Recopilación de licencias según tipo de objeto digital](https://doi.org/10.5281/zenodo.8222781)
-
+📌 **Más información:**
+- [Recopilación de licencias según tipo de objeto digital](https://doi.org/10.5281/zenodo.8222781)  
+  Tabla resumen que vincula tipos de productos digitales con licencias recomendadas para su publicación y reutilización.
 
 ### Consideraciones al elegir una licencia:
 
@@ -353,80 +369,68 @@ Las licencias abiertas facilitan la reutilización de datos:
 - Para datos y código, utilizar formatos que permitan la interpretación de la licencia por sistemas informáticos.
 
 
-📌 **Herramienta para elegir licencias:** 
-- [Choose a License](https://choosealicense.com/).
+📌 **Más información:**
+- [Choose a License](https://choosealicense.com/)  
+  Herramienta interactiva para entender y seleccionar licencias de software de forma accesible.
 
-📌 **Lista de licencias y sus identificadores:** 
-- [SPDX License List](https://spdx.org/licenses/)
+- [SPDX License List](https://spdx.org/licenses/)  
+  Lista estandarizada de licencias mantenida por la Linux Foundation, útil para referencias técnicas y automatización.
 
 ---
 
-## 6. Evaluación FAIR y Herramientas <a name="6-evaluacion-fair-y-herramientas"></a>
+## 7. Evaluación FAIR y Herramientas <a name="7-evaluacion-fair-y-herramientas"></a>
 
-Algunas herramientas útiles para evaluar la adopción FAIR incluyen:
+Los principios FAIR no son una lista de chequeo cerrada, sino un marco evaluable. Existen herramientas comunitarias que permiten medir el cumplimiento FAIR de un conjunto de datos o de un repositorio, ya sea a través de interfaces manuales o evaluaciones automatizadas. Estas herramientas comparan los metadatos, licencias, formatos y persistencia de los identificadores con estándares aceptados, y asignan una puntuación o nivel de madurez FAIR.
 
-### **FAIR-Aware**
+### FAIR-Aware
 - **Descripción**: FAIR-Aware es una plataforma educativa desarrollada por **DANS (Data Archiving and Networked Services)** que ayuda a investigadores y gestores de datos a comprender mejor los principios **FAIR** y cómo aplicarlos a sus datos. 
 - Proporciona una autoevaluación guiada que sensibiliza sobre los aspectos clave de FAIR.  
 - **Enlace**: [FAIR-Aware](https://fairaware.dans.knaw.nl/)
 
-### **FAIR Evaluator**
-- **Descripción**: Herramienta en línea que permite a los usuarios evaluar el cumplimiento de sus datos con los principios **FAIR** a través de una serie de preguntas y métricas. 
-- Proporciona comentarios y recomendaciones para mejorar la **FAIRness** de los datos.
-- **Enlace**: [FAIR Evaluator](https://fairsharing.org/FAIR-Evaluator)
-
-### **How FAIR is**
-- **Descripción**: Herramienta de línea de commando que permite analisar el cumplimiento del software con las recomendaciones de [fair-software.eu](https://fair-software.eu/). 
-- Las recomendaciones de no estan directamente ligadas a los principios **FAIR4RS**, pero no les contradicen tienen el mismo objetivo.
-- **Enlace**: [howFAIRis](https://github.com/fair-software/howfairis)
-
-### **F-UJI**
-- **Descripción**: Herramienta automatica para la evaluación de **FAIRness**.
-- La evaluación de F-UJI assessment esta basada en 16 de las 17 metricas desarolladas en el projecto [FAIRsFAIR](https://www.fairsfair.eu/). 
+### F-UJI
+- **Descripción**: Herramienta automática para la evaluación de **FAIRness**.
+- La evaluación de F-UJI está basada en 16 de las 17 métricas desarrolladas en el proyecto [FAIRsFAIR](https://www.fairsfair.eu/). 
 - **Enlace**: [F-UJI](https://catalogue.fair-impact.eu/resources/f-uji)
 
-### ** Auto-evaluacion de FAIR software **
-- **Descripción**: Una lista interactive de verificación con preguntas sobre el **FAIRness** del software de investigación.
+### FAIR Data Maturity Model
+- **Descripción**: Modelo desarrollado por el **Grupo de Trabajo de la RDA** para medir el grado de cumplimiento de los principios **FAIR**. 
+- Proporciona un conjunto de indicadores y métricas que permiten evaluar de manera sistemática la madurez FAIR de los datos.
+- **Enlace**: [FAIR Data Maturity Model](https://zenodo.org/records/3909563)
+
+### How FAIR is
+- **Descripción**: Herramienta de línea de comando que permite analizar el cumplimiento del software con las recomendaciones de [fair-software.eu](https://fair-software.eu/). 
+- Las recomendaciones no están directamente ligadas a los principios **FAIR4RS**, pero no los contradicen y persiguen el mismo objetivo.
+- **Enlace**: [howFAIRis](https://github.com/fair-software/howfairis)
+
+### Autoevaluación de FAIR software
+- **Descripción**: Lista interactiva de verificación con preguntas sobre el **FAIRness** del software de investigación.
 - Esta lista genera una insignia (badge) que los propietarios de proyectos pueden incluir en su README para comunicar el estado del proyecto a los visitantes.
 - **Enlace**: [FAIR software check-list](https://fairsoftwarechecklist.net/v0.2/)
 
-### **FAIRsharing**
-- **Descripción**: Recurso curado que proporciona información sobre estándares, repositorios y políticas que apoyan la implementación de los principios **FAIR**.
-- **Enlace**: [FAIRsharing](https://fairsharing.org/)
-
-### **FAIR Data Maturity Model**
-- **Descripción**: Modelo desarrollado por el **Grupo de Trabajo ISO/TC 276** para medir el grado de "FAIRness" de los datos. 
-- Proporciona un conjunto de indicadores y métricas que permiten evaluar de manera sistemática el cumplimiento de los principios **FAIR**.
-- **Enlace**: [FAIR Data Maturity Model](https://zenodo.org/records/3909563)
-
-### **FAIR Cookbook**
+### FAIR Cookbook
 - **Descripción**: Colección de recetas prácticas que guían a los usuarios a través de los pasos necesarios para implementar los principios **FAIR** en la gestión y publicación de datos.
 - **Enlace**: [FAIR Cookbook](https://faircookbook.elixir-europe.org/)
 
-### **FAIRification Process**
+### FAIRification Process
 - **Descripción**: Guía detallada que describe el proceso de "FAIRificación" de los datos, incluyendo pasos prácticos y consideraciones técnicas.
 - **Enlace**: [FAIRification Process](https://www.go-fair.org/fair-principles/fairification-process/)
 
-### ***Otros Recursos Relevantes***
+### Otros recursos relevantes
 
-### **DMT Clearinghouse**
+### DMT Clearinghouse
 - **Descripción**: Repositorio curado de materiales educativos, herramientas y recursos sobre gestión de datos. Permite buscar guías, plantillas y presentaciones útiles para investigadores y data stewards.
 - **Enlace**: [https://dmtclearinghouse.esipfed.org/search](https://dmtclearinghouse.esipfed.org/search)
 
-### **Ethical Data Initiative**
-- **Descripción**: Iniciativa global centrada en los aspectos éticos del uso, gestión y gobernanza de datos. Promueve principios de equidad, justicia de datos y soberanía digital.
-- **Enlace**: [https://ethicaldatainitiative.org](https://ethicaldatainitiative.org)
-
-### **The Turing Way**
+### The Turing Way
 - **Descripción**: Proyecto comunitario que ofrece una guía integral para la ciencia de datos reproducible, colaborativa y ética. Incluye capítulos sobre planes de gestión de datos y software, licencias, citación, liderazgo, diversidad y colaboración abierta. Todo el contenido está disponible bajo licencia CC BY e incluye ilustraciones reutilizables.
 - **Enlace**: [https://the-turing-way.netlify.app/](https://the-turing-way.netlify.app/)
 
 
 ---
 
-## 7. Tipos de Investigación y Requisitos FAIR <a name="7-tipos-de-investigacion-y-requisitos-fair"></a>
+## 8. Tipos de Investigación y Requisitos FAIR <a name="7-tipos-de-investigacion-y-requisitos-fair"></a>
   
-### 7.1 Investigación Observacional <a name="71-investigacion-observacional"></a>
+### 8.1 Investigación Observacional <a name="71-investigacion-observacional"></a>
   
 ##### **Requisitos:**
 - **Documentar Instrumentos y Métodos**:  
@@ -441,7 +445,7 @@ Algunas herramientas útiles para evaluar la adopción FAIR incluyen:
   - Obtener consentimiento informado cuando sea aplicable.  
   - Cumplir con las regulaciones de protección de datos.
 
-### 7.2 Investigación Experimental <a name="72-investigacion-experimental"></a>
+### 8.2 Investigación Experimental <a name="72-investigacion-experimental"></a>
 ##### **Requisitos:**
 - **Documentar Condiciones Experimentales**:
   - Proveniencia y estándares
@@ -456,7 +460,7 @@ Algunas herramientas útiles para evaluar la adopción FAIR incluyen:
 - **Consideraciones Éticas**:  
   - Obtener aprobaciones éticas y cumplir con las regulaciones aplicables.
 
-### 7.3 Investigación Computacional <a name="73-investigacion-computacional"></a>
+### 8.3 Investigación Computacional <a name="73-investigacion-computacional"></a>
 ##### **Requisitos:**
 - **Documentar Código y Dependencias**:
   - Publicación de código y entorno   
@@ -472,7 +476,7 @@ Algunas herramientas útiles para evaluar la adopción FAIR incluyen:
 - **Licencias de Código**:  
   - Aplicar licencias apropiadas como **Apache 2.0** o **GPL** para código y software.
 
-### 7.4 Investigación Clínica y Social <a name="74-investigacion-clinica-y-social"></a>
+### 8.4 Investigación Clínica y Social <a name="74-investigacion-clinica-y-social"></a>
 ##### **Requisitos:**
 - **Cumplimiento con Regulaciones de Protección de Datos**:
   - Licencias, anonimización  
@@ -489,33 +493,74 @@ Algunas herramientas útiles para evaluar la adopción FAIR incluyen:
 
 ---
 
-## 8. Consideraciones éticas, lingüísticas y culturales <a name="8-consideraciones-eticas-linguisticas-y-culturales"></a>
+## 9. Planificación estructurada de productos de investigación <a name="5-planificacion-estructurada"></a>
 
-Los principios **FAIR** no consideran explícitamente los derechos de comunidades, por lo que es crucial complementarlos con los principios **CARE** (Colectivo, Autoridad, Responsabilidad, Ética), desarrollados por GIDA para guiar el uso justo y respetuoso de datos sobre pueblos indígenas.
+En proyectos de investigación contemporáneos, es crucial planificar desde el inicio cómo se gestionarán, compartirán y preservarán los productos digitales. Esta planificación no solo aplica a los datos, sino también al software, flujos de trabajo, documentación y metadatos. A continuación se presentan los tipos principales de planes, su evolución hacia formatos más estructurados y herramientas clave para su elaboración.
 
-📌 [Más información sobre CARE](https://www.gida-global.org/care)
+### 9.1 Planes de Gestión de Datos (DMP) <a name="51-planes-de-gestion-de-datos"></a>
 
+Los **Planes de Gestión de Datos (DMP)** son documentos vivos que describen cómo se generarán, organizarán, documentarán, almacenarán, compartirán y preservarán los datos de investigación. En muchas convocatorias y repositorios, estos planes son un requisito obligatorio.
 
-### Accesibilidad lingüística
+📌 **Ejemplo completo**: ver [Anexo 9.3](#93-anexo-c-datos-minimos-para-un-plan-de-gestion-de-datos-dmp)
 
-- La mayoría de las herramientas, guías y vocabularios están disponibles solo en inglés.
-- Promover traducciones, glosarios en español y capacitación multilingüe es un paso esencial hacia la equidad en ciencia abierta.
+**Elementos clave:**
+- Descripción de tipos de datos y metodologías de recolección.
+- Estrategias de documentación, licencias y estándares de metadatos.
+- Planes de preservación, seguridad y acceso.
+- Repositorios y licencias seleccionadas.
 
-### Contextos locales y epistemologías diversas
-
-- La definición de metadatos, estándares y licencias debe considerar normas culturales, marcos legales nacionales y derechos colectivos.
-- El principio de **reutilización responsable** implica no solo lo técnico, sino también lo ético y contextual.
-
-📌 **Recurso inspirador**:
-- [Ethical Data Initiative](https://ethicaldatainitiative.org) – reflexiones sobre justicia de datos, soberanía digital y derechos de comunidades.
-
-> ⚠️ Se recomienda no aplicar criterios FAIR de forma mecánica o exclusivamente técnica, sino incorporar principios de **justicia epistémica**, accesibilidad cultural y pluralismo de saberes.
+Entre las plataformas destacadas para su elaboración se encuentran:
+- [Data Stewardship Wizard (DSW)](https://ds-wizard.org/)
+- [DMPonline (DCC)](https://dmponline.dcc.ac.uk/)
+- [RDMO](https://rdmorganiser.github.io/)
 
 ---
 
-## 9. Anexos <a name="9-anexos"></a>
+### 9.2 Planes de Gestión de Software (SMP) <a name="52-planes-de-gestion-de-software"></a>
 
-### 9.1 Anexo A: Checklist de Evaluación FAIR <a name="91-anexo-a-checklist-de-evaluacion-fair"></a>
+El **Plan de Gestión de Software (SMP)** es el equivalente a un DMP pero orientado al desarrollo, documentación, publicación y sostenibilidad del software producido en investigación. Estos planes se enmarcan en los principios **FAIR4RS**, orientados a software reutilizable, reproducible y citable.
+
+📌 **Ejemplo completo**: ver [Anexo 9.4](#94-anexo-d-datos-minimos-para-un-plan-de-gestion-de-software-smp)
+
+**Aspectos cubiertos en un SMP:**
+- Ciclo de vida del software, control de versiones y gobernanza.
+- Publicación, citación, licencias y preservación en plataformas como Zenodo o Software Heritage.
+- Calidad del código, documentación y pruebas.
+- Sustentabilidad tras el cierre del proyecto.
+
+Guías clave:
+- [Guía práctica del Netherlands eScience Center](https://doi.org/10.5281/zenodo.6245751)
+- [SMP Checklist – Software Sustainability Institute](https://software.ac.uk/resources/guides/software-management-plans)
+
+---
+
+### 9.3 Planes Accionables por Máquina (maDMPs y maSMPs) <a name="53-planes-maquina"></a>
+
+La evolución natural de los DMP y SMP ha llevado al desarrollo de **planes accionables por máquina** (*machine-actionable DMPs/SMPs*), diseñados para ser leídos, validados y procesados por sistemas automatizados, APIs y herramientas de seguimiento FAIR.
+
+**Características principales:**
+- Uso de formatos como JSON/JSON-LD.
+- Validación sintáctica y lógica a través de plantillas y esquemas.
+- Permiten integración con sistemas institucionales, repositorios y plataformas de gestión de proyectos.
+
+📌 Recurso clave:
+- [RDA maDMP WG – DMP Common Standard](https://github.com/RDA-DMP-Common/RDA-DMP-Common-Standard)
+
+**Herramientas para construir planes estructurados:**
+- **Data Stewardship Wizard (DSW)**: ofrece plantillas personalizadas para maDMPs y SMPs interoperables.
+- **RDMO**: permite exportar planes estructurados compatibles con esquemas FAIR.
+- **DMPonline**: incluye soporte para validación automática y exportación en JSON.
+
+> 🔗 **Referencia cruzada**: estos planes se complementan con las herramientas de evaluación FAIR descritas en la sección [6. Evaluación FAIR y Herramientas](#6-evaluacion-fair-y-herramientas).
+
+
+Con una planificación estructurada e integrada, se garantiza no solo el cumplimiento de requisitos institucionales o de agencias financiadoras, sino también la reutilización, interoperabilidad y preservación a largo plazo de los productos digitales de la investigación.
+
+---
+
+## 10. Anexos <a name="9-anexos"></a>
+
+### 10.1 Anexo A: Checklist de Evaluación FAIR <a name="91-anexo-a-checklist-de-evaluacion-fair"></a>
 
 ### **Findable (Encontrable)**
 
@@ -587,7 +632,7 @@ Los principios **FAIR** no consideran explícitamente los derechos de comunidade
   
 ---
 
-### 9.2 Anexo B: Ejemplo de Metadatos Estructurados <a name="92-anexo-b-ejemplo-de-metadatos-estructurados"></a>
+### 10.2 Anexo B: Ejemplo de Metadatos Estructurados <a name="92-anexo-b-ejemplo-de-metadatos-estructurados"></a>
 
 A continuación se muestra un ejemplo de metadatos estructurados según el estándar **Dublin Core** para un conjunto de datos hipotético.
 
@@ -629,7 +674,7 @@ additional_metadata:
   methodology: "Se usaron sensores calibrados de alta precisión para la recolección de datos. La frecuencia de medición fue diaria, y los datos fueron almacenados y respaldados siguiendo protocolos estándar."
 ```
 
-### 9.3 Anexo C: Datos mínimos para un Plan de Gestión de Datos (DMP) <a name="93-anexo-c-datos-minimos-para-un-plan-de-gestion-de-datos-dmp"></a>
+### 10.3 Anexo C: Datos mínimos para un Plan de Gestión de Datos (DMP) <a name="93-anexo-c-datos-minimos-para-un-plan-de-gestion-de-datos-dmp"></a>
 
 Un **Plan de Gestión de Datos (DMP)** es un documento esencial que describe cómo se generarán, documentarán, almacenarán, compartirán y preservarán los datos de investigación. A continuación, se presentan los elementos mínimos que debe contener un DMP.
 
@@ -666,12 +711,11 @@ Un **Plan de Gestión de Datos (DMP)** es un documento esencial que describe có
 
 ---
 
-📌 Notas Finales
 Un **DMP bien estructurado** es clave para asegurar la **transparencia, reproducibilidad e interoperabilidad** de los datos científicos. Se recomienda revisar periódicamente este plan para adaptarlo a nuevas necesidades o requisitos institucionales.
 
 ---
 
-### 9.4 Anexo D: Datos mínimos para un Plan de Gestión de Software (SMP) <a name="94-anexo-d-datos-minimos-para-un-plan-de-gestion-de-software-smp"></a>
+### 10.4 Anexo D: Datos mínimos para un Plan de Gestión de Software (SMP) <a name="94-anexo-d-datos-minimos-para-un-plan-de-gestion-de-software-smp"></a>
 
 El **Plan de Gestión de Software (PGS)** describe cómo se desarrollará, documentará y compartirá el software durante un proyecto de investigación. Su objetivo es garantizar que el software sea **mantenido, utilizable y accesible a largo plazo**, apoyando la trazabilidad de su desarrollo y facilitando su reutilización, de acuerdo con los principios FAIR4RS (Findable, Accessible, Interoperable, Reusable for Research Software).
 
@@ -679,13 +723,14 @@ El **Plan de Gestión de Software (PGS)** describe cómo se desarrollará, docum
 
 | Principio | FAIR (datos) | FAIR4RS (software) |
 |-----------|--------------|--------------------|
-| **Findable** | Los datos deben tener un identificador persistente y estar indexados en un repositorio. | El software debe tener un identificador, versión persistente y estar registrable (ej. en Zenodo, Software Heritage). |
+| **Findable** | Los datos deben tener un identificador persistente y estar indexados en un repositorio. | El software debe tener un identificador, versión persistente y estar registrable. |
 | **Accessible** | Los metadatos y datos deben estar disponibles con protocolos abiertos. | El código fuente, documentación y ejecutables deben estar accesibles (repositorio abierto, instrucciones de instalación). |
 | **Interoperable** | Uso de vocabularios controlados y formatos estándar. | Uso de lenguajes estándar, interoperabilidad entre módulos, y metadatos de ejecución. |
 | **Reusable** | Licencias claras, documentación adecuada y proveniencia completa. | Licencia de software compatible, documentación, dependencias y entorno reproducible. |
 
 📌 **Más información:**
-- Martínez-Ortiz, C., Bakker, P., & Koning, H. (2022). *Practical guide to Software Management Plans*. Netherlands eScience Center. [https://doi.org/10.5281/zenodo.6245751](https://doi.org/10.5281/zenodo.6245751)
+- [Martínez-Ortiz, C., Bakker, P., & Koning, H. (2022). *Practical guide to Software Management Plans*. Netherlands eScience Center](https://doi.org/10.5281/zenodo.6245751)  
+  Guía práctica para desarrollar y aplicar planes de gestión de software en proyectos de investigación.
 
 A continuación, se describen los elementos mínimos recomendados que debe contener un PGS:
 
@@ -741,69 +786,45 @@ A continuación, se describen los elementos mínimos recomendados que debe conte
 
 ---
 
-📌 **Recursos y plantillas útiles**
+📌 **Más información**
 
-### **Principios y lineamientos FAIR para software**
+**Principios y lineamientos FAIR para software**
 
-### **FAIR4RS Principles (RDA, FORCE11, ReSA)**
-- **Descripción**: Principios FAIR adaptados específicamente para software de investigación, desarrollados por comunidades como RDA, FORCE11 y ReSA. Sirven como marco de referencia para asegurar la trazabilidad, accesibilidad y reutilización del software en contextos científicos.
-- **Enlace**: [https://doi.org/10.15497/RDA00068](https://doi.org/10.15497/RDA00068)
+- [FAIR4RS Principles (RDA, FORCE11, ReSA)](https://doi.org/10.15497/RDA00068)  
+  Principios FAIR adaptados para software, desarrollados por comunidades como RDA, FORCE11 y ReSA.
 
-### **SMP Checklist – Software Sustainability Institute**
-- **Descripción**: Lista de verificación para elaborar planes de gestión de software sostenibles y de calidad. Incluye preguntas clave sobre documentación, licencias, preservación y gobernanza.
-- **Enlace**: [https://software.ac.uk/resources/guides/software-management-plans](https://software.ac.uk/resources/guides/software-management-plans)
+- [SMP Checklist – Software Sustainability Institute](https://software.ac.uk/resources/guides/software-management-plans)  
+  Lista de verificación para planes de gestión de software, cubriendo documentación, licencias y sostenibilidad.
 
-### **Plantilla de PGS – Wageningen University & Research**
-- **Descripción**: Ejemplo práctico de plan de gestión de software (PGS), alineado con los principios FAIR y usado como referencia por instituciones europeas.
-- **Enlace**: [https://zenodo.org/record/10696023](https://zenodo.org/record/10696023)
+- [Plantilla de PGS – Wageningen University & Research](https://zenodo.org/record/10696023)  
+  Ejemplo práctico de plan de gestión de software alineado con FAIR y adoptado por instituciones europeas.
 
----
+**Herramientas para elaborar y gestionar PGS**
 
-### **Herramientas para elaborar y gestionar PGS**
+- [Data Stewardship Wizard (DSW)](https://ds-wizard.org/)  
+  Herramienta interactiva para construir DMPs y SMPs con vocabularios controlados y lógica FAIR.
 
-### **Data Stewardship Wizard (DSW)**
-- **Descripción**: Herramienta interactiva para construir planes de gestión de datos y software, integrando vocabularios controlados y buenas prácticas FAIR desde etapas tempranas del proyecto.
-- **Enlace**: [https://ds-wizard.org/](https://ds-wizard.org/)
+- [RDA Workshop on Machine Actionable DMPs](https://www.dcc.ac.uk/events/RDAcolocated_machine_actionable_DMPs)  
+  Taller de RDA y DCC sobre el desarrollo y adopción de DMPs automatizados.
 
-### **Machine Actionable DMPs – DSW**
-- **Descripción**: Extensión del DSW para generar DMPs legibles por máquinas (maDMPs), facilitando su integración en flujos automatizados de gestión de datos.
-- **Enlace**: [https://ds-wizard.org/machine-actionability](https://ds-wizard.org/machine-actionability)
+- [DMPonline](https://dmponline.dcc.ac.uk/)  
+  Plataforma para crear planes de gestión personalizados según requisitos de proyectos y financiadores.
 
-### **RDA Workshop on Machine Actionable DMPs**
-- **Descripción**: Taller organizado por la RDA y DCC para explorar el desarrollo, adopción y uso práctico de planes de gestión automatizados.
-- **Enlace**: [https://www.dcc.ac.uk/events/RDAcolocated_machine_actionable_DMPs](https://www.dcc.ac.uk/events/RDAcolocated_machine_actionable_DMPs)
+- [RDMO – Research Data Management Organizer](https://rdmorganiser.github.io/)  
+  Herramienta modular para planificar la gestión de datos y software a lo largo del ciclo de vida del proyecto.
 
-### **DMPonline**
-- **Descripción**: Plataforma ampliamente utilizada para elaborar DMPs y SMPs personalizados según el tipo de proyecto y requerimientos de financiadores.
-- **Enlace**: [https://dmponline.dcc.ac.uk/](https://dmponline.dcc.ac.uk/)
+**Preservación, licencias y metadatos**
 
-### **RDMO – Research Data Management Organizer**
-- **Descripción**: Herramienta flexible y modular para planificar la gestión de datos y software durante todo el ciclo de vida del proyecto.
-- **Enlace**: [https://rdmorganiser.github.io/](https://rdmorganiser.github.io/)
+- [Software Heritage](https://www.softwareheritage.org/)  
+  Archivo universal para preservar código fuente con identificadores persistentes (SWHID).
 
----
+- [Codemeta](https://codemeta.github.io/)  
+  Esquema de metadatos interoperables para describir y facilitar la citación de software científico.
 
-### **Preservación, licencias y metadatos**
+**Herramientas para gestionar software científico**
 
-### **Software Heritage**
-- **Descripción**: Archivo universal de software impulsado por INRIA, que permite preservar, rastrear y citar código fuente mediante identificadores persistentes (SWHID).
-- **Enlace**: [https://www.softwareheritage.org/](https://www.softwareheritage.org/)
-
-### **Choose a License – GitHub**
-- **Descripción**: Asistente que facilita la elección de licencias de software, comparando permisos, restricciones y compatibilidades.
-- **Enlace**: [https://choosealicense.com/](https://choosealicense.com/)
-
-### **Codemeta**
-- **Descripción**: Esquema estandarizado para describir software con metadatos interoperables, facilitando su descubrimiento, citación y reutilización en repositorios.
-- **Enlace**: [https://codemeta.github.io/](https://codemeta.github.io/)
-
----
-
-### **Herramientas para gestionar software científico**
-
-### **Tutorial GloBI (en español)**
-- **Descripción**: Guía paso a paso del proyecto Global Biotic Interactions (GloBI) sobre cómo documentar, versionar y publicar software científico usando GitHub y Zenodo. Incluye buenas prácticas para la asignación de DOIs y licencias.
-- **Enlace**: [https://www.globalbioticinteractions.org/es/tutorial.html](https://www.globalbioticinteractions.org/es/tutorial.html)
+- [Tutorial GloBI (en español)](https://www.globalbioticinteractions.org/es/tutorial.html)  
+  Guía práctica para documentar, versionar y publicar software científico con GitHub y Zenodo.
 
 
 ---
