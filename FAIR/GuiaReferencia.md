@@ -8,26 +8,25 @@
    2.2 [Accessible (Accesible)](#22-accessible-accesible)  
    2.3 [Interoperable](#23-interoperable)  
    2.4 [Reusable (Reutilizable)](#24-reusable-reutilizable)  
-3. [Formatos de Datos y Recomendaciones](#3-formatos-de-datos-y-recomendaciones)  
-4. [Metadatos y Estándares](#4-metadatos-y-estandares)  
-5. [Licencias y Derechos de Uso](#5-licencias-y-derechos-de-uso)  
-6. [Evaluación FAIR y Herramientas](#6-evaluacion-fair-y-herramientas)  
-7. [Tipos de Investigación y Requisitos FAIR](#7-tipos-de-investigacion-y-requisitos-fair)  
-   7.1 [Investigación Observacional](#71-investigacion-observacional)  
-   7.2 [Investigación Experimental](#72-investigacion-experimental)  
-   7.3 [Investigación Computacional](#73-investigacion-computacional)  
-   7.4 [Investigación Clínica y Social](#74-investigacion-clinica-y-social)  
-8. [Planificación estructurada de productos de investigación](#8-planificacion-estructurada-de-productos-de-investigacion)  
-   8.1 [Planes de Gestión de Datos (DMP)](#81-planes-de-gestion-de-datos)  
-   8.2 [Planes de Gestión de Software (SMP)](#82-planes-de-gestion-de-software)  
-   8.3 [Planes Accionables por Máquina (maDMPs y maSMPs)](#83-planes-maquina)  
-9. [Consideraciones éticas, lingüísticas y culturales](#9-consideraciones-eticas-linguisticas-y-culturales)  
+3. [Consideraciones éticas, lingüísticas y culturales](#3-consideraciones-eticas-linguisticas-y-culturales)  
+4. [Formatos de Datos y Recomendaciones](#4-formatos-de-datos-y-recomendaciones)  
+5. [Metadatos y Estándares](#5-metadatos-y-estandares)  
+6. [Licencias y Derechos de Uso](#6-licencias-y-derechos-de-uso)  
+7. [Evaluación FAIR y Herramientas](#7-evaluacion-fair-y-herramientas)  
+8. [Tipos de Investigación y Requisitos FAIR](#8-tipos-de-investigacion-y-requisitos-fair)  
+   8.1 [Investigación Observacional](#81-investigacion-observacional)  
+   8.2 [Investigación Experimental](#82-investigacion-experimental)  
+   8.3 [Investigación Computacional](#83-investigacion-computacional)  
+   8.4 [Investigación Clínica y Social](#84-investigacion-clinica-y-social)  
+9. [Planificación estructurada de productos de investigación](#9-planificacion-estructurada-de-productos-de-investigacion)  
+   9.1 [Planes de Gestión de Datos (DMP)](#91-planes-de-gestion-de-datos)  
+   9.2 [Planes de Gestión de Software (SMP)](#92-planes-de-gestion-de-software)  
+   9.3 [Planes Accionables por Máquina (maDMPs y maSMPs)](#93-planes-maquina)  
 10. [Anexos](#10-anexos)  
-    10.1 [Anexo A: Checklist de Evaluación FAIR](#101-anexo-a-checklist-de-evaluacion-fair)  
-    10.2 [Anexo B: Ejemplo de Metadatos Estructurados](#102-anexo-b-ejemplo-de-metadatos-estructurados)  
-    10.3 [Anexo C: Datos mínimos para un Plan de Gestión de Datos (DMP)](#103-anexo-c-datos-minimos-para-un-plan-de-gestion-de-datos-dmp)  
-    10.4 [Anexo D: Datos mínimos para un Plan de Gestión de Software (SMP)](#104-anexo-d-datos-minimos-para-un-plan-de-gestion-de-software-smp)  
-
+   10.1 [Anexo A: Checklist de Evaluación FAIR](#101-anexo-a-checklist-de-evaluacion-fair)  
+   10.2 [Anexo B: Ejemplo de Metadatos Estructurados](#102-anexo-b-ejemplo-de-metadatos-estructurados)  
+   10.3 [Anexo C: Datos mínimos para un Plan de Gestión de Datos (DMP)](#103-anexo-c-datos-minimos-para-un-plan-de-gestion-de-datos-dmp)  
+   10.4 [Anexo D: Datos mínimos para un Plan de Gestión de Software (SMP)](#104-anexo-d-datos-minimos-para-un-plan-de-gestion-de-software-smp)  
 
 **Este documento está disponible bajo la licencia CC BY 4.0** y puede ser actualizado con nuevas colaboraciones.
 
@@ -111,7 +110,7 @@ Objetivo: Permitir la reutilización de los datos en distintos contextos.
 
 ---
 
-## 3. Consideraciones éticas, lingüísticas y culturales <a name="8-consideraciones-eticas-linguisticas-y-culturales"></a>
+## 3. Consideraciones éticas, lingüísticas y culturales <a name="3-consideraciones-eticas-linguisticas-y-culturales"></a>
 
 Los principios **FAIR** no consideran explícitamente los derechos de comunidades, por lo que es crucial complementarlos con los principios **CARE** (Colectivo, Autoridad, Responsabilidad, Ética), desarrollados por GIDA para guiar el uso justo y respetuoso de datos sobre pueblos indígenas.
 
@@ -137,7 +136,7 @@ Los principios **FAIR** no consideran explícitamente los derechos de comunidade
 
 ---
 
-## 4. Formatos de Datos y Recomendaciones <a name="3-formatos-de-datos-y-recomendaciones"></a>
+## 4. Formatos de Datos y Recomendaciones <a name="4-formatos-de-datos-y-recomendaciones"></a>
 
 | **Tipo de Datos**      | **Formato Recomendado** | **Observaciones** |
 |------------------------|------------------------|--------------------|
@@ -177,7 +176,7 @@ Los principios **FAIR** no consideran explícitamente los derechos de comunidade
 
 ---
 
-## 5. Metadatos y Estándares <a name="4-metadatos-y-estandares"></a>
+## 5. Metadatos y Estándares <a name="5-metadatos-y-estandares"></a>
 
 Los **metadatos** son descripciones estructuradas que permiten entender, descubrir y reutilizar los datos. Siguen estructuras normalizadas conocidas como **esquemas de metadatos** y, cuando se alinean con vocabularios compartidos, habilitan la interoperabilidad semántica.
 
@@ -428,9 +427,9 @@ Los principios FAIR no son una lista de chequeo cerrada, sino un marco evaluable
 
 ---
 
-## 8. Tipos de Investigación y Requisitos FAIR <a name="7-tipos-de-investigacion-y-requisitos-fair"></a>
+## 8. Tipos de Investigación y Requisitos FAIR <a name="8-tipos-de-investigacion-y-requisitos-fair"></a>
   
-### 8.1 Investigación Observacional <a name="71-investigacion-observacional"></a>
+### 8.1 Investigación Observacional <a name="81-investigacion-observacional"></a>
   
 ##### **Requisitos:**
 - **Documentar Instrumentos y Métodos**:  
@@ -445,7 +444,7 @@ Los principios FAIR no son una lista de chequeo cerrada, sino un marco evaluable
   - Obtener consentimiento informado cuando sea aplicable.  
   - Cumplir con las regulaciones de protección de datos.
 
-### 8.2 Investigación Experimental <a name="72-investigacion-experimental"></a>
+### 8.2 Investigación Experimental <a name="82-investigacion-experimental"></a>
 ##### **Requisitos:**
 - **Documentar Condiciones Experimentales**:
   - Proveniencia y estándares
@@ -460,7 +459,7 @@ Los principios FAIR no son una lista de chequeo cerrada, sino un marco evaluable
 - **Consideraciones Éticas**:  
   - Obtener aprobaciones éticas y cumplir con las regulaciones aplicables.
 
-### 8.3 Investigación Computacional <a name="73-investigacion-computacional"></a>
+### 8.3 Investigación Computacional <a name="83-investigacion-computacional"></a>
 ##### **Requisitos:**
 - **Documentar Código y Dependencias**:
   - Publicación de código y entorno   
@@ -476,7 +475,7 @@ Los principios FAIR no son una lista de chequeo cerrada, sino un marco evaluable
 - **Licencias de Código**:  
   - Aplicar licencias apropiadas como **Apache 2.0** o **GPL** para código y software.
 
-### 8.4 Investigación Clínica y Social <a name="74-investigacion-clinica-y-social"></a>
+### 8.4 Investigación Clínica y Social <a name="84-investigacion-clinica-y-social"></a>
 ##### **Requisitos:**
 - **Cumplimiento con Regulaciones de Protección de Datos**:
   - Licencias, anonimización  
@@ -493,11 +492,11 @@ Los principios FAIR no son una lista de chequeo cerrada, sino un marco evaluable
 
 ---
 
-## 9. Planificación estructurada de productos de investigación <a name="5-planificacion-estructurada"></a>
+## 9. Planificación estructurada de productos de investigación <a name="9-planificacion-estructurada"></a>
 
 En proyectos de investigación contemporáneos, es crucial planificar desde el inicio cómo se gestionarán, compartirán y preservarán los productos digitales. Esta planificación no solo aplica a los datos, sino también al software, flujos de trabajo, documentación y metadatos. A continuación se presentan los tipos principales de planes, su evolución hacia formatos más estructurados y herramientas clave para su elaboración.
 
-### 9.1 Planes de Gestión de Datos (DMP) <a name="51-planes-de-gestion-de-datos"></a>
+### 9.1 Planes de Gestión de Datos (DMP) <a name="91-planes-de-gestion-de-datos"></a>
 
 Los **Planes de Gestión de Datos (DMP)** son documentos vivos que describen cómo se generarán, organizarán, documentarán, almacenarán, compartirán y preservarán los datos de investigación. En muchas convocatorias y repositorios, estos planes son un requisito obligatorio.
 
@@ -516,7 +515,7 @@ Entre las plataformas destacadas para su elaboración se encuentran:
 
 ---
 
-### 9.2 Planes de Gestión de Software (SMP) <a name="52-planes-de-gestion-de-software"></a>
+### 9.2 Planes de Gestión de Software (SMP) <a name="92-planes-de-gestion-de-software"></a>
 
 El **Plan de Gestión de Software (SMP)** es el equivalente a un DMP pero orientado al desarrollo, documentación, publicación y sostenibilidad del software producido en investigación. Estos planes se enmarcan en los principios **FAIR4RS**, orientados a software reutilizable, reproducible y citable.
 
@@ -534,7 +533,7 @@ Guías clave:
 
 ---
 
-### 9.3 Planes Accionables por Máquina (maDMPs y maSMPs) <a name="53-planes-maquina"></a>
+### 9.3 Planes Accionables por Máquina (maDMPs y maSMPs) <a name="93-planes-maquina"></a>
 
 La evolución natural de los DMP y SMP ha llevado al desarrollo de **planes accionables por máquina** (*machine-actionable DMPs/SMPs*), diseñados para ser leídos, validados y procesados por sistemas automatizados, APIs y herramientas de seguimiento FAIR.
 
@@ -558,9 +557,9 @@ Con una planificación estructurada e integrada, se garantiza no solo el cumplim
 
 ---
 
-## 10. Anexos <a name="9-anexos"></a>
+## 10. Anexos <a name="10-anexos"></a>
 
-### 10.1 Anexo A: Checklist de Evaluación FAIR <a name="91-anexo-a-checklist-de-evaluacion-fair"></a>
+### 10.1 Anexo A: Checklist de Evaluación FAIR <a name="101-anexo-a-checklist-de-evaluacion-fair"></a>
 
 ### **Findable (Encontrable)**
 
@@ -632,7 +631,7 @@ Con una planificación estructurada e integrada, se garantiza no solo el cumplim
   
 ---
 
-### 10.2 Anexo B: Ejemplo de Metadatos Estructurados <a name="92-anexo-b-ejemplo-de-metadatos-estructurados"></a>
+### 10.2 Anexo B: Ejemplo de Metadatos Estructurados <a name="102-anexo-b-ejemplo-de-metadatos-estructurados"></a>
 
 A continuación se muestra un ejemplo de metadatos estructurados según el estándar **Dublin Core** para un conjunto de datos hipotético.
 
@@ -674,7 +673,7 @@ additional_metadata:
   methodology: "Se usaron sensores calibrados de alta precisión para la recolección de datos. La frecuencia de medición fue diaria, y los datos fueron almacenados y respaldados siguiendo protocolos estándar."
 ```
 
-### 10.3 Anexo C: Datos mínimos para un Plan de Gestión de Datos (DMP) <a name="93-anexo-c-datos-minimos-para-un-plan-de-gestion-de-datos-dmp"></a>
+### 10.3 Anexo C: Datos mínimos para un Plan de Gestión de Datos (DMP) <a name="103-anexo-c-datos-minimos-para-un-plan-de-gestion-de-datos-dmp"></a>
 
 Un **Plan de Gestión de Datos (DMP)** es un documento esencial que describe cómo se generarán, documentarán, almacenarán, compartirán y preservarán los datos de investigación. A continuación, se presentan los elementos mínimos que debe contener un DMP.
 
