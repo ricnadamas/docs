@@ -9,8 +9,8 @@
    2.3 [Interoperable](#23-interoperable)  
    2.4 [Reusable (Reutilizable)](#24-reusable-reutilizable)  
 3. [Consideraciones éticas, lingüísticas y culturales](#3-consideraciones-eticas-linguisticas-y-culturales)  
-4. [Formatos de Datos y Recomendaciones](#4-formatos-de-datos-y-recomendaciones)  
-5. [Metadatos y Estándares](#5-metadatos-y-estandares)  
+4. [Metadatos y Estándares](#4-metadatos-y-estandares)  
+5. [Formatos de Datos y Recomendaciones](#5-formatos-de-datos-y-recomendaciones)  
 6. [Licencias y Derechos de Uso](#6-licencias-y-derechos-de-uso)  
 7. [Evaluación FAIR y Herramientas](#7-evaluacion-fair-y-herramientas)  
 8. [Tipos de Investigación y Requisitos FAIR](#8-tipos-de-investigacion-y-requisitos-fair)  
@@ -22,11 +22,17 @@
    9.1 [Planes de Gestión de Datos (DMP)](#91-planes-de-gestion-de-datos)  
    9.2 [Planes de Gestión de Software (SMP)](#92-planes-de-gestion-de-software)  
    9.3 [Planes Accionables por Máquina (maDMPs y maSMPs)](#93-planes-maquina)  
-10. [Anexos](#10-anexos)  
-   10.1 [Anexo A: Checklist de Evaluación FAIR](#101-anexo-a-checklist-de-evaluacion-fair)  
-   10.2 [Anexo B: Ejemplo de Metadatos Estructurados](#102-anexo-b-ejemplo-de-metadatos-estructurados)  
-   10.3 [Anexo C: Datos mínimos para un Plan de Gestión de Datos (DMP)](#103-anexo-c-datos-minimos-para-un-plan-de-gestion-de-datos-dmp)  
-   10.4 [Anexo D: Datos mínimos para un Plan de Gestión de Software (SMP)](#104-anexo-d-datos-minimos-para-un-plan-de-gestion-de-software-smp)  
+10. [Extensiones para la trazabilidad e interoperabilidad FAIR](#10-extensiones-trazabilidad-interoperabilidad-fair)  
+   10.1 [Trazabilidad, versionado y mantenimiento](#101-trazabilidad-versionado-mantenimiento)  
+   10.2 [Gestión de flujos de trabajo y modelos computacionales](#102-gestion-flujos-modelos)  
+   10.3 [Requisitos técnicos para la interoperabilidad FAIR](#103-requisitos-tecnicos-interoperabilidad)  
+   10.4 [Citación y métricas de uso de productos FAIR](#104-citacion-metricas-fair)  
+11. [Anexos](#11-anexos)  
+   11.1 [Anexo A: Checklist de Evaluación FAIR](#111-anexo-a-checklist-de-evaluacion-fair)  
+   11.2 [Anexo B: Ejemplo de Metadatos Estructurados](#112-anexo-b-ejemplo-de-metadatos-estructurados)  
+   11.3 [Anexo C: Datos mínimos para un Plan de Gestión de Datos (DMP)](#113-anexo-c-datos-minimos-para-un-plan-de-gestion-de-datos-dmp)  
+   11.4 [Anexo D: Datos mínimos para un Plan de Gestión de Software (SMP)](#114-anexo-d-datos-minimos-para-un-plan-de-gestion-de-software-smp)  
+
 
 **Este documento está disponible bajo la licencia CC BY 4.0** y puede ser actualizado con nuevas colaboraciones.
 
@@ -557,9 +563,67 @@ Con una planificación estructurada e integrada, se garantiza no solo el cumplim
 
 ---
 
-## 10. Anexos <a name="10-anexos"></a>
+## 10. Extensiones para la trazabilidad e interoperabilidad FAIR <a name="10-extensiones-trazabilidad-interoperabilidad-fair"></a>
 
-### 10.1 Anexo A: Checklist de Evaluación FAIR <a name="101-anexo-a-checklist-de-evaluacion-fair"></a>
+Este bloque aborda elementos avanzados que refuerzan la trazabilidad, la citación y la interoperabilidad técnica de los productos de investigación, en línea con los principios FAIR y las infraestructuras internacionales emergentes.
+
+### 10.1 Trazabilidad, versionado y mantenimiento <a name="101-trazabilidad-versionado-mantenimiento"></a>
+
+- Usar versionado semántico (ej. `v1.0`, `v2.1`) en datos, software y notebooks.
+- Asignar identificadores persistentes por versión (ej. DOI en Zenodo o Figshare).
+- Relacionar versiones usando propiedades como `isNewVersionOf`, `isPreviousVersionOf`.
+- Documentar cambios relevantes mediante archivos `CHANGELOG.md` o descripciones en repositorios.
+- Incluir estrategias de preservación digital y registro de modificaciones (logs o auditorías institucionales).
+
+### 10.2 Gestión de flujos de trabajo y modelos computacionales <a name="102-gestion-flujos-modelos"></a>
+
+- Documentar workflows con herramientas como Galaxy, Nextflow, Snakemake o CWL.
+- Asignar DOIs a flujos de trabajo mediante repositorios como [WorkflowHub](https://workflowhub.eu/) o [Dockstore](https://dockstore.org/).
+- Detallar entradas, salidas, software usado y contenedores (ej. Docker, Singularity).
+- Incluir notebooks interactivos (Jupyter, RMarkdown) como parte de los pipelines.
+
+### 10.3 Requisitos técnicos para la interoperabilidad FAIR <a name="103-requisitos-tecnicos-interoperabilidad"></a>
+
+- Asegurar el uso de protocolos estándar: HTTPS, RESTful APIs, OAI-PMH, SPARQL.
+- Usar formatos abiertos y estructurados: JSON-LD, RDF, NetCDF, CSV con delimitadores claros.
+- Describir recursos mediante vocabularios como DCAT, schema.org, DATS.
+- Habilitar el descubrimiento a través de endpoints públicos y catálogos abiertos institucionales.
+
+### 10.4 Citación y métricas de uso de productos FAIR <a name="104-citacion-metricas-fair"></a>
+
+- Incluir archivos de citación en software (`CITATION.cff`), datos (`datacite.yml`) y código (`codemeta.json`).
+- Usar identificadores como DOI y ARK también para materiales complementarios (datasets intermedios, notebooks, visualizaciones).
+- Promover la citación en estilos formales (APA, MLA, Vancouver), citando datasets y software como productos académicos.
+- Monitorear el uso mediante plataformas como:
+  - [Make Data Count](https://makedatacount.org/)
+  - [Software Heritage](https://www.softwareheritage.org/)
+  - [Data Citation Corpus](https://datasetsearch.research.google.com/)
+
+---
+
+📌 **Más información:**
+
+- [FAIR Cookbook](https://faircookbook.elixir-europe.org/)  
+  Guía técnica para implementar prácticas FAIR con ejemplos detallados por tipo de dato y dominio.
+
+- [WorkflowHub](https://workflowhub.eu/)  
+  Repositorio especializado para compartir, versionar y describir workflows científicos siguiendo los principios FAIR.
+
+- [Software Heritage](https://www.softwareheritage.org/)  
+  Archivo global de software fuente, útil para garantizar trazabilidad y preservación a largo plazo de código científico.
+
+- [FAIRsharing](https://fairsharing.org/)  
+  Registro curado de estándares, repositorios y políticas FAIR, categorizado por disciplina y tipo de producto digital.
+
+- [FAIR Principles (GO FAIR)](https://www.go-fair.org/fair-principles/)  
+  Referencia oficial de los principios FAIR, mantenida por la iniciativa internacional GO FAIR.
+
+
+---
+
+## 11. Anexos <a name="10-anexos"></a>
+
+### 11.1 Anexo A: Checklist de Evaluación FAIR <a name="101-anexo-a-checklist-de-evaluacion-fair"></a>
 
 ### **Findable (Encontrable)**
 
@@ -631,7 +695,7 @@ Con una planificación estructurada e integrada, se garantiza no solo el cumplim
   
 ---
 
-### 10.2 Anexo B: Ejemplo de Metadatos Estructurados <a name="102-anexo-b-ejemplo-de-metadatos-estructurados"></a>
+### 11.2 Anexo B: Ejemplo de Metadatos Estructurados <a name="102-anexo-b-ejemplo-de-metadatos-estructurados"></a>
 
 A continuación se muestra un ejemplo de metadatos estructurados según el estándar **Dublin Core** para un conjunto de datos hipotético.
 
@@ -673,7 +737,7 @@ additional_metadata:
   methodology: "Se usaron sensores calibrados de alta precisión para la recolección de datos. La frecuencia de medición fue diaria, y los datos fueron almacenados y respaldados siguiendo protocolos estándar."
 ```
 
-### 10.3 Anexo C: Datos mínimos para un Plan de Gestión de Datos (DMP) <a name="103-anexo-c-datos-minimos-para-un-plan-de-gestion-de-datos-dmp"></a>
+### 11.3 Anexo C: Datos mínimos para un Plan de Gestión de Datos (DMP) <a name="103-anexo-c-datos-minimos-para-un-plan-de-gestion-de-datos-dmp"></a>
 
 Un **Plan de Gestión de Datos (DMP)** es un documento esencial que describe cómo se generarán, documentarán, almacenarán, compartirán y preservarán los datos de investigación. A continuación, se presentan los elementos mínimos que debe contener un DMP.
 
@@ -714,7 +778,7 @@ Un **DMP bien estructurado** es clave para asegurar la **transparencia, reproduc
 
 ---
 
-### 10.4 Anexo D: Datos mínimos para un Plan de Gestión de Software (SMP) <a name="94-anexo-d-datos-minimos-para-un-plan-de-gestion-de-software-smp"></a>
+### 11.4 Anexo D: Datos mínimos para un Plan de Gestión de Software (SMP) <a name="94-anexo-d-datos-minimos-para-un-plan-de-gestion-de-software-smp"></a>
 
 El **Plan de Gestión de Software (PGS)** describe cómo se desarrollará, documentará y compartirá el software durante un proyecto de investigación. Su objetivo es garantizar que el software sea **mantenido, utilizable y accesible a largo plazo**, apoyando la trazabilidad de su desarrollo y facilitando su reutilización, de acuerdo con los principios FAIR4RS (Findable, Accessible, Interoperable, Reusable for Research Software).
 
