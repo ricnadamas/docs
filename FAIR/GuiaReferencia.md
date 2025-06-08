@@ -38,7 +38,7 @@ Esta guía ha sido elaborada con el apoyo de diversas personas y organizaciones 
 
 ---
 
-## 1. Introducción
+## 1. Introducción <a name="1-introduccion"></a>
 
 Esta guía práctica tiene como objetivo facilitar la implementación de los principios **FAIR** en la gestión de datos de investigación y otros contextos donde la organización, trazabilidad y accesibilidad de la información digital son esenciales. No está dirigida únicamente a investigadores, sino también a bibliotecarios, gestores de datos, responsables de políticas científicas, desarrolladores de infraestructuras y cualquier persona interesada en la gestión eficiente de datos digitales.
 
@@ -57,13 +57,13 @@ Para facilitar su aplicación, se incluyen listas de verificación y directrices
 
 ---
 
-## 2. Principios FAIR
+## 2. Principios FAIR <a name="2-principios-fair"></a>
 
 📌 **Más información:**
 - [Principios FAIR (material para taller). Autores Meyers, N., Escapil-Inchauspé, P., Egaña Aranguren, M., & Hartley Belmar, Ricardo](https://doi.org/10.6075/J0TM7BG5)
 - [Traducción del Documento guía para el Plan de Gestión de Datos FAIR en Organizaciones e Instituciones. Autores Kirkpatrick, C. R., Cragin, M. H., & Meyers, N. (2024) (Translators Hartley Belmar, Ricardo; Meyers, Natalie)](https://doi.org/10.6075/J0ZC836W)
 
-### 2.1 Findable (Encontrable)
+### 2.1 Findable (Encontrable) <a name="21-findable-encontrable"></a>
 Objetivo: Asegurar que los datos y metadatos puedan ser descubiertos fácilmente.
 
 **Requisitos clave:**
@@ -75,7 +75,7 @@ Objetivo: Asegurar que los datos y metadatos puedan ser descubiertos fácilmente
 📌 **Más información:** 
 - [FAIR Data Principles - GO FAIR](https://www.go-fair.org/fair-principles/)
 
-### 2.2 Accessible (Accesible)
+### 2.2 Accessible (Accesible) <a name="22-accessible-accesible"></a>
 Objetivo: Garantizar el acceso a datos y metadatos de manera clara y transparente.
 
 **Requisitos clave:**
@@ -87,7 +87,7 @@ Objetivo: Garantizar el acceso a datos y metadatos de manera clara y transparent
 📌 **Más información:** 
 - [FAIR Data - OpenAIRE](https://www.openaire.eu/fair-data)
 
-### 2.3 Interoperable
+### 2.3 Interoperable <a name="23-interoperable"></a>
 Objetivo: Facilitar la integración de datos con otros sistemas y garantizar su reutilización automatizada.
 
 **Requisitos clave:**
@@ -98,7 +98,7 @@ Objetivo: Facilitar la integración de datos con otros sistemas y garantizar su 
 📌 **Ejemplo práctico:** 
 - [FAIRsharing.org](https://fairsharing.org/)
 
-### 2.4 Reusable (Reutilizable)
+### 2.4 Reusable (Reutilizable) <a name="24-reusable-reutilizable"></a>
 Objetivo: Permitir la reutilización de los datos en distintos contextos.
 
 **Requisitos clave:**
@@ -112,7 +112,7 @@ Objetivo: Permitir la reutilización de los datos en distintos contextos.
 
 ---
 
-## 3. Formatos de Datos y Recomendaciones
+## 3. Formatos de Datos y Recomendaciones <a name="3-formatos-de-datos-y-recomendaciones"></a>
 
 | **Tipo de Datos**      | **Formato Recomendado** | **Observaciones** |
 |------------------------|------------------------|--------------------|
@@ -152,7 +152,7 @@ Objetivo: Permitir la reutilización de los datos en distintos contextos.
   
 ---
 
-## 4. Metadatos y Estándares
+## 4. Metadatos y Estándares <a name="4-metadatos-y-estandares"></a>
 
 Los **metadatos** son descripciones estructuradas que permiten entender, descubrir y reutilizar los datos. Siguen estructuras normalizadas conocidas como **esquemas de metadatos** y, cuando se alinean con vocabularios compartidos, habilitan la interoperabilidad semántica.
 
@@ -258,7 +258,7 @@ Los **metadatos** son descripciones estructuradas que permiten entender, descubr
 
 ---
 
-## 5. Licencias y Derechos de Uso
+## 5. Licencias y Derechos de Uso <a name="5-licencias-y-derechos-de-uso"></a>
 
 Las licencias abiertas facilitan la reutilización de datos:
 
@@ -361,7 +361,7 @@ Las licencias abiertas facilitan la reutilización de datos:
 
 ---
 
-## 6. Evaluación FAIR y Herramientas
+## 6. Evaluación FAIR y Herramientas <a name="6-evaluacion-fair-y-herramientas"></a>
 
 Algunas herramientas útiles para evaluar la adopción FAIR incluyen:
 
@@ -424,7 +424,7 @@ Algunas herramientas útiles para evaluar la adopción FAIR incluyen:
 
 ---
 
-## 7. Tipos de Investigación y Requisitos FAIR
+## 7. Tipos de Investigación y Requisitos FAIR <a name="7-tipos-de-investigacion-y-requisitos-fair"></a>
   
 ### 7.1 Investigación Observacional <a name="71-investigacion-observacional"></a>
   
@@ -441,7 +441,7 @@ Algunas herramientas útiles para evaluar la adopción FAIR incluyen:
   - Obtener consentimiento informado cuando sea aplicable.  
   - Cumplir con las regulaciones de protección de datos.
 
-### 7.2 Investigación Experimental
+### 7.2 Investigación Experimental <a name="72-investigacion-experimental"></a>
 ##### **Requisitos:**
 - **Documentar Condiciones Experimentales**:
   - Proveniencia y estándares
@@ -456,7 +456,7 @@ Algunas herramientas útiles para evaluar la adopción FAIR incluyen:
 - **Consideraciones Éticas**:  
   - Obtener aprobaciones éticas y cumplir con las regulaciones aplicables.
 
-### 7.3 Investigación Computacional
+### 7.3 Investigación Computacional <a name="73-investigacion-computacional"></a>
 ##### **Requisitos:**
 - **Documentar Código y Dependencias**:
   - Publicación de código y entorno   
@@ -472,7 +472,7 @@ Algunas herramientas útiles para evaluar la adopción FAIR incluyen:
 - **Licencias de Código**:  
   - Aplicar licencias apropiadas como **Apache 2.0** o **GPL** para código y software.
 
-### 7.4 Investigación Clínica y Social
+### 7.4 Investigación Clínica y Social <a name="74-investigacion-clinica-y-social"></a>
 ##### **Requisitos:**
 - **Cumplimiento con Regulaciones de Protección de Datos**:
   - Licencias, anonimización  
@@ -489,7 +489,7 @@ Algunas herramientas útiles para evaluar la adopción FAIR incluyen:
 
 ---
 
-## 8. Consideraciones éticas, lingüísticas y culturales
+## 8. Consideraciones éticas, lingüísticas y culturales <a name="8-consideraciones-eticas-linguisticas-y-culturales"></a>
 
 Los principios **FAIR** no consideran explícitamente los derechos de comunidades, por lo que es crucial complementarlos con los principios **CARE** (Colectivo, Autoridad, Responsabilidad, Ética), desarrollados por GIDA para guiar el uso justo y respetuoso de datos sobre pueblos indígenas.
 
@@ -513,9 +513,9 @@ Los principios **FAIR** no consideran explícitamente los derechos de comunidade
 
 ---
 
-## 9. Anexos
+## 9. Anexos <a name="9-anexos"></a>
 
-### 9.1 Anexo A: Checklist de Evaluación FAIR
+### 9.1 Anexo A: Checklist de Evaluación FAIR <a name="91-anexo-a-checklist-de-evaluacion-fair"></a>
 
 ### **Findable (Encontrable)**
 
@@ -587,7 +587,7 @@ Los principios **FAIR** no consideran explícitamente los derechos de comunidade
   
 ---
 
-### 9.2 Anexo B: Ejemplo de Metadatos Estructurados
+### 9.2 Anexo B: Ejemplo de Metadatos Estructurados <a name="92-anexo-b-ejemplo-de-metadatos-estructurados"></a>
 
 A continuación se muestra un ejemplo de metadatos estructurados según el estándar **Dublin Core** para un conjunto de datos hipotético.
 
@@ -629,7 +629,7 @@ additional_metadata:
   methodology: "Se usaron sensores calibrados de alta precisión para la recolección de datos. La frecuencia de medición fue diaria, y los datos fueron almacenados y respaldados siguiendo protocolos estándar."
 ```
 
-### 9.3 Anexo C: Datos mínimos para un Plan de Gestión de Datos (DMP)
+### 9.3 Anexo C: Datos mínimos para un Plan de Gestión de Datos (DMP) <a name="93-anexo-c-datos-minimos-para-un-plan-de-gestion-de-datos-dmp"></a>
 
 Un **Plan de Gestión de Datos (DMP)** es un documento esencial que describe cómo se generarán, documentarán, almacenarán, compartirán y preservarán los datos de investigación. A continuación, se presentan los elementos mínimos que debe contener un DMP.
 
@@ -671,7 +671,7 @@ Un **DMP bien estructurado** es clave para asegurar la **transparencia, reproduc
 
 ---
 
-### 9.4 Anexo D: Datos mínimos para un Plan de Gestión de Software (SMP)
+### 9.4 Anexo D: Datos mínimos para un Plan de Gestión de Software (SMP) <a name="94-anexo-d-datos-minimos-para-un-plan-de-gestion-de-software-smp"></a>
 
 El **Plan de Gestión de Software (PGS)** describe cómo se desarrollará, documentará y compartirá el software durante un proyecto de investigación. Su objetivo es garantizar que el software sea **mantenido, utilizable y accesible a largo plazo**, apoyando la trazabilidad de su desarrollo y facilitando su reutilización, de acuerdo con los principios FAIR4RS (Findable, Accessible, Interoperable, Reusable for Research Software).
 
