@@ -492,7 +492,7 @@ Los principios FAIR no son una lista de chequeo cerrada, sino un marco evaluable
 
 ---
 
-## 9. Planificación estructurada de productos de investigación <a name="9-planificacion-estructurada"></a>
+## 9. Planificación estructurada de productos de investigación <a name="9-planificacion-estructurada-de-productos-de-investigacion"></a>
 
 En proyectos de investigación contemporáneos, es crucial planificar desde el inicio cómo se gestionarán, compartirán y preservarán los productos digitales. Esta planificación no solo aplica a los datos, sino también al software, flujos de trabajo, documentación y metadatos. A continuación se presentan los tipos principales de planes, su evolución hacia formatos más estructurados y herramientas clave para su elaboración.
 
