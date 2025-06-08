@@ -26,7 +26,8 @@
    10.1 [Trazabilidad, versionado y mantenimiento](#101-trazabilidad-versionado-mantenimiento)  
    10.2 [Gestión de flujos de trabajo y modelos computacionales](#102-gestion-flujos-modelos)  
    10.3 [Requisitos técnicos para la interoperabilidad FAIR](#103-requisitos-tecnicos-interoperabilidad)  
-   10.4 [Citación y métricas de uso de productos FAIR](#104-citacion-metricas-fair)  
+   10.4 [Citación y métricas de uso de productos FAIR](#104-citacion-metricas-fair)
+   10.5 [Estructura de metadatos procesables por máquinas](#105-estructura-metadatos-procesables-maquinas)  
 11. [Anexos](#11-anexos)  
    11.1 [Anexo A: Checklist de Evaluación FAIR](#111-anexo-a-checklist-de-evaluacion-fair)  
    11.2 [Anexo B: Ejemplo de Metadatos Estructurados](#112-anexo-b-ejemplo-de-metadatos-estructurados)  
@@ -70,56 +71,54 @@ Para facilitar su aplicación, se incluyen listas de verificación y directrices
 ## 2. Principios FAIR <a name="2-principios-fair"></a>
 
 📌 **Más información:**
-- [Principios FAIR (material para taller). Autores Meyers, N., Escapil-Inchauspé, P., Egaña Aranguren, M., & Hartley Belmar, Ricardo](https://doi.org/10.6075/J0TM7BG5)  
+- [Principios FAIR (material para taller). Autores: Meyers, N., Escapil-Inchauspé, P., Egaña Aranguren, M., & Hartley Belmar, R.](https://doi.org/10.6075/J0TM7BG5)  
   Recurso didáctico adaptado para talleres sobre principios FAIR y su aplicación práctica.
-- [Traducción del Documento guía para el Plan de Gestión de Datos FAIR en Organizaciones e Instituciones. Autores Kirkpatrick, C. R., Cragin, M. H., & Meyers, N. (2024) (Translators Hartley Belmar, Ricardo; Meyers, Natalie)](https://doi.org/10.6075/J0ZC836W)  
+- [Traducción del documento guía para el Plan de Gestión de Datos FAIR en Organizaciones e Instituciones. Autores: Kirkpatrick, C. R., Cragin, M. H., & Meyers, N. (2024) (Traductores: Hartley Belmar, R.; Meyers, N.)](https://doi.org/10.6075/J0ZC836W)  
   Traducción comentada de la guía FAIR de DMPs institucionales, contextualizada para públicos hispanohablantes.
 - [Ten Simple Rules for FAIR Data](https://doi.org/10.1371/journal.pcbi.1007854)  
   Artículo que sintetiza recomendaciones clave para implementar datos FAIR.
 
 ### 2.1 Findable (Encontrable) <a name="21-findable-encontrable"></a>
-Objetivo: Asegurar que los datos y metadatos puedan ser descubiertos fácilmente.
+**Objetivo:** Asegurar que los datos y metadatos puedan ser descubiertos fácilmente.
 
 **Requisitos clave:**
-- Uso de **identificadores persistentes (PIDs)** como DOI, Handle, ARK u otros, que permiten la referencia inequívoca a los conjuntos de datos.
-- Almacenamiento de metadatos los identificadores persistentes. E.g. [PIDs](https://support.orcid.org/hc/en-us/articles/360006971013-What-are-persistent-identifiers-PIDs)
-- Metadatos ricos que describan los datos de manera clara y estructurada.
-- Indexación en **repositorios especializados** como Zenodo, DataCite o re3data  o busque aquí repositorios certificados [Current CoreTrustSeal certified data repositories](https://amt.coretrustseal.org/certificates)
-
+- Uso de **identificadores persistentes (PIDs)** como DOI, Handle o ARK, que permiten la referencia inequívoca a conjuntos de datos.
+- Inclusión de metadatos que referencien explícitamente estos identificadores persistentes.  
+  Ejemplo: [¿Qué son los PIDs? - ORCID Support](https://support.orcid.org/hc/en-us/articles/360006971013-What-are-persistent-identifiers-PIDs)
+- Metadatos ricos, legibles por humanos y máquinas, que describan el contenido, contexto y estructura de los datos.
+- Indexación en **repositorios certificados** como Zenodo, DataCite o aquellos registrados en [CoreTrustSeal](https://amt.coretrustseal.org/certificates).
 
 ### 2.2 Accessible (Accesible) <a name="22-accessible-accesible"></a>
-Objetivo: Garantizar el acceso a datos y metadatos de manera clara y transparente.
+**Objetivo:** Garantizar el acceso a datos y metadatos de manera clara y transparente.
 
 **Requisitos clave:**
-- Uso de protocolos de comunicación abiertos y seguros (**HTTPS, APIs RESTful**).
-- Implementación de mecanismos de autenticación y autorización cuando sea necesario.
-- **Disponibilidad de metadatos**, incluso si los datos tienen restricciones.
-- Metadatos descriptivos que permitan comprender los datos y la accesibilidad para personas con discapacidades.
-
+- Uso de **protocolos de comunicación abiertos y seguros**, como HTTPS o APIs RESTful.
+- Implementación de mecanismos de **autenticación y autorización**, cuando sea necesario.
+- **Disponibilidad de metadatos**, incluso si los datos tienen restricciones de acceso.
+- Inclusión de descripciones que favorezcan la accesibilidad, incluyendo para personas con discapacidades.
 
 ### 2.3 Interoperable <a name="23-interoperable"></a>
-Objetivo: Facilitar la integración de datos con otros sistemas y garantizar su reutilización automatizada.
+**Objetivo:** Facilitar la integración de los datos con otros sistemas y su reutilización automatizada.
 
 **Requisitos clave:**
-- Uso de **formatos estándar** como JSON, RDF, XML.
-- Uso de **vocabularios controlados y ontologías** (ej. COAR, Schema.org).
-- Inclusión de referencias a otros datos con relaciones bien definidas en los metadatos.
-
+- Uso de **formatos abiertos y estándar** como JSON, XML, RDF.
+- Empleo de **vocabularios controlados y ontologías reconocidas**, como COAR, Schema.org, DCMI Terms.
+- Inclusión de relaciones semánticas claras entre recursos, utilizando descripciones interoperables y enlaces entre conjuntos de datos relacionados.
 
 ### 2.4 Reusable (Reutilizable) <a name="24-reusable-reutilizable"></a>
-Objetivo: Permitir la reutilización de los datos en distintos contextos.
+**Objetivo:** Permitir la reutilización de los datos en múltiples contextos disciplinarios, temporales y geográficos.
 
 **Requisitos clave:**
-- Asignación de **licencias claras** (ej. CC BY, CC0).
-- Documentar exhaustivamente la **proveniencia** de los datos: cómo fueron generados, transformados y validados.
-- Mantener un **registro de versiones** de los datos y los metadatos asociados, incluyendo fecha de creación, modificación y autor responsable.
-- Cumplimiento de estándares y buenas prácticas de la comunidad (ej. diccionario de datos, cuaderno de código).
+- Asignación de **licencias claras y abiertas**, como CC BY o CC0.
+- Documentación detallada de la **proveniencia de los datos**: cómo fueron generados, transformados, validados y versionados.
+- Mantenimiento de un **registro de versiones**, indicando fecha de creación, modificación y responsable del conjunto de datos.
+- Cumplimiento de **estándares y buenas prácticas de la comunidad**, incluyendo glosarios, diccionarios de datos y notebooks reproducibles.
 
 ---
 
 ## 3. Consideraciones éticas, lingüísticas y culturales <a name="3-consideraciones-eticas-linguisticas-y-culturales"></a>
 
-Los principios **FAIR** no consideran explícitamente los derechos de comunidades, por lo que es crucial complementarlos con los principios **CARE** (Colectivo, Autoridad, Responsabilidad, Ética), desarrollados por GIDA para guiar el uso justo y respetuoso de datos sobre pueblos indígenas.
+Los principios **FAIR** no consideran explícitamente los derechos de comunidades, por lo que es crucial complementarlos con los principios **CARE** (Colectivo, Autoridad, Responsabilidad, Ética), desarrollados por la **Global Indigenous Data Alliance (GIDA)** para guiar el uso justo y respetuoso de datos sobre pueblos indígenas.
 
 📌 **Más información:**
 - [Más información sobre CARE](https://www.gida-global.org/care)  
@@ -129,14 +128,16 @@ Los principios **FAIR** no consideran explícitamente los derechos de comunidade
 
 - La mayoría de las herramientas, guías y vocabularios están disponibles solo en inglés.
 - Promover traducciones, glosarios en español y capacitación multilingüe es un paso esencial hacia la equidad en ciencia abierta.
+- Ejemplos de recursos adaptados al español incluyen materiales de OpenAIRE, el Grupo de Trabajo de RDA en español, y la traducción de guías FAIR institucionales.
 
 ### Contextos locales y epistemologías diversas
 
 - La definición de metadatos, estándares y licencias debe considerar normas culturales, marcos legales nacionales y derechos colectivos.
 - El principio de **reutilización responsable** implica no solo lo técnico, sino también lo ético y contextual.
+- En contextos donde existan pueblos originarios, se recomienda tener en cuenta instrumentos como el **Convenio 169 de la OIT** sobre derechos de los pueblos indígenas y tribales, así como leyes locales sobre patrimonio cultural y datos sensibles.
 
 > ⚠️ Se recomienda no aplicar criterios FAIR de forma mecánica o exclusivamente técnica, sino incorporar principios de **justicia epistémica**, accesibilidad cultural y pluralismo de saberes.
-> 
+
 📌 **Más información:**
 - [Ethical Data Initiative](https://ethicaldatainitiative.org)  
   Iniciativa que promueve la justicia de datos, la soberanía digital y los derechos de comunidades en entornos digitales.
@@ -145,134 +146,107 @@ Los principios **FAIR** no consideran explícitamente los derechos de comunidade
 
 ## 4. Formatos de Datos y Recomendaciones <a name="4-formatos-de-datos-y-recomendaciones"></a>
 
-| **Tipo de Datos**      | **Formato Recomendado** | **Observaciones** |
-|------------------------|------------------------|--------------------|
-| **Datos Tabulares**    | CSV, TSV (UTF-8)       | Valores separados por comas o tabulaciones, asegurando el uso de codificación **UTF-8** y la inclusión de encabezados de columna claros. |
-| **Datos Jerárquicos**  | JSON, XML              | Uso de esquemas estandarizados para facilitar la interoperabilidad. |
-| **Datos Geoespaciales** | GeoJSON, GML          | Incluir información sobre sistemas de coordenadas y proyecciones utilizadas. |
-| **Datos Biológicos**   | FASTA, NetCDF          | Seguir las especificaciones y versiones recomendadas por la comunidad científica correspondiente. |
-| **Imágenes Científicas** | TIFF, DICOM          | Seguir las especificaciones y versiones recomendadas por la comunidad científica correspondiente (Cuidado con metadatos embebidos) |
-| **Otros específicos**  | FITS, NetCDF           | Seguir las especificaciones y versiones recomendadas por la comunidad científica correspondiente. |
+| **Tipo de Datos**       | **Formato Recomendado** | **Observaciones** |
+|-------------------------|-------------------------|--------------------|
+| **Datos tabulares**     | CSV, TSV (UTF-8)        | Separados por comas o tabulaciones, con codificación **UTF-8** y encabezados claros. |
+| **Datos jerárquicos**   | JSON, XML               | Uso de esquemas estandarizados para facilitar la validación e interoperabilidad. |
+| **Datos geoespaciales** | GeoJSON, GML            | Incluir metadatos sobre sistemas de referencia y proyecciones. |
+| **Datos biológicos**    | FASTA, NetCDF           | Seguir las especificaciones de la comunidad científica correspondiente. |
+| **Imágenes científicas**| TIFF, DICOM             | Preservar metadatos embebidos; considerar directrices de interoperabilidad. |
+| **Otros formatos específicos** | FITS, NetCDF     | Usar conforme a estándares de dominio y versiones documentadas. |
 
-### Consideraciones:
+### Consideraciones
 
-#### Formatos Abiertos vs. Formatos Propietarios
-- Preferir formatos abiertos y estandarizados para promover la interoperabilidad y la reutilización a largo plazo.
-- Evitar formatos propietarios que puedan limitar el acceso y uso de los datos.
+#### Formatos abiertos vs. formatos propietarios
+- Favorecer **formatos abiertos, legibles por máquinas y con documentación pública**.
+- Evitar formatos propietarios que limiten el acceso, conservación o reutilización.
 
-#### Compresión y Codificación
-- Utilizar codificaciones de caracteres estándar como UTF-8.
-- Documentar claramente la codificación utilizada para garantizar la correcta interpretación de los datos.
+#### Codificación y preservación
+- Emplear codificación **UTF-8** de forma consistente.
+- Documentar explícitamente cualquier transformación aplicada y la estructura interna de los archivos.
 
-#### Compresión y Verificación de Integridad
-- Documentar los métodos de compresión y cualquier configuración especial utilizada.
-- Proporcionar sumas de verificación (por ejemplo, MD5, SHA-256) para permitir la verificación de la integridad de los archivos.
+#### Compresión y verificación de integridad
+- Describir los algoritmos de compresión y su configuración (ej. `.zip`, `.tar.gz`).
+- Incluir **sumas de verificación** (ej. `SHA-256`, `MD5`) para validar la integridad del archivo descargado.
 
-#### Interoperabilidad Semántica
-- Cuando sea apropiado, utilizar formatos que faciliten la interoperabilidad semántica, como RDF o JSON-LD.
+#### Interoperabilidad semántica
+- Cuando corresponda, utilizar formatos que integren estructuras semánticas (ej. **RDF**, **JSON-LD**) para habilitar el enlace e interpretación automática.
 
 📌 **Más información:**
 - [Formatos preferidos para la preservación y publicación en repositorios (Zenodo)](https://doi.org/10.5281/zenodo.8432009)  
-  Recomendaciones sobre formatos aceptados y sostenibles para la preservación digital a largo plazo.
+  Recomendaciones de Zenodo para formatos sostenibles a largo plazo.
 
 - [DANS - Recomendaciones de formatos de archivo](https://dans.knaw.nl/en/file-formats/)  
-  Guía del Instituto Holandés DANS con formatos recomendados para el archivo sostenible de datos digitales.
+  Directrices del Instituto Holandés DANS para asegurar el archivo digital confiable.
 
 - [UK Data Service - Formatos recomendados](https://ukdataservice.ac.uk/learning-hub/research-data-management/format-your-data/recommended-formats/)  
-  Tabla con orientación sobre formatos aceptados por el UK Data Service para compartir, reutilizar y preservar datos.
+  Tabla de formatos compatibles con buenas prácticas de gestión, preservación y difusión.
+
 
 ---
 
-## 5. Metadatos y Estándares <a name="5-metadatos-y-estandares"></a>
+## 5. Metadatos y estándares <a name="5-metadatos-y-estandares"></a>
 
 Los **metadatos** son descripciones estructuradas que permiten entender, descubrir y reutilizar los datos. Siguen estructuras normalizadas conocidas como **esquemas de metadatos** y, cuando se alinean con vocabularios compartidos, habilitan la interoperabilidad semántica.
 
-#### Importancia de la Metadata
+### Importancia de la metadata
 
-- Describen el contenido, contexto y estructura de los datos de manera detallada y legible por máquinas.
+- Permiten describir el contenido, contexto y estructura de los datos de manera detallada y legible por máquinas.
 - Facilitan la búsqueda, comprensión, interoperabilidad y reutilización de los datos por parte de los usuarios y los sistemas informáticos.
 
-### Estándares de Metadatos
+### Estándares de metadatos
 
 #### Generales
 - **Dublin Core**: Estándar general y ampliamente utilizado para describir una amplia variedad de recursos digitales y físicos. Proporciona un conjunto básico de elementos de metadatos para facilitar la interoperabilidad.
 - **DataCite Metadata Schema**: Enfocado en la citación y el registro de datos de investigación, incluyendo identificadores persistentes como DOI. Facilita la identificación, acceso y reutilización de conjuntos de datos.
 - **ISO 19115**: Estándar internacional para metadatos de información geoespacial. Define la estructura y contenido de los metadatos para describir datos geoespaciales y servicios relacionados.
 
-#### Ciencias Sociales y Economía
-- **DDI (Data Documentation Initiative)**: Estándar para metadatos en ciencias sociales, comportamiento y economía. Facilita la documentación, descubrimiento y compartición de datos en estos campos.
+#### Ciencias sociales y economía
+- **DDI (Data Documentation Initiative)**: Estándar para metadatos en ciencias sociales, comportamiento y economía.
 - **SDMX (Statistical Data and Metadata eXchange)**: Estándar para el intercambio de datos y metadatos estadísticos, utilizado por organizaciones estadísticas y bancos centrales.
 
-#### Ciencias de la Salud
-- **CDISC (Clinical Data Interchange Standards Consortium)**: Estándares para datos clínicos y de ensayos clínicos, promoviendo la interoperabilidad y eficiencia en la investigación clínica.
-- **HL7 (Health Level Seven)**: Conjunto de estándares para el intercambio, integración y recuperación de información electrónica de salud, utilizado en sistemas hospitalarios y clínicos.
+#### Ciencias de la salud
+- **CDISC (Clinical Data Interchange Standards Consortium)**: Estándares para datos clínicos y ensayos clínicos.
+- **HL7 (Health Level Seven)**: Conjunto de estándares para el intercambio e integración de información electrónica de salud.
 
-#### Ciencias de la Vida y Biología
-- **Darwin Core (DwC)**: Estándar para datos de biodiversidad. Proporciona un marco para compartir información sobre especies y registros de organismos, facilitando el intercambio y agregación de datos biológicos.
-- **MIAME (Minimum Information About a Microarray Experiment)**: Directrices para la descripción de experimentos de microarrays en genética y genómica, garantizando que los datos sean interpretables y reutilizables.
-- **MINSEQE (Minimum Information about a high-throughput Nucleotide Sequencing Experiment)**: Estándar para describir experimentos de secuenciación de alto rendimiento, facilitando la comprensión y reproducción de resultados.
-- **EML (Ecological Metadata Language)**: Estándar para metadatos en ecología y ciencias ambientales, promoviendo la gestión y reutilización de datos ecológicos.
-- **SBML (Systems Biology Markup Language)**: Lenguaje para representar modelos en biología de sistemas.
-- **BioPAX (Biological Pathway Exchange)**: Estándar para el intercambio de datos sobre vías biológicas.
+#### Ciencias de la vida y biología
+- **Darwin Core (DwC)**, **MIAME**, **MINSEQE**, **EML**, **SBML**, **BioPAX**: Estándares clave para la descripción de datos biológicos, ecológicos y genómicos.
 
-#### Humanidades Digitales y Patrimonio Cultural
-- **TEI (Text Encoding Initiative)**: Estándar para la representación de textos en formato digital, ampliamente utilizado en humanidades digitales para codificar y describir recursos textuales.
-- **METS (Metadata Encoding and Transmission Standard)**: Esquema para la codificación y transmisión de metadatos de objetos digitales complejos, comúnmente utilizado en bibliotecas y archivos digitales.
-- **PREMIS (Preservation Metadata)**: Estándar para metadatos de preservación digital, proporcionando información necesaria para gestionar y mantener objetos digitales a largo plazo.
-- **MODS (Metadata Object Description Schema)**: Esquema para descripción bibliográfica, desarrollado por la Biblioteca del Congreso de EE.UU., utilizado en bibliotecas y repositorios digitales.
-- **VRA Core**: Estándar para describir obras de arte y artefactos culturales, utilizado en museos, galerías y colecciones de arte.
-- **LIDO (Lightweight Information Describing Objects)**: Estándar para la interoperabilidad de datos sobre objetos de museos y colecciones culturales, facilitando el intercambio de información entre instituciones.
-- **EAD (Encoded Archival Description)**: Estándar para describir materiales de archivo y manuscritos, utilizado en archivos y bibliotecas para facilitar el acceso a colecciones especiales.
-- **ONIX (ONline Information eXchange)**: Estándar para el intercambio de información sobre publicaciones, utilizado en la industria editorial para compartir metadatos sobre libros y otros medios.
-- **CIDOC CRM (Conceptual Reference Model)**: Modelo para la interoperabilidad de información cultural y patrimonial.
-- **IIIF (International Image Interoperability Framework)**: Estándares para compartir, visualizar y anotar imágenes de alta resolución.
+#### Humanidades digitales y patrimonio cultural
+- **TEI**, **METS**, **PREMIS**, **MODS**, **VRA Core**, **LIDO**, **EAD**, **ONIX**, **CIDOC CRM**, **IIIF**: Diversos estándares para la representación, preservación y descripción de objetos digitales, documentos textuales y obras culturales.
 
-#### Ciencias de la Tierra y Medio Ambiente
-- **CF Conventions (Climate and Forecast)**: Estándares para datos climáticos y de pronósticos meteorológicos, utilizados con formatos como NetCDF.
-- **INSPIRE Metadata Implementing Rules**: Especificaciones para metadatos en el contexto de la directiva INSPIRE de la Unión Europea, relacionadas con datos espaciales ambientales.
-- **CSDGM (Content Standard for Digital Geospatial Metadata)**: Estándar desarrollado por el FGDC (Federal Geographic Data Committee) de EE.UU. para metadatos geoespaciales, promoviendo una documentación consistente de datos geoespaciales.
+#### Ciencias de la tierra y medio ambiente
+- **CF Conventions**, **INSPIRE**, **CSDGM**: Normativas para asegurar documentación coherente de datos espaciales y ambientales.
 
-#### Ingeniería y Manufactura
-- **STEP (Standard for the Exchange of Product model data)**: Estándar para el intercambio de datos de productos industriales y de ingeniería.
+#### Ingeniería y manufactura
+- **STEP**: Estándar para el intercambio de modelos de productos industriales.
 
 #### Educación
-- **LOM (Learning Object Metadata)**: Estándar para describir objetos de aprendizaje y recursos educativos.
+- **LOM (Learning Object Metadata)**: Estándar para describir objetos de aprendizaje.
 
-#### Servicios Web y Datos Abiertos
-- **DCAT (Data Catalog Vocabulary)**: Vocabulario para describir catálogos de datos publicados en la web, facilitando la interoperabilidad entre portales de datos.
-- **OAI-PMH (Open Archives Initiative Protocol for Metadata Harvesting)**: Protocolo que facilita la recolección de metadatos desde repositorios digitales, permitiendo la interoperabilidad y el descubrimiento de recursos.
+#### Servicios web y datos abiertos
+- **DCAT**, **OAI-PMH**: Vocabularios para facilitar la interoperabilidad en catálogos y recolección automatizada de metadatos.
 
-### Uso de Vocabularios Controlados y Ontologías
-- Emplear vocabularios y ontologías estandarizados como **Schema.org**, **FOAF**, **DCMI Terms**, que mejoran la interoperabilidad semántica y la comprensión común de los términos utilizados.
-- Asegurar que estos vocabularios y ontologías sigan los principios **FAIR**.
+### Uso de vocabularios controlados y ontologías
 
-### Elementos Clave de los Metadatos
+- Emplear vocabularios y ontologías estandarizados como **Schema.org**, **FOAF**, **DCMI Terms**.
+- Favorecen la interoperabilidad semántica y una comprensión común de los términos.
+- Asegurar que estos vocabularios estén alineados con los principios **FAIR** y sean sostenibles a largo plazo.
+
+### Elementos clave de los metadatos
+
 - **Título**
-- **Autores/Colaboradores**: Incluir identificadores persistentes como **ORCID** para autores y **ROR** para organizaciones.
+- **Autores/Colaboradores** (con **ORCID** y **ROR**)
 - **Resumen/Descripción**
-- **Palabras Clave**: Utilizar vocabularios controlados para facilitar la búsqueda y recuperación.
-- **Fecha de Publicación**
-- **Fecha de Creación y Modificación**
-- **Licencia**: Especificar una licencia clara y estándar (ej. **CC BY**, **CC0**) para definir las condiciones de reutilización.
-- **Identificador Persistente**: Asignar un **DOI** u otro identificador persistente al conjunto de datos.
-- **Proveniencia**: Proporcionar información sobre el origen de los datos, métodos de recolección y cualquier transformación realizada.
-- **Métodos**: Detalles sobre cómo se recopilaron, procesaron y analizaron los datos.
-- **Estándares y Formatos Utilizados**: Especificar los estándares y formatos utilizados en los datos y metadatos.
-- **Información de Contacto**: Datos de la persona responsable o custodio de los datos para soporte o consultas adicionales.
-
-### **Estructura de metadatos procesables por máquinas**
-
-### **Data Stewardship Wizard – maDMPs**
-- **Descripción**: Extensión de la herramienta DSW que permite generar planes de gestión de datos legibles por máquinas (maDMPs), facilitando su integración con flujos institucionales, APIs y sistemas de monitoreo FAIR.
-- **Enlace**: [https://ds-wizard.org/machine-actionability](https://ds-wizard.org/machine-actionability)
-
-### **DCAT – Data Catalog Vocabulary**
-- **Descripción**: Vocabulario del W3C para describir catálogos de datos abiertos y sus recursos asociados, usado por portales de datos científicos e institucionales.
-- **Enlace**: [https://www.w3.org/TR/vocab-dcat-3/](https://www.w3.org/TR/vocab-dcat-3/)
-
-### **FAIRsharing**
-- **Descripción**: Repositorio curado de estándares, metadatos, políticas y repositorios que permite identificar estructuras interoperables por disciplina o tipo de producto digital.
-- **Enlace**: [https://fairsharing.org/](https://fairsharing.org/)
+- **Palabras clave** (preferentemente con vocabularios controlados)
+- **Fecha de publicación**
+- **Fecha de creación y modificación**
+- **Licencia** (ej. **CC BY**, **CC0**)
+- **Identificador persistente** (ej. **DOI**)
+- **Proveniencia**
+- **Métodos**
+- **Estándares y formatos utilizados**
+- **Información de contacto**
 
 📌 **Más información:**
 - [FAIR Metadata Recommendations](https://doi.org/10.1371/journal.pcbi.1009041)  
@@ -570,9 +544,9 @@ Este bloque aborda elementos avanzados que refuerzan la trazabilidad, la citaci�
 
 ### 10.1 Trazabilidad, versionado y mantenimiento <a name="101-trazabilidad-versionado-mantenimiento"></a>
 
-- Usar versionado semántico (ej. `v1.0`, `v2.1`) en datos, software y notebooks.
+- Usar versionado semántico (ej. `v1.0`, `v2.1`) en datos, software, metadatos y notebooks.
 - Asignar identificadores persistentes por versión (ej. DOI en Zenodo o Figshare).
-- Relacionar versiones usando propiedades como `isNewVersionOf`, `isPreviousVersionOf`.
+- Relacionar versiones usando propiedades como `isNewVersionOf`, `isPreviousVersionOf` o `isVersionOf`.
 - Documentar cambios relevantes mediante archivos `CHANGELOG.md` o descripciones en repositorios.
 - Incluir estrategias de preservación digital y registro de modificaciones (logs o auditorías institucionales).
 
@@ -581,24 +555,54 @@ Este bloque aborda elementos avanzados que refuerzan la trazabilidad, la citaci�
 - Documentar workflows con herramientas como Galaxy, Nextflow, Snakemake o CWL.
 - Asignar DOIs a flujos de trabajo mediante repositorios como [WorkflowHub](https://workflowhub.eu/) o [Dockstore](https://dockstore.org/).
 - Detallar entradas, salidas, software usado y contenedores (ej. Docker, Singularity).
+- Describir los flujos con metadatos estructurados compatibles con esquemas FAIR.
 - Incluir notebooks interactivos (Jupyter, RMarkdown) como parte de los pipelines.
 
 ### 10.3 Requisitos técnicos para la interoperabilidad FAIR <a name="103-requisitos-tecnicos-interoperabilidad"></a>
 
 - Asegurar el uso de protocolos estándar: HTTPS, RESTful APIs, OAI-PMH, SPARQL.
-- Usar formatos abiertos y estructurados: JSON-LD, RDF, NetCDF, CSV con delimitadores claros.
-- Describir recursos mediante vocabularios como DCAT, schema.org, DATS.
+- Usar formatos abiertos y estructurados: JSON-LD, RDF, NetCDF, CSV con delimitadores consistentes.
+- Describir recursos mediante vocabularios como **DCAT**, **schema.org**, **DATS**.
 - Habilitar el descubrimiento a través de endpoints públicos y catálogos abiertos institucionales.
+- Estos elementos son clave para lograr **interoperabilidad técnica y accionabilidad por máquinas**.
 
 ### 10.4 Citación y métricas de uso de productos FAIR <a name="104-citacion-metricas-fair"></a>
 
 - Incluir archivos de citación en software (`CITATION.cff`), datos (`datacite.yml`) y código (`codemeta.json`).
+- Validar periódicamente los archivos de citación con herramientas automatizadas.
 - Usar identificadores como DOI y ARK también para materiales complementarios (datasets intermedios, notebooks, visualizaciones).
-- Promover la citación en estilos formales (APA, MLA, Vancouver), citando datasets y software como productos académicos.
+- Promover la citación en estilos formales (APA, MLA, Vancouver), reconociendo datasets y software como productos académicos.
+- Crear páginas persistentes (landing pages) con metadatos completos y enlaces a versiones.
 - Monitorear el uso mediante plataformas como:
   - [Make Data Count](https://makedatacount.org/)
   - [Software Heritage](https://www.softwareheritage.org/)
   - [Data Citation Corpus](https://datasetsearch.research.google.com/)
+
+### 10.5 Estructura de metadatos procesables por máquinas <a name="105-metadatos-maquina"></a>
+
+- Adoptar estructuras de metadatos legibles por máquinas para permitir la automatización de validación, monitoreo y evaluación FAIR.
+- Usar esquemas como `codemeta.json` para software, `datacite.yml` para datos, y `CITATION.cff` para citación formal.
+- Emplear vocabularios como **DCAT**, **schema.org**, **DATS** y **DCMI Terms** para describir recursos de forma estandarizada.
+- Generar planes de gestión FAIR con herramientas como **Data Stewardship Wizard**, habilitando la producción de **maDMPs**.
+
+📌 **Más información:**
+- [FAIR Cookbook](https://faircookbook.elixir-europe.org/)  
+  Guía técnica para implementar prácticas FAIR con ejemplos detallados por tipo de dato y dominio.
+
+- [WorkflowHub](https://workflowhub.eu/)  
+  Repositorio especializado para compartir, versionar y describir workflows científicos siguiendo los principios FAIR.
+
+- [Software Heritage](https://www.softwareheritage.org/)  
+  Archivo global de software fuente, útil para garantizar trazabilidad y preservación a largo plazo de código científico.
+
+- [FAIRsharing](https://fairsharing.org/)  
+  Registro curado de estándares, repositorios y políticas FAIR, categorizado por disciplina y tipo de producto digital.
+
+- [FAIR Principles (GO FAIR)](https://www.go-fair.org/fair-principles/)  
+  Referencia oficial de los principios FAIR, mantenida por la iniciativa internacional GO FAIR.
+
+- [Data Stewardship Wizard – maDMPs](https://ds-wizard.org/machine-actionability)  
+  Plataforma para generar planes de gestión de datos legibles por máquina y alineados con metadatos estructurados.
 
 ---
 
