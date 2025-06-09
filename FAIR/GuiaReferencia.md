@@ -57,7 +57,7 @@ Esta guía fue concebida como una herramienta práctica para facilitar la adopci
 
 Los principios FAIR —**Encontrables, Accesibles, Interoperables y Reutilizables**— promueven la organización y publicación de datos de manera que otras personas (y sistemas informáticos) puedan encontrarlos, acceder a ellos, integrarlos y reutilizarlos con facilidad. Lejos de ser una lista rígida, representan una aspiración hacia un ecosistema de conocimiento más abierto y eficiente.
 
-Aunque se diseñaron inicialmente para datos, estos principios han sido adaptados también al **software de investigación**, dando origen a la iniciativa **FAIR4RS**. Aquí, el término "software" se entiende en un sentido amplio: desde líneas de código simples hasta sistemas complejos desarrollados en colaboración.
+Aunque originalmente diseñados para datos, estos principios también han sido adaptados al software de investigación, dando origen a la iniciativa FAIR4RS. En este contexto, el término "software" abarca desde líneas de código simples hasta sistemas complejos desarrollados en colaboración.
 
 A lo largo de esta guía se abordan también temas prácticos y estratégicos: recomendaciones sobre **estándares de metadatos**, **formatos abiertos**, **licencias de uso**, **evaluación del cumplimiento FAIR**, así como ejemplos aplicables a distintos tipos de proyectos y disciplinas. Se incluyen listas de verificación y recursos para facilitar su implementación en entornos reales.
 
@@ -65,7 +65,7 @@ A lo largo de esta guía se abordan también temas prácticos y estratégicos: r
 
 # 2. Principios FAIR
 
-Los principios FAIR aseguran que los datos sean **Encontrables (Findable)**, **Accesibles (Accessible)**, **Interoperables (Interoperable)** y **Reutilizables (Reusable)**. Estos principios facilitan el acceso a los datos científicos, promoviendo su reutilización y fomentando el intercambio de conocimientos en múltiples contextos.
+Los principios FAIR aseguran que los datos sean **Encontrables (Findable)**, **Accesibles (Accessible)**, **Interoperables (Interoperable)** y **Reutilizables (Reusable)**. Estos principios facilitan el acceso a los datos científicos, promoviendo su reutilización y fomentando el intercambio de conocimientos en diversos contextos.
 
 Aquí se detallan los principios clave de FAIR:
 
@@ -77,7 +77,7 @@ Aquí se detallan los principios clave de FAIR:
 - Los datos deben tener un **identificador único**, como un DOI, que permita encontrarlos fácilmente.
 - Los metadatos deben incluir estos identificadores persistentes, lo que facilita su localización automática.
 - Los metadatos deben ser detallados y estar en formatos comprensibles tanto para personas como para máquinas.
-- Los datos deben ser indexados en **repositorios certificados** como Zenodo, DataCite o aquellos registrados en CoreTrustSeal.
+- Los datos deben ser indexados en **repositorios certificados**, como Zenodo, DataCite o aquellos registrados en CoreTrustSeal.
 
 ## 2.2 Accessible (Accesible)
 
