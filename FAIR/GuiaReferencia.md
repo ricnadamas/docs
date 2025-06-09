@@ -59,6 +59,8 @@ Los principios FAIR —**Encontrables, Accesibles, Interoperables y Reutilizable
 
 Aunque originalmente diseñados para datos, estos principios también han sido adaptados al software de investigación, dando origen a la iniciativa FAIR4RS. En este contexto, el término "software" abarca desde líneas de código simples hasta sistemas complejos desarrollados en colaboración.
 
+Estos principios también se complementan con otras iniciativas como CARE (Colectivo, Autoridad, Responsabilidad, Ética) o TRUST (Transparencia, Responsabilidad, Usabilidad, Sostenibilidad, Tecnología), que abordan aspectos éticos y sociales complementarios a FAIR.
+
 A lo largo de esta guía se abordan también temas prácticos y estratégicos: recomendaciones sobre **estándares de metadatos**, **formatos abiertos**, **licencias de uso**, **evaluación del cumplimiento FAIR**, así como ejemplos aplicables a distintos tipos de proyectos y disciplinas. Se incluyen listas de verificación y recursos para facilitar su implementación en entornos reales.
 
 ---
@@ -77,23 +79,28 @@ Aquí se detallan los principios clave de FAIR:
 - Los datos deben tener un **identificador único**, como un DOI, que permita encontrarlos fácilmente.
 - Los metadatos deben incluir estos identificadores persistentes, lo que facilita su localización automática.
 - Los metadatos deben ser detallados y estar en formatos comprensibles tanto para personas como para máquinas.
-- Los datos deben ser indexados en **repositorios certificados**, como Zenodo, DataCite o aquellos registrados en CoreTrustSeal.
+- Los datos deben ser indexados en repositorios que implementan identificadores persistentes.
 
 ## 2.2 Accessible (Accesible)
 
 **Objetivo:** Garantizar que los datos y metadatos estén accesibles de forma abierta y transparente.
 
 **Requisitos clave:**
-- Los datos deben estar disponibles a través de **enlaces seguros y abiertos**, como HTTPS o APIs RESTful.
+- Los datos deben estar disponibles a través de **enlaces seguros mediante protocolos abiertos y estandarizados**, como HTTPS o APIs RESTful.
 - Si se requiere control de acceso, deben implementarse sistemas de **autenticación y autorización** bien definidos.
 - Los **metadatos** deben ser accesibles independientemente del acceso a los datos subyacentes, especialmente si existen restricciones de acceso.
+- Los protocolos de acceso a los datos y metadatos deben ser abiertos, gratuitos y universalmente implementables, como HTTPS u OAI-PMH.
+
+⚠️ **Nota importante:**  
+Aunque los principios FAIR favorecen el acceso abierto, **FAIR no implica necesariamente que los datos sean abiertos**. Un conjunto de datos puede cumplir con los principios FAIR incluso si es cerrado, siempre que sus metadatos estén disponibles de forma pública y describan claramente las condiciones de acceso justificadas (por ejemplo, por razones éticas, legales o de confidencialidad).
+
 
 ## 2.3 Interoperable
 
 **Objetivo:** Facilitar la integración de los datos con otros sistemas y su reutilización en diversos contextos.
 
 **Requisitos clave:**
-- Los datos deben estar en **formatos abiertos** y estandarizados, como JSON, XML o RDF, que sean fáciles de procesar y convertir a otros formatos.
+- Los datos deben estar en formatos abiertos y estructurados (como JSON-LD, XML+XSD o RDF), considerando que la interoperabilidad  se logra mediante el uso de vocabularios controlados y ontologías formalizadas que permitan la interpretación automática del significado de los datos.
 - Se deben utilizar **vocabularios controlados** y **ontologías** reconocidas, como Schema.org o DCMI Terms, para asegurar la compatibilidad semántica.
 - Los metadatos deben incluir relaciones claras entre los datos, como enlaces a recursos relacionados que aporten contexto o información adicional.
 
@@ -102,10 +109,11 @@ Aquí se detallan los principios clave de FAIR:
 **Objetivo:** Asegurar que los datos puedan ser utilizados de nuevo en otros contextos científicos, por otros investigadores y en diferentes momentos.
 
 **Requisitos clave:**
-- Los datos deben tener **licencias claras y abiertas**, como CC BY o CC0, que permitan su reutilización sin restricciones.
+- Los datos deben tener **licencias claras y abiertas**, como CC BY o CC0, que permitan su reutilización, con o sin condiciones, dependiendo del tipo de licencia seleccionada.
 - La **documentación** debe ser completa, explicando cómo se generaron, transformaron, validaron y versionaron los datos.
 - Es fundamental mantener un **registro de versiones** para asegurar que los datos se puedan actualizar de forma coherente, señalando las fechas y responsables de las modificaciones.
 - Los datos deben seguir **estándares y buenas prácticas** dentro de la comunidad científica, como diccionarios de datos o glosarios, y ser proporcionados en formatos reutilizables como notebooks reproducibles.
+- La documentación debe incluir claramente las limitaciones, condiciones específicas de reutilización, y potenciales sesgos o errores conocidos en los datos.
 
 📌 **Más información:**
 - [Principios FAIR (material para taller). Autores: Meyers, N., Escapil-Inchauspé, P., Egaña Aranguren, M., & Hartley Belmar, R.](https://doi.org/10.6075/J0TM7BG5)  
@@ -120,7 +128,7 @@ Aquí se detallan los principios clave de FAIR:
 
 ## 3. Consideraciones éticas, lingüísticas y culturales
 
-Los principios **FAIR** no consideran explícitamente los derechos de las comunidades, por lo que es necesario complementarlos con los principios **CARE** (Colectivo, Autoridad, Responsabilidad, Ética), desarrollados por la **Global Indigenous Data Alliance (GIDA)**. Estos principios guían el uso justo y respetuoso de los datos sobre pueblos indígenas, garantizando la soberanía digital y el respeto hacia los derechos colectivos.
+Los principios **FAIR** no consideran explícitamente los derechos de las comunidades, por lo que es necesario complementarlos con los principios **CARE** (Colectivo, Autoridad, Responsabilidad, Ética), desarrollados por la **Global Indigenous Data Alliance (GIDA)**. Estos principios guían el uso justo y respetuoso de los datos sobre pueblos indígenas, garantizando la soberanía digital y el respeto hacia los derechos colectivos. También es clave considerar el concepto de soberanía de datos (data sovereignty), que refuerza la autonomía y control de las comunidades sobre sus datos.
 
 📌 **Más información:**
 - [Más información sobre CARE](https://www.gida-global.org/care)  
@@ -138,7 +146,7 @@ Los principios **FAIR** no consideran explícitamente los derechos de las comuni
 - El principio de **reutilización responsable** no solo aborda lo técnico, sino también lo ético y contextual. Los datos deben ser gestionados con responsabilidad y en consonancia con los derechos de las comunidades.
 - En contextos con pueblos originarios, es esencial tener en cuenta instrumentos como el **Convenio 169 de la OIT** sobre derechos de los pueblos indígenas y tribales, así como las leyes locales que protegen el patrimonio cultural y los datos sensibles.
 
-> ⚠️ Se recomienda evitar aplicar los principios FAIR de manera rígida y exclusivamente técnica. Es fundamental incorporar principios de **justicia epistémica**, accesibilidad cultural y pluralismo de saberes.
+> ⚠️ Es fundamental evitar una aplicación estrictamente técnica o descontextualizada de los principios FAIR, y complementarlos con enfoques que promuevan la justicia epistémica, la equidad lingüística y la soberanía de datos en contextos diversos.
 
 📌 **Más información:**
 - [Ethical Data Initiative](https://ethicaldatainitiative.org)  
@@ -153,7 +161,7 @@ Los principios **FAIR** no consideran explícitamente los derechos de las comuni
 | **Datos tabulares**     | CSV, TSV (UTF-8)        | Separados por comas o tabulaciones, con codificación **UTF-8** y encabezados claros. |
 | **Datos jerárquicos**   | JSON, XML               | Uso de esquemas estandarizados para facilitar la validación e interoperabilidad. |
 | **Datos geoespaciales** | GeoJSON, GML            | Incluir metadatos sobre sistemas de referencia y proyecciones. |
-| **Datos biológicos**    | FASTA, NetCDF           | Seguir las especificaciones de la comunidad científica correspondiente. |
+| **Datos biológicos**    | FASTA, FASTQ, BAM, HDF5 | Seguir las especificaciones y formatos estándares utilizados en comunidades científicas específicas. |
 | **Imágenes científicas**| TIFF, DICOM             | Preservar metadatos embebidos; considerar directrices de interoperabilidad. |
 | **Otros formatos específicos** | FITS, NetCDF     | Usar conforme a estándares de dominio y versiones documentadas. |
 
@@ -189,7 +197,14 @@ Los principios **FAIR** no consideran explícitamente los derechos de las comuni
 
 ## 5. Metadatos y estándares <a name="5-metadatos-y-estandares"></a>
 
-Los **metadatos** son descripciones estructuradas que permiten entender, descubrir y reutilizar los datos. Siguen estructuras normalizadas conocidas como **esquemas de metadatos** y, cuando se alinean con vocabularios compartidos, habilitan la interoperabilidad semántica.
+Los **metadatos** son descripciones estructuradas que permiten entender, descubrir y reutilizar los datos. A diferencia de la documentación en lenguaje natural —como archivos PDF, Word o descripciones narrativas— los metadatos FAIR deben estar **estructurados y ser legibles por máquinas**. Esto se logra utilizando esquemas de metadatos y vocabularios compartidos que permiten su interpretación automática en distintos sistemas.
+
+> 🧠 **Distinción clave:**  
+> La documentación humana es necesaria, pero no suficiente. Para cumplir con FAIR, los metadatos deben seguir estándares estructurados reconocidos y legibles por máquina, como DataCite, schema.org, DCAT o codemeta, según el tipo de producto y su comunidad.
+
+Es importante diferenciar entre esquemas generales como **Dublin Core** o **DataCite**, aplicables a múltiples tipos de productos digitales, y **esquemas específicos por dominio** (como MIAME para datos de microarreglos o DDI para ciencias sociales), los cuales deben ser priorizados cuando existan.
+
+Además de describir el objeto digital, los metadatos deben capturar sus relaciones con otros objetos, usando propiedades explícitas como `isDescribedBy`, `hasVersion`, `cites`, `isDerivedFrom` o `isPartOf`. Estas relaciones permiten reconstruir el ecosistema de conocimiento, asegurar la trazabilidad y facilitar la reutilización automatizada. Esto es especialmente relevante para representar vínculos entre datasets, publicaciones, software, protocolos y otros componentes del ciclo de investigación.
 
 ### Importancia de la metadata
 
@@ -266,6 +281,8 @@ Las licencias abiertas facilitan la reutilización de datos:
 - **Creative Commons Attribution-ShareAlike (CC BY-SA)**: Requiere atribución y compartir bajo la misma licencia. Promueve la distribución en los mismos términos.
 - **Open Data Commons Open Database License (ODbL)**: Requiere atribución y compartir con la misma licencia para bases de datos. Específico para conjuntos de datos y bases de datos.
 - **Public Domain Dedication and License (PDDL)**: Equivalente a CC0 para datos y bases de datos, dedicando los datos al dominio público.
+
+Algunas licencias restrictivas, como CC-BY-NC, aunque populares, limitan la reutilización comercial y no son plenamente compatibles con los principios FAIR.
 
 ### Tipos de Licencias Comunes para Código y Software:
 - **Apache 2.0 License**:
@@ -370,12 +387,14 @@ Las licencias abiertas facilitan la reutilización de datos:
 
 Los principios FAIR no son una lista de chequeo cerrada, sino un marco evaluable. Existen herramientas comunitarias que permiten medir el cumplimiento FAIR de un conjunto de datos o de un repositorio, ya sea mediante formularios interactivos, validadores en línea o integraciones automatizadas con APIs. Estas herramientas comparan los metadatos, licencias, formatos y persistencia de los identificadores con estándares aceptados, y asignan una puntuación o nivel de madurez FAIR.
 
+Es importante considerar que muchas de estas herramientas evalúan principalmente los metadatos y no necesariamente aspectos intrínsecos como calidad o reproducibilidad científica de los datos.
+
 ### FAIR-Aware
 - **Descripción**: FAIR-Aware es una plataforma educativa desarrollada por **DANS (Data Archiving and Networked Services)** que ayuda a investigadores y gestores de datos a comprender mejor los principios **FAIR** y cómo aplicarlos a sus datos. Proporciona una autoevaluación guiada que **no entrega puntuaciones**, pero sensibiliza sobre los aspectos clave de FAIR.  
 - **Enlace**: [FAIR-Aware](https://fairaware.dans.knaw.nl/)
 
 ### F-UJI
-- **Descripción**: Herramienta automática para la evaluación de **FAIRness** de conjuntos de datos registrados con DOI en DataCite. La evaluación de F-UJI está basada en 16 de las 17 métricas desarrolladas en el proyecto [FAIRsFAIR](https://www.fairsfair.eu/).  
+- **Descripción**: Herramienta automática para evaluar el cumplimiento FAIR de conjuntos de datos registrados con DOI, tanto en DataCite como en Crossref, basándose en métricas desarrolladas en el proyecto FAIRsFAIR [FAIRsFAIR](https://www.fairsfair.eu/).  
 - **Enlace**: [F-UJI](https://catalogue.fair-impact.eu/resources/f-uji)
 
 ### FAIR Data Maturity Model
@@ -489,6 +508,8 @@ Los principios FAIR deben adaptarse a las particularidades de cada tipo de inves
 - **Implementar acceso restringido y controlado**  
   Establecer mecanismos que limiten el acceso a los datos sensibles, tales como acuerdos de uso o plataformas seguras de datos.
 
+- **Utilizar repositorios especializados con altos estándares de seguridad y privacidad**: Los datos clínicos y sociales generalmente incluyen información sensible. Por ello, es fundamental almacenarlos en plataformas que provean medidas robustas para el control de acceso, anonimización efectiva y cumplimiento con regulaciones como GDPR o HIPAA.
+
 ---
 
 ## 9. Planificación estructurada de productos de investigación <a name="9-planificacion-estructurada-de-productos-de-investigacion"></a>
@@ -530,7 +551,7 @@ Guías útiles:
 
 ### 9.3 Planes accionables por máquina (maDMPs y maSMPs) <a name="93-planes-maquina"></a>
 
-Los maDMPs y maSMPs están diseñados para ser interpretados por sistemas automatizados, APIs y herramientas de seguimiento FAIR. Representan la evolución natural de los planes tradicionales hacia esquemas estructurados y legibles por máquina.
+Los maDMPs y maSMPs están diseñados para ser interpretados por sistemas automatizados, APIs y herramientas de seguimiento FAIR. Representan la evolución natural de los planes tradicionales hacia esquemas estructurados y legibles por máquina. Además de JSON o JSON-LD, también es común utilizar formatos estructurados como YAML, siempre que existan esquemas validados disponibles para su interpretación automática.
 
 Características:
 - Uso de formatos estructurados como JSON o JSON-LD.
@@ -559,6 +580,12 @@ Este bloque aborda elementos avanzados que refuerzan la trazabilidad, la citaci�
 - Relacionar versiones usando propiedades como `isNewVersionOf`, `isPreviousVersionOf` o `isVersionOf`.
 - Documentar cambios relevantes mediante archivos `CHANGELOG.md` o descripciones en repositorios.
 - Incluir estrategias de preservación digital y registro de modificaciones (logs o auditorías institucionales).
+- Se recomienda utilizar ontologías específicas como PROV-O (Provenance Ontology) para documentar relaciones y procedencia entre versiones de los datos.
+
+⚠️ **Nota importante:**  
+> La trazabilidad FAIR implica registrar no solo las versiones, sino también las relaciones entre distintos objetos digitales, usando propiedades semánticas explícitas como isDerivedFrom, cites, isReferencedBy o isDescribedBy, que permiten reconstruir contextos, flujos y dependencias científicas.
+
+> La implementación completa de FAIR requiere el uso sistemático de **identificadores persistentes (PIDs)** no solo para los datos (DOI), sino también para **autores (ORCID)**, **instituciones (ROR)**, **financiamientos (Grant ID, Funder ID)** y **software (SWHID, codemeta)** entre otros.
 
 ### 10.2 Gestión de flujos de trabajo y modelos computacionales <a name="102-gestion-flujos-modelos"></a>
 
@@ -578,7 +605,10 @@ Este bloque aborda elementos avanzados que refuerzan la trazabilidad, la citaci�
 
 ### 10.4 Citación y métricas de uso de productos FAIR <a name="104-citacion-metricas-fair"></a>
 
-- Incluir archivos de citación en software (`CITATION.cff`), datos (`datacite.yml`) y código (`codemeta.json`).
+- **Incluir archivos estandarizados de citación** en todos los productos digitales:
+  - Para **software**, utilizar el archivo `CITATION.cff`, que permite la citación estructurada en repositorios como GitHub.
+  - Para **datos**, usar formatos como `datacite.xml` o archivos `JSON-LD` que pueden ser generados automáticamente por plataformas como Zenodo o Figshare.
+  - Para **código y software científico**, utilizar metadatos estructurados según el estándar `codemeta.json` para facilitar su interoperabilidad y citación formal.
 - Validar periódicamente los archivos de citación con herramientas automatizadas.
 - Usar identificadores como DOI y ARK también para materiales complementarios (datasets intermedios, notebooks, visualizaciones).
 - Promover la citación en estilos formales (APA, MLA, Vancouver), reconociendo datasets y software como productos académicos.
@@ -591,7 +621,7 @@ Este bloque aborda elementos avanzados que refuerzan la trazabilidad, la citaci�
 ### 10.5 Estructura de metadatos procesables por máquinas <a name="105-metadatos-maquina"></a>
 
 - Adoptar estructuras de metadatos legibles por máquinas para permitir la automatización de validación, monitoreo y evaluación FAIR.
-- Usar esquemas como `codemeta.json` para software, `datacite.yml` para datos, y `CITATION.cff` para citación formal.
+- Usar esquemas como `codemeta.json` para software, `datacite.xml` o JSON-LD para datos, y `CITATION.cff` para citación formal.
 - Emplear vocabularios como **DCAT**, **schema.org**, **DATS** y **DCMI Terms** para describir recursos de forma estandarizada.
 - Generar planes de gestión FAIR con herramientas como **Data Stewardship Wizard**, habilitando la producción de **maDMPs**.
 
@@ -633,7 +663,6 @@ Este bloque aborda elementos avanzados que refuerzan la trazabilidad, la citaci�
 - [FAIR Principles (GO FAIR)](https://www.go-fair.org/fair-principles/)  
   Referencia oficial de los principios FAIR, mantenida por la iniciativa internacional GO FAIR.
 
-
 ---
 
 ## 11. Anexos <a name="11-anexos"></a>
@@ -671,6 +700,7 @@ Esta checklist permite autoevaluar el cumplimiento de los principios FAIR en pro
 - [ ] ¿Los metadatos incluyen suficiente contexto para comprender y reutilizar los datos?
 - [ ] ¿Se siguen estándares y convenciones de la comunidad en el dominio de los datos?
 - [ ] ¿Se han realizado controles de calidad y están documentados los procedimientos de validación?
+- [ ] ¿Están documentadas claramente las limitaciones, sesgos conocidos o potenciales errores de los datos para asegurar una reutilización informada?
 
 ---
 
@@ -767,10 +797,6 @@ El **Plan de Gestión de Software (PGS)** describe cómo se desarrollará, docum
 | **Interoperable** | Uso de vocabularios controlados y formatos estándar.          | Uso de lenguajes estándar, interoperabilidad entre módulos, y metadatos de ejecución. |
 | **Reusable**   | Licencias claras, documentación adecuada y proveniencia completa. | Licencia de software compatible, documentación, dependencias y entorno reproducible. |
 
-📌 **Más información:**
-- [Martínez-Ortiz, C., Bakker, P., & Koning, H. (2022). *Practical guide to Software Management Plans*. Netherlands eScience Center](https://doi.org/10.5281/zenodo.6245751)  
-  Guía práctica para desarrollar y aplicar planes de gestión de software en proyectos de investigación.
-
 ### Elementos mínimos recomendados que debe contener un PGS:
 
 1. **Información general del software**
@@ -801,6 +827,7 @@ El **Plan de Gestión de Software (PGS)** describe cómo se desarrollará, docum
    - Revisión de código (*code review*)
    - Uso de herramientas de calidad (linters, CI/CD)
    - Gestión de *issues* y errores
+   - Garantizar reproducibilidad del entorno mediante herramientas de gestión del entorno como contenedores (**Docker** o **Singularity**) para asegurar que el software pueda ser ejecutado exactamente con las mismas dependencias y configuraciones originales.
 
 6. **Licenciamiento y aspectos legales**
    - Licencia elegida (MIT, GPL, Apache, etc.)
@@ -826,6 +853,9 @@ El **Plan de Gestión de Software (PGS)** describe cómo se desarrollará, docum
 ---
 
 📌 **Más información**
+
+- [Martínez-Ortiz, C., Bakker, P., & Koning, H. (2022). *Practical guide to Software Management Plans*. Netherlands eScience Center](https://doi.org/10.5281/zenodo.6245751)  
+  Guía práctica para desarrollar y aplicar planes de gestión de software en proyectos de investigación.
 
 **Principios y lineamientos FAIR para software:**
 
